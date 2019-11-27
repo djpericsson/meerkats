@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "projects": {
+    "meerkat-recordings": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/meerkat-recordings",
+      "sourceRoot": "apps/meerkat-recordings/src",
+      "prefix": "meerkat-recordings",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/meerkat-recordings",
+            "index": "apps/meerkat-recordings/src/index.html",
+            "main": "apps/meerkat-recordings/src/main.ts",
+            "polyfills": "apps/meerkat-recordings/src/polyfills.ts",
+            "tsConfig": "apps/meerkat-recordings/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "apps/meerkat-recordings/src/favicon.ico",
+              "apps/meerkat-recordings/src/assets"
+            ],
+            "styles": ["apps/meerkat-recordings/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/meerkat-recordings/src/environments/environment.ts",
+                  "with": "apps/meerkat-recordings/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "meerkat-recordings:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "meerkat-recordings:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "meerkat-recordings:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/meerkat-recordings/tsconfig.app.json",
+              "apps/meerkat-recordings/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/meerkat-recordings/jest.config.js",
+            "tsConfig": "apps/meerkat-recordings/tsconfig.spec.json",
+            "setupFile": "apps/meerkat-recordings/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "meerkat-recordings-e2e": {
+      "root": "apps/meerkat-recordings-e2e",
+      "sourceRoot": "apps/meerkat-recordings-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/meerkat-recordings-e2e/cypress.json",
+            "tsConfig": "apps/meerkat-recordings-e2e/tsconfig.e2e.json",
+            "devServerTarget": "meerkat-recordings:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "meerkat-recordings:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/meerkat-recordings-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings-e2e/**"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "meerkat-recordings"
+}
