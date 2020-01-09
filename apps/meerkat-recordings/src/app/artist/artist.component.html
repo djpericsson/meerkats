@@ -1,0 +1,79 @@
+<div
+  class="flex-container"
+  fxLayoutAlign="space-between stretch"
+  fxLayout="row wrap"
+  fxFlex="100%"
+  fxLayout.xs="column"
+  fxLayoutGap="0.01%"
+>
+  <mat-card *ngFor="let artist of artists" fxFlex="24.3%">
+    <mat-card-header style="padding-bottom: 10px;">
+      <img mat-card-avatar src="{{ artist.img }}" />
+      <mat-card-title style="font-size:1vw;">{{ artist.name }}</mat-card-title>
+      <br />
+    </mat-card-header>
+
+    <img
+      mat-card-image
+      src="{{ artist.img }}"
+      alt="Photo of {{ artist.name }}"
+      (click)="onClick(artist.url)"
+    />
+
+    <div class="description" layout="row" layout-align="start start">
+      <p>
+        {{ artist.description }}
+      </p>
+    </div>
+
+    <p class="title" *ngIf="artist.releases">Releases:</p>
+    <div *ngIf="artist.releases" layout="row" layout-align="start start">
+      <button
+        mat-button
+        (click)="onClick(release.url)"
+        *ngFor="let release of artist.releases"
+        fxFlex="20%"
+      >
+        <img
+          alt="Avatar"
+          class="avatar"
+          src="{{ release.img }}"
+          alt="Photo of {{ release.name }}"
+        />
+      </button>
+    </div>
+
+    <p class="title" *ngIf="artist.features">Featured on:</p>
+    <div *ngIf="artist.features" layout="row" layout-align="start start">
+      <button
+        mat-button
+        (click)="onClick(feature.url)"
+        *ngFor="let feature of artist.features"
+        fxFlex="20%"
+      >
+        <img
+          alt="Avatar"
+          class="avatar"
+          src="{{ feature.img }}"
+          alt="Photo of {{ feature.name }}"
+        />
+      </button>
+    </div>
+
+    <mat-card-content></mat-card-content>
+
+    <!-- <mat-card-actions>
+      <button
+        mat-button
+        (click)="onClick(artist.url)"
+        tooltip="{{ artist.name }} on Soundcloud"
+        placement="top"
+      >
+        <i class="fa fa-external-link"></i> Artist on Soundcloud
+      </button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
+<!--
+tooltip="{{ feature.name }}"
+placement="bottom" -->

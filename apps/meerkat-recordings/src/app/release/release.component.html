@@ -1,0 +1,44 @@
+<div
+  class="flex-container"
+  fxLayoutAlign="space-between stretch"
+  fxLayout="row wrap"
+  fxFlex="100%"
+  fxLayout.xs="column"
+  fxLayoutGap="0.1%"
+>
+  <mat-card *ngFor="let release of releases" fxFlex="24.3%">
+    <mat-card-header style="padding-bottom: 10px;">
+      <img mat-card-avatar src="{{ release.artistImg }}" />
+      <mat-card-title style="font-size:1vw;">{{ release.name }}</mat-card-title>
+    </mat-card-header>
+
+    <img
+      mat-card-image
+      src="{{ release.img }}"
+      alt="Photo of {{ release.name }}"
+      (click)="onClick(release.url)"
+    />
+
+    <div layout="row" layout-align="start start" style="font-size: 0.85vw;">
+      <p>
+        <b>Artist</b>: {{ release.artist }} <br />
+        <b>Name</b>: {{ release.name }} <br />
+        <b>Release Date</b>: {{ release.date }}
+      </p>
+    </div>
+
+    <div class="description">
+      {{ release.description }}
+    </div>
+
+    <!-- <mat-card-content>
+      {{ release.description }}
+    </mat-card-content> -->
+
+    <!-- <mat-card-actions>
+      <button mat-button (click)="onClick(release.url)">
+        <i class="fa fa-external-link"></i> Release on Bandcamp
+      </button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>
