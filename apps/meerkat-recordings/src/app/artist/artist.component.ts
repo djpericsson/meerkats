@@ -4,7 +4,7 @@ import { ArtistService } from '../service/artist.service';
 import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
 import { IRelease } from '../model/irelease';
-import { NgxSpinnerService } from "ngx-spinner";
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'meerkat-recordings-artist',
@@ -12,11 +12,10 @@ import { NgxSpinnerService } from "ngx-spinner";
   styleUrls: ['./artist.component.scss']
 })
 export class ArtistComponent implements OnInit {
-
   isLoading = true;
 
-  public artists: IArtist[] = [];
-  public releases: IRelease[] = [];
+  public artists$: Observable<IArtist>;
+  public releases$: Observable<IRelease>;
 
   constructor(
     private artistService: ArtistService,
@@ -39,54 +38,44 @@ export class ArtistComponent implements OnInit {
 
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
-      this.artists = data.artists;
+      this.artists$ = data.artists;
       this.getReleases();
     });
   }
 
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
-      this.releases = data.releases;
-      this.listReleases()
+      this.releases$ = data.releases;
+      this.listReleases();
     });
   }
 
   listReleases() {
-    this.artists.forEach(artist => {
+    this.artists$.forEach(artist => {
       const rel: IRelease[] = [];
       const features: IRelease[] = [];
-      this.releases.forEach(release => {
+      this.releases$.forEach(release => {
         if (release.artist.includes(artist.name)) {
           if (!rel.includes(release)) {
             rel.push(release);
           }
-        };
+        }
         release.songs.forEach(song => {
           if (song.artist.includes(artist.name)) {
             if (!features.includes(release) && !rel.includes(release)) {
               features.push(release);
             }
-          };
+          }
         });
       });
       if (rel.length > 0) {
         artist.releases = rel;
-      };
+      }
       if (features.length > 0) {
         artist.features = features;
-      };
+      }
     });
-    this.isLoading = false
+    this.isLoading = false;
     this.spinner.hide();
-  }
-
-  over(name: object): void {
-    // const artistReleases: any[] = [];
-    // this.releases.forEach(release => {
-    //   if (release.artist === name) {
-    //     artistReleases.push(release.name);
-    //   }
-    // });
-    // console.log(artistReleases);
   }
 }

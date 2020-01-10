@@ -8,7 +8,7 @@
   fxLayout.xs="column"
 >
   <mat-card
-    *ngFor="let release of releases"
+    *ngFor="let release of releases$"
     fxFlex.xs="100%"
     fxFlex.sm="48%"
     fxFlex.md="32%"
@@ -38,15 +38,5 @@
     <div class="description">
       {{ release.description }}
     </div>
-
-    <!-- <mat-card-content>
-      {{ release.description }}
-    </mat-card-content> -->
-
-    <!-- <mat-card-actions>
-      <button mat-button (click)="onClick(release.url)">
-        <i class="fa fa-external-link"></i> Release on Bandcamp
-      </button>
-    </mat-card-actions> -->
   </mat-card>
 </div>

@@ -8,7 +8,7 @@
   fxLayout.xs="column"
 >
   <mat-card
-    *ngFor="let artist of artists"
+    *ngFor="let artist of artists$"
     fxFlex.xs="100%"
     fxFlex.sm="48%"
     fxFlex.md="32%"
@@ -75,19 +75,5 @@
     </div>
 
     <mat-card-content></mat-card-content>
-
-    <!-- <mat-card-actions>
-      <button
-        mat-button
-        (click)="onClick(artist.url)"
-        tooltip="{{ artist.name }} on Soundcloud"
-        placement="top"
-      >
-        <i class="fa fa-external-link"></i> Artist on Soundcloud
-      </button>
-    </mat-card-actions> -->
   </mat-card>
 </div>
-<!--
-tooltip="{{ feature.name }}"
-placement="bottom" -->

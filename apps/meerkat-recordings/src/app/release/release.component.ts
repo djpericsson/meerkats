@@ -3,7 +3,7 @@ import { IRelease } from '../model/irelease';
 import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
 import { ArtistService } from '../service/artist.service';
-import { NgxSpinnerService } from "ngx-spinner";
+import { NgxSpinnerService } from 'ngx-spinner';
 import { IArtist } from '../model/iartist';
 
 @Component({
@@ -12,11 +12,10 @@ import { IArtist } from '../model/iartist';
   styleUrls: ['./release.component.scss']
 })
 export class ReleaseComponent implements OnInit {
+  isLoading = true;
 
-  isLoading = true
-
-  public artists: IArtist[] = [];
-  public releases: IRelease[] = [];
+  public artists$: Observable<IArtist>;
+  public releases$: Observable<IRelease>;
 
   constructor(
     private releaseService: ReleaseService,
@@ -35,31 +34,31 @@ export class ReleaseComponent implements OnInit {
 
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
-      this.releases = data.releases;
+      this.releases$ = data.releases;
       this.getArtists();
     });
   }
 
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
-      this.artists = data.artists;
+      this.artists$ = data.artists;
       this.listArtist();
     });
   }
 
   listArtist() {
-    this.releases.forEach(release => {
-      this.artists.forEach(artist => {
+    this.releases$.forEach(release => {
+      this.artists$.forEach(artist => {
         if (release.artist === artist.name) {
           release.artistImg = artist.img;
           return false;
-        };
+        }
       });
       if (!release.artistImg) {
         release.artistImg = release.img;
       }
     });
-    this.isLoading = false
+    this.isLoading = false;
     this.spinner.hide();
   }
 
