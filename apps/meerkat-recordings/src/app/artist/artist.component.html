@@ -6,7 +6,6 @@
   fxLayout="row wrap"
   fxFlex="100%"
   fxLayout.xs="column"
-  fxLayoutGap="0.01%"
 >
   <mat-card
     *ngFor="let artist of artists"
@@ -36,14 +35,9 @@
     </div>
 
     <p class="title" *ngIf="artist.releases">Releases:</p>
-    <div
-      *ngIf="artist.releases"
-      class="flex-container"
-      layout="row wrap"
-      layout-align="start start"
-    >
+    <div *ngIf="artist.releases" style="flex-direction: row; box-sizing: border-box; /*! display: flex; */">
       <button
-        mat-button
+      mat-flat-button
         (click)="onClick(release.url)"
         *ngFor="let release of artist.releases"
         fxFlex="20%"
@@ -58,9 +52,9 @@
     </div>
 
     <p class="title" *ngIf="artist.features">Featured on:</p>
-    <div *ngIf="artist.features" layout="row wrap" layout-align="start start">
+    <div *ngIf="artist.features" style="flex-direction: row; box-sizing: border-box; /*! display: flex; */">
       <button
-        mat-button
+      mat-flat-button
         (click)="onClick(feature.url)"
         *ngFor="let feature of artist.features"
         fxFlex="20%"
