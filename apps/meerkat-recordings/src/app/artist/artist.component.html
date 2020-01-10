@@ -10,10 +10,11 @@
 >
   <mat-card
     *ngFor="let artist of artists"
-    fxFlex="24.3%"
+    fxFlex.xs="100%"
     fxFlex.sm="48%"
     fxFlex.md="32%"
-    fxFlex.xs="100%"
+    fxFlex.lg="24.3%"
+    fxFlex.xl="19.5%"
   >
     <mat-card-header style="padding-bottom: 10px;">
       <img mat-card-avatar src="{{ artist.img }}" />
@@ -35,7 +36,12 @@
     </div>
 
     <p class="title" *ngIf="artist.releases">Releases:</p>
-    <div *ngIf="artist.releases" class="flex-container" layout="row wrap" layout-align="start start">
+    <div
+      *ngIf="artist.releases"
+      class="flex-container"
+      layout="row wrap"
+      layout-align="start start"
+    >
       <button
         mat-button
         (click)="onClick(release.url)"

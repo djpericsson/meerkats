@@ -8,7 +8,14 @@
   fxLayout.xs="column"
   fxLayoutGap="0.1%"
 >
-  <mat-card *ngFor="let release of releases" fxFlex="24.3%" fxFlex.sm="48%" fxFlex.md="32%" fxFlex.xs="100%">
+  <mat-card
+    *ngFor="let release of releases"
+    fxFlex.xs="100%"
+    fxFlex.sm="48%"
+    fxFlex.md="32%"
+    fxFlex.lg="24.3%"
+    fxFlex.xl="19.5%"
+  >
     <mat-card-header style="padding-bottom: 10px;">
       <img mat-card-avatar src="{{ release.artistImg }}" />
       <mat-card-title>{{ release.name }}</mat-card-title>
