@@ -24,12 +24,12 @@ export class ReleaseComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.showSpinner()
+    setTimeout(() => {
+      if (this.isLoading) {
+        this.spinner.show();
+      }
+    }, 1000);
     this.getReleases();
-  }
-
-  showSpinner() {
-    this.spinner.show();
   }
 
   async getReleases() {
@@ -59,6 +59,7 @@ export class ReleaseComponent implements OnInit {
       }
     });
     this.isLoading = false
+    this.spinner.hide();
   }
 
   onClick(url: string) {

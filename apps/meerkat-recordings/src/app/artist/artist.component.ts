@@ -13,7 +13,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class ArtistComponent implements OnInit {
 
-  isLoading = true
+  isLoading = true;
 
   public artists: any[] = [];
   public releases: any[] = [];
@@ -25,16 +25,16 @@ export class ArtistComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.showSpinner();
+    setTimeout(() => {
+      if (this.isLoading) {
+        this.spinner.show();
+      }
+    }, 1000);
     this.getArtists();
   }
 
   onClick(url: string) {
     window.open(url);
-  }
-
-  showSpinner() {
-    this.spinner.show();
   }
 
   async getArtists() {
@@ -77,6 +77,7 @@ export class ArtistComponent implements OnInit {
       };
     });
     this.isLoading = false
+    this.spinner.hide();
   }
 
   over(name: object): void {
