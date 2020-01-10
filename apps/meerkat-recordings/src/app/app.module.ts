@@ -12,10 +12,11 @@ import { ReleaseComponent } from './release/release.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [AppComponent, ArtistComponent, HomeComponent, NavbarComponent, ReleaseComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule, FlexLayoutModule, RouterModule, NgxSpinnerModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule, FlexLayoutModule, RouterModule, NgxSpinnerModule, MomentModule],
   providers: [HomeComponent, ArtistComponent],
   entryComponents: [HomeComponent, ArtistComponent],
   bootstrap: [AppComponent]

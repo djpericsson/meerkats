@@ -32,7 +32,7 @@
       <p>
         <b>Artist</b>: {{ release.artist }} <br />
         <b>Name</b>: {{ release.name }} <br />
-        <b>Release Date</b>: {{ release.date }}
+        <b>Release Date</b>: {{ release.date | amDateFormat: 'LL' }}
       </p>
     </div>
 
