@@ -4,6 +4,7 @@ import { ArtistService } from '../service/artist.service';
 import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
 import { IRelease } from '../model/irelease';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'meerkat-recordings-artist',
@@ -12,20 +13,28 @@ import { IRelease } from '../model/irelease';
 })
 export class ArtistComponent implements OnInit {
 
+  isLoading = true
+
   public artists: any[] = [];
   public releases: any[] = [];
 
   constructor(
     private artistService: ArtistService,
-    private releaseService: ReleaseService
+    private releaseService: ReleaseService,
+    private spinner: NgxSpinnerService
   ) {}
 
   ngOnInit() {
+    this.showSpinner();
     this.getArtists();
   }
 
   onClick(url: string) {
     window.open(url);
+  }
+
+  showSpinner() {
+    this.spinner.show();
   }
 
   async getArtists() {
@@ -67,6 +76,7 @@ export class ArtistComponent implements OnInit {
         artist.features = features;
       };
     });
+    this.isLoading = false
   }
 
   over(name: object): void {

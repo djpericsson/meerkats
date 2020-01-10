@@ -11,11 +11,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ReleaseComponent } from './release/release.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
-import { TooltipModule } from 'ng2-tooltip-directive';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [AppComponent, ArtistComponent, HomeComponent, NavbarComponent, ReleaseComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule, FlexLayoutModule, RouterModule, TooltipModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule, FlexLayoutModule, RouterModule, NgxSpinnerModule],
   providers: [HomeComponent, ArtistComponent],
   entryComponents: [HomeComponent, ArtistComponent],
   bootstrap: [AppComponent]
