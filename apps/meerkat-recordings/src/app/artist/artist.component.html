@@ -8,10 +8,16 @@
   fxLayout.xs="column"
   fxLayoutGap="0.01%"
 >
-  <mat-card *ngFor="let artist of artists" fxFlex="24.3%">
+  <mat-card
+    *ngFor="let artist of artists"
+    fxFlex="24.3%"
+    fxFlex.sm="48%"
+    fxFlex.md="32%"
+    fxFlex.xs="100%"
+  >
     <mat-card-header style="padding-bottom: 10px;">
       <img mat-card-avatar src="{{ artist.img }}" />
-      <mat-card-title style="font-size:1vw;">{{ artist.name }}</mat-card-title>
+      <mat-card-title>{{ artist.name }}</mat-card-title>
       <br />
     </mat-card-header>
 
@@ -29,7 +35,7 @@
     </div>
 
     <p class="title" *ngIf="artist.releases">Releases:</p>
-    <div *ngIf="artist.releases" layout="row" layout-align="start start">
+    <div *ngIf="artist.releases" class="flex-container" layout="row wrap" layout-align="start start">
       <button
         mat-button
         (click)="onClick(release.url)"
@@ -46,7 +52,7 @@
     </div>
 
     <p class="title" *ngIf="artist.features">Featured on:</p>
-    <div *ngIf="artist.features" layout="row" layout-align="start start">
+    <div *ngIf="artist.features" layout="row wrap" layout-align="start start">
       <button
         mat-button
         (click)="onClick(feature.url)"

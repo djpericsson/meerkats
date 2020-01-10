@@ -15,7 +15,6 @@
   flex: 1;
   overflow: auto;
   margin-left: 0px;
-  font-size: 1vw;
 }
 
 .mat-card-image {
@@ -41,7 +40,6 @@
 .title {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 0.75vw;
 }
 
 .mat-card-header-text {
@@ -52,5 +50,4 @@
 .description {
   max-height: 12em;
   overflow: hidden;
-  font-size: 0.8vw !important;
 }
