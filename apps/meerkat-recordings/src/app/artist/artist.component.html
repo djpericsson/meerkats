@@ -35,9 +35,12 @@
     </div>
 
     <p class="title" *ngIf="artist.releases">Releases:</p>
-    <div *ngIf="artist.releases" style="flex-direction: row; box-sizing: border-box; /*! display: flex; */">
+    <div
+      *ngIf="artist.releases"
+      style="flex-direction: row; box-sizing: border-box; /*! display: flex; */"
+    >
       <button
-      mat-flat-button
+        mat-flat-button
         (click)="onClick(release.url)"
         *ngFor="let release of artist.releases"
         fxFlex="20%"
@@ -52,9 +55,12 @@
     </div>
 
     <p class="title" *ngIf="artist.features">Featured on:</p>
-    <div *ngIf="artist.features" style="flex-direction: row; box-sizing: border-box; /*! display: flex; */">
+    <div
+      *ngIf="artist.features"
+      style="flex-direction: row; box-sizing: border-box; /*! display: flex; */"
+    >
       <button
-      mat-flat-button
+        mat-flat-button
         (click)="onClick(feature.url)"
         *ngFor="let feature of artist.features"
         fxFlex="20%"
