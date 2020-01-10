@@ -1,3 +1,5 @@
+import { ISong } from './isong';
+
 export interface IRelease {
   name: string
   artist: string
@@ -6,5 +8,5 @@ export interface IRelease {
   url: string
   img: string
   artistImg: string
-  songs: string[]
+  songs: ISong[]
 }

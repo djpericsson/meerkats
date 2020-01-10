@@ -4,6 +4,7 @@ import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
 import { ArtistService } from '../service/artist.service';
 import { NgxSpinnerService } from "ngx-spinner";
+import { IArtist } from '../model/iartist';
 
 @Component({
   selector: 'meerkat-recordings-release',
@@ -14,8 +15,8 @@ export class ReleaseComponent implements OnInit {
 
   isLoading = true
 
-  public artists: any[] = [];
-  public releases: any[] = [];
+  public artists: IArtist[] = [];
+  public releases: IRelease[] = [];
 
   constructor(
     private releaseService: ReleaseService,

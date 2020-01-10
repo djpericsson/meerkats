@@ -15,8 +15,8 @@ export class ArtistComponent implements OnInit {
 
   isLoading = true;
 
-  public artists: any[] = [];
-  public releases: any[] = [];
+  public artists: IArtist[] = [];
+  public releases: IRelease[] = [];
 
   constructor(
     private artistService: ArtistService,
@@ -81,7 +81,6 @@ export class ArtistComponent implements OnInit {
   }
 
   over(name: object): void {
-    console.log(name);
     // const artistReleases: any[] = [];
     // this.releases.forEach(release => {
     //   if (release.artist === name) {
