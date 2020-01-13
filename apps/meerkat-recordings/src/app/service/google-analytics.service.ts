@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-declare let gtag: Function;
+declare const gtag: any;
 
 @Injectable({
   providedIn: 'root'
