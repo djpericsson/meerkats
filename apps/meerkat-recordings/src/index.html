@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script
       async
-      src="https://www.google-analytics.com/analytics_debug.js"
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
     ></script>
     <script>
-      var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
-      gtag('create', 'UA-156089383-1', {
-        storage: 'none',
-        clientId: localStorage.getItem(GA_LOCAL_STORAGE_KEY)
-      });
-      gtag(function(tracker) {
-        localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
-      });
-      gtag('set', 'checkProtocolTask', function() {});
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-156089383-1');
     </script>
     <meta charset="utf-8" />
     <title>MeerkatRecordings</title>

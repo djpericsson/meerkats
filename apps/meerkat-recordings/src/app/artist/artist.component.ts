@@ -5,6 +5,7 @@ import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
 import { IRelease } from '../model/irelease';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
 @Component({
   selector: 'meerkat-recordings-artist',
@@ -20,6 +21,7 @@ export class ArtistComponent implements OnInit {
   constructor(
     private artistService: ArtistService,
     private releaseService: ReleaseService,
+    public googleAnalyticsService: GoogleAnalyticsService,
     private spinner: NgxSpinnerService
   ) {}
 
@@ -33,6 +35,13 @@ export class ArtistComponent implements OnInit {
   }
 
   onClick(url: string) {
+    this.googleAnalyticsService.eventEmitter(
+      url,
+      'artist',
+      'image',
+      'click',
+      10
+    );
     window.open(url);
   }
 
