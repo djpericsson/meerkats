@@ -1,12 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  Routes,
-  RouterModule,
-  PreloadAllModules,
-  NavigationEnd,
-  Router
-} from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ArtistComponent } from './artist/artist.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -45,8 +39,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { ReleaseComponent } from './release/release.component';
-
-declare let gtag: Function;
 
 const routes: Routes = [
   { path: '', redirectTo: 'release', pathMatch: 'full' },
@@ -137,14 +129,4 @@ const routes: Routes = [
     MatTreeModule
   ]
 })
-export class AppRoutingModule {
-  constructor(public router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        gtag('config', 'UA-156089383-1', {
-          page_path: event.urlAfterRedirects
-        });
-      }
-    });
-  }
-}
+export class AppRoutingModule {}
