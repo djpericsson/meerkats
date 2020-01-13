@@ -65,13 +65,13 @@ export class ReleaseComponent implements OnInit {
   }
 
   onClick(url: string) {
-    this.googleAnalyticsService.eventEmitter(
-      'navigate',
-      'release',
-      'image',
-      'click',
-      10
-    );
+    // this.googleAnalyticsService.eventEmitter(
+    //   'navigate',
+    //   'release',
+    //   'image',
+    //   'click',
+    //   10
+    // );
     window.open(url);
   }
 }
