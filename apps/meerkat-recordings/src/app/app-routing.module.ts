@@ -41,11 +41,11 @@ import { MatTreeModule } from '@angular/material/tree';
 import { ReleaseComponent } from './release/release.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'release', pathMatch: 'full' },
+  { path: '', redirectTo: 'releases', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'artist', component: ArtistComponent },
-  { path: 'release', component: ReleaseComponent },
-  { path: '**', redirectTo: 'release' }
+  { path: 'artists', component: ArtistComponent },
+  { path: 'releases', component: ReleaseComponent },
+  { path: '**', redirectTo: 'releases' }
 ];
 
 @NgModule({
