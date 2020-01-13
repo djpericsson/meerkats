@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import {AfterViewInit, Inject, PLATFORM_ID} from '@angular/core';
 
-declare const gtag: any;
+declare const gtag: Function;
 
 @Component({
   selector: 'meerkat-recordings-root',
@@ -11,7 +10,7 @@ declare const gtag: any;
 })
 export class AppComponent {
   title = 'Meerkat Recordings';
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, public router: Router) {
+  constructor(public router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         gtag('config', 'UA-156089383-1', {
