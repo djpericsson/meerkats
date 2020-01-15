@@ -24,7 +24,7 @@
             "assets": [
               "apps/meerkat-recordings/src/favicon.ico",
               "apps/meerkat-recordings/src/assets",
-              "src/_redirects"
+              "apps/meerkat-recordings/src/_redirects"
             ],
             "styles": ["apps/meerkat-recordings/src/styles.scss"],
             "scripts": []
