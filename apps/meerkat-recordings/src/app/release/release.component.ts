@@ -14,6 +14,7 @@ import { GoogleAnalyticsService } from '../service/google-analytics.service';
 })
 export class ReleaseComponent implements OnInit {
   isLoading = true;
+  showShortDesciption = true
 
   public artists$: Observable<IArtist>;
   public releases$: Observable<IRelease>;
@@ -74,4 +75,8 @@ export class ReleaseComponent implements OnInit {
     );
     window.open(url);
   }
+
+  alterDescriptionText(text: string): void {
+    this.showShortDesciption = !this.showShortDesciption
+ }
 }

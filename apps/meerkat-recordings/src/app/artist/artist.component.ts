@@ -77,7 +77,7 @@ export class ArtistComponent implements OnInit {
           }
         });
       });
-      if (rel.length > 0) {
+    if (rel.length > 0) {
         artist.releases = rel;
       }
       if (features.length > 0) {

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { ArtistComponent } from './artist/artist.component';
@@ -32,7 +33,8 @@ import { GoogleAnalyticsService } from './service/google-analytics.service';
     FlexLayoutModule,
     RouterModule,
     NgxSpinnerModule,
-    MomentModule
+    MomentModule,
+    BrowserAnimationsModule
   ],
   providers: [HomeComponent, ArtistComponent, GoogleAnalyticsService],
   entryComponents: [HomeComponent, ArtistComponent],
