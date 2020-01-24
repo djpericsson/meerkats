@@ -2,10 +2,11 @@
 
 <div
   class="container"
-  fxLayoutAlign="space-between stretch"
+  fxLayoutAlign="space-between start"
   fxLayout="row wrap"
   fxFlex="100%"
   fxLayout.xs="column"
+  fxFill
 >
   <mat-card
     *ngFor="let release of releases$"
@@ -15,7 +16,7 @@
     fxFlex.lg="24.3%"
     fxFlex.xl="19.5%"
   >
-    <mat-card-header style="padding-bottom: 10px;">
+    <mat-card-header style="padding-bottom: 10px;" id="{{release.name}}">
       <img mat-card-avatar src="{{ release.artistImg }}" />
       <mat-card-title>{{ release.name }}</mat-card-title>
     </mat-card-header>
@@ -35,7 +36,7 @@
       </p>
     </div>
 
-    <div class="description" [ngClass]="{'show-less': showShortDesciption}" (click)="alterDescriptionText(release.description)">
+    <div class="description" [ngClass]="{'show-less': showShortDesciption}" (click)="alterDescriptionText(release.description, release.name)">
       {{ release.description }}
     </div>
 

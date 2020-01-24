@@ -76,7 +76,11 @@ export class ReleaseComponent implements OnInit {
     window.open(url);
   }
 
-  alterDescriptionText(text: string): void {
+  alterDescriptionText(text: string, target: string): void {
     this.showShortDesciption = !this.showShortDesciption
+    setTimeout(() => {
+      const element = document.getElementById(target);
+      element.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }, 5);
  }
 }
