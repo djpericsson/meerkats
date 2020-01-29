@@ -52,7 +52,7 @@ export class ReleaseComponent implements OnInit {
   listArtist() {
     this.releases$.forEach(release => {
       this.artists$.forEach(artist => {
-        if (release.artist === artist.name) {
+        if (release.artist.includes(artist.name)) {
           release.artistImg = artist.img;
           return false;
         }
