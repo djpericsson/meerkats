@@ -36,8 +36,7 @@
       </p>
     </div>
 
-    <div class="description" [ngClass]="{'show-less': showShortDesciption}" (click)="alterDescriptionText(release.description, release.name)">
-      {{ release.description }}
+    <div [ngClass]="{'less-description': !release.isClicked, 'full-description': release.isClicked}" (click)="changeItemState(release)" [innerHTML]="release.description">
     </div>
 
   </mat-card>

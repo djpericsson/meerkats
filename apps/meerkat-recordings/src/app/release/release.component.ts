@@ -14,7 +14,6 @@ import { GoogleAnalyticsService } from '../service/google-analytics.service';
 })
 export class ReleaseComponent implements OnInit {
   isLoading = true;
-  showShortDesciption = true
 
   public artists$: Observable<IArtist>;
   public releases$: Observable<IRelease>;
@@ -51,6 +50,7 @@ export class ReleaseComponent implements OnInit {
 
   listArtist() {
     this.releases$.forEach(release => {
+      release.isClicked = false;
       this.artists$.forEach(artist => {
         if (release.artist.includes(artist.name)) {
           release.artistImg = artist.img;
@@ -76,11 +76,11 @@ export class ReleaseComponent implements OnInit {
     window.open(url);
   }
 
-  alterDescriptionText(text: string, target: string): void {
-    this.showShortDesciption = !this.showShortDesciption
+  public changeItemState(item: any): void {
+    item.isClicked = !item.isClicked;
     setTimeout(() => {
-      const element = document.getElementById(target);
+      const element = document.getElementById(item.name);
       element.scrollIntoView({ behavior: 'auto', block: 'start' });
     }, 5);
- }
+  }
 }
