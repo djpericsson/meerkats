@@ -78,9 +78,9 @@ export class ReleaseComponent implements OnInit {
 
   public changeItemState(item: any): void {
     item.isClicked = !item.isClicked;
-    setTimeout(() => {
-      const element = document.getElementById(item.name);
-      element.scrollIntoView({ behavior: 'auto', block: 'start' });
-    }, 5);
+    // setTimeout(() => {
+    //   const element = document.getElementById(item.name);
+    //   element.scrollIntoView({ behavior: 'auto', block: 'start' });
+    // }, 5);
   }
 }
