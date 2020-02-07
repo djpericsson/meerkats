@@ -20,7 +20,7 @@
             "main": "apps/meerkat-recordings/src/main.ts",
             "polyfills": "apps/meerkat-recordings/src/polyfills.ts",
             "tsConfig": "apps/meerkat-recordings/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "apps/meerkat-recordings/src/favicon.ico",
               "apps/meerkat-recordings/src/assets",
@@ -42,7 +42,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
