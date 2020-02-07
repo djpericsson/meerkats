@@ -9,7 +9,8 @@
   },
   "projects": {
     "meerkat-recordings-e2e": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["meerkat-recordings"]
     },
     "meerkat-recordings": {
       "tags": []
