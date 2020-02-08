@@ -1,48 +1,5 @@
 <ngx-spinner></ngx-spinner>
 
-<!-- <div
-  class="container"
-  fxLayoutAlign="space-between start"
-  fxLayout="row wrap"
-  fxFlex="100%"
-  fxLayout.xs="column"
-  fxLayout.sm="row wrap"
-  fxFill
->
-  <mat-card
-    *ngFor="let release of releases$"
-    fxFlex.xs="100%"
-    fxFlex.sm="48%"
-    fxFlex.md="32%"
-    fxFlex.lg="24.3%"
-    fxFlex.xl="19.5%"
-  >
-    <mat-card-header style="padding-bottom: 10px;" id="{{release.name}}">
-      <img mat-card-avatar src="{{ release.artistImg }}" />
-      <mat-card-title>{{ release.name }}</mat-card-title>
-    </mat-card-header>
-
-    <img
-      mat-card-image
-      src="{{ release.img }}"
-      alt="Photo of {{ release.name }}"
-      (click)="onClick(release.url)"
-    />
-
-    <div layout="row" layout-align="start start">
-      <p>
-        <b>Artist</b>: {{ release.artist }} <br />
-        <b>Name</b>: {{ release.name }} <br />
-        <b>Release Date</b>: {{ release.date | amDateFormat: 'LL' }}
-      </p>
-    </div>
-
-    <div [ngClass]="{'less-description': !release.isClicked, 'full-description': release.isClicked}" (click)="changeItemState(release)" [innerHTML]="release.description">
-    </div>
-
-  </mat-card>
-</div> -->
-
 <div
   class="container"
   fxLayoutAlign="space-between start"
@@ -60,10 +17,6 @@
     fxFlex.lg="24.3%"
     fxFlex.xl="19.5%"
   >
-    <!-- <mat-card-header style="padding-bottom: 10px;" id="{{ release.name }}">
-      <img mat-card-avatar src="{{ release.artistImg }}" />
-      <mat-card-title>{{ release.name }}</mat-card-title>
-    </mat-card-header> -->
 
     <img
       mat-card-image
@@ -72,24 +25,20 @@
     />
 
     <div layout="row" layout-align="start start" style="text-align: center;">
+
+      <p class="artist">
+        <!-- <img mat-card-avatar src="{{ release.artistImg }}" /><br /> -->
+        {{ release.artist }} <br />
+      </p>
+      <p class="release">
+        <b>{{ release.name }}</b> <br />
+      </p>
       <p class="date">
         <i>{{ release.date | amDateFormat: 'LL' }}</i>
-      </p>
-      <p class="info">
-        <!-- <img mat-card-avatar src="{{ release.artistImg }}" /><br /> -->
-        <b>{{ release.artist }}</b> <br />
-        {{ release.name }} <br />
       </p>
     </div>
 
     <mat-card-actions style="text-align: center;">
-      <!-- <button mat-button (click)="onClick(release.url)">
-        <img
-          mat-card-image
-          src="./assets/images/site/logo-bandcamp.png"
-          style="width: 100px;"
-        />
-      </button> -->
       <button mat-button (click)="onClick(release.url)">
         Get it on Bandcamp
       </button>

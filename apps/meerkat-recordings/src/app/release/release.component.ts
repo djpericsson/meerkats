@@ -50,7 +50,6 @@ export class ReleaseComponent implements OnInit {
 
   listArtist() {
     this.releases$.forEach(release => {
-      release.isClicked = false;
       this.artists$.forEach(artist => {
         if (release.artist.includes(artist.name)) {
           release.artistImg = artist.img;
@@ -74,15 +73,5 @@ export class ReleaseComponent implements OnInit {
       10
     );
     window.open(url);
-  }
-
-  public changeItemState(item: any): void {
-    item.isClicked = !item.isClicked;
-    if (!item.isClicked) {
-      setTimeout(() => {
-        const element = document.getElementById(item.name);
-        element.scrollIntoView({ behavior: 'auto', block: 'start' });
-      }, 5);
-    }
   }
 }

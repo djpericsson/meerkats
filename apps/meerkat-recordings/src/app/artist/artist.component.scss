@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-bottom: 15px;
   overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .mat-card:hover {
@@ -18,13 +19,12 @@
 }
 
 .mat-card-image {
-  transform: scale(0.94);
+  transform: scale(0.96);
   transition: height 0.3s, opacity 0.3s;
 }
 
 .mat-card-image:hover {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .avatar {
@@ -56,4 +56,13 @@
 .mat-flat-button {
   min-width: 64px;
   padding: 4 4px;
+}
+
+.mat-card-actions {
+  padding: 0px 0px 0px;
+}
+
+.artist {
+  margin-bottom: 10px;
+  font-size: 1.1rem
 }

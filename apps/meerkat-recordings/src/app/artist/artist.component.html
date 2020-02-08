@@ -17,18 +17,23 @@
     fxFlex.lg="24.3%"
     fxFlex.xl="19.5%"
   >
-    <mat-card-header style="padding-bottom: 10px;">
+    <!-- <mat-card-header style="padding-bottom: 10px;">
       <img mat-card-avatar src="{{ artist.img }}" />
       <mat-card-title>{{ artist.name }}</mat-card-title>
       <br />
-    </mat-card-header>
+    </mat-card-header> -->
 
     <img
       mat-card-image
       src="{{ artist.img }}"
       alt="Photo of {{ artist.name }}"
-      (click)="onClick(artist.url)"
     />
+
+    <div layout="row" layout-align="start start" style="text-align: center;">
+      <p class="artist">
+        {{ artist.name }} <br />
+      </p>
+    </div>
 
     <div class="description" layout="row" layout-align="start start">
       <p>
@@ -77,5 +82,11 @@
     </div>
 
     <mat-card-content></mat-card-content>
+
+    <mat-card-actions style="text-align: center;">
+      <button mat-button (click)="onClick(artist.url)">
+        Visit on Soundcloud
+      </button>
+    </mat-card-actions>
   </mat-card>
 </div>
