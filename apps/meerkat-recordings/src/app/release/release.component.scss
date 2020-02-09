@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-bottom: 15px;
   overflow: hidden;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .mat-card:hover {
@@ -53,17 +53,17 @@
 
 .artist {
   margin-bottom: 0px;
-  font-size: 1.0rem
+  font-size: 1.05rem
 }
 
 .release {
-  margin-bottom: 5px;
-  font-size: 1.05rem
+  margin-bottom: 3px;
+  font-size: 1.1rem
 }
 
 .date {
   margin-top: 0px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   color: darkgray;
 }
 
@@ -72,6 +72,6 @@
 }
 
 .mat-button {
-  font-size: 0.75rem;
-  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  font-family: 'Titillium Web', sans-serif;
 }
