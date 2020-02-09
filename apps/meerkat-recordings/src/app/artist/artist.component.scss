@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-bottom: 15px;
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .mat-card:hover {
@@ -64,9 +64,10 @@
 
 .artist {
   margin-bottom: 10px;
-  font-size: 1.1rem
+  font-size: 1.05rem
 }
 
 .mat-button {
-  font-size: 0.8rem
+  font-size: 0.75rem;
+  font-family: 'Raleway', sans-serif;
 }
