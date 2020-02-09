@@ -1,10 +1,9 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 $primary-color: #2f4050; //#1C2B36 #002538  #2f4050 #293846
-$primary-font: 'Raleway', sans-serif;
+$primary-font: 'Titillium Web', sans-serif;
 
 body {
   font-family: $primary-font;
