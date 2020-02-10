@@ -1,5 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+interface DialogData {
+  email: string;
+}
 
 declare const gtag: Function;
 

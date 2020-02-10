@@ -1,0 +1,15 @@
+/* .mat-dialog-content {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+} */
+
+.mat-dialog-container {
+  padding: 10px !important;
+}
+
+/* .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */

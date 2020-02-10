@@ -16,6 +16,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { MomentModule } from 'ngx-moment';
 
 import { GoogleAnalyticsService } from './service/google-analytics.service';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GoogleAnalyticsService } from './service/google-analytics.service';
     ArtistComponent,
     HomeComponent,
     NavbarComponent,
-    ReleaseComponent
+    ReleaseComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

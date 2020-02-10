@@ -1,0 +1,12 @@
+<div mat-dialog-content *ngIf="this.data.id">
+  <iframe
+    style="border: 0; width: 350px; height: 555px;"
+    class="e2e-trusted-url"
+    [src]="url"
+    seamless
+  >
+  </iframe>
+  <!-- <button #btnClose mat-button class="close" data-dismiss="modal" aria-label="Close" (click)="onNoClick()">
+    <span aria-hidden="true">&times;</span>
+  </button> -->
+</div>

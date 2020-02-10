@@ -46,6 +46,7 @@
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
     "font-awesome": "^4.7.0",
+    "hammerjs": "^2.0.8",
     "jquery": "^3.4.1",
     "jsdom": "^16.1.0",
     "moment": "^2.24.0",

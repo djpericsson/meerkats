@@ -7,6 +7,9 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { IArtist } from '../model/iartist';
 import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
+
 @Component({
   selector: 'meerkat-recordings-release',
   templateUrl: './release.component.html',
@@ -22,7 +25,8 @@ export class ReleaseComponent implements OnInit {
     private releaseService: ReleaseService,
     private artistService: ArtistService,
     public googleAnalyticsService: GoogleAnalyticsService,
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit() {
@@ -73,5 +77,15 @@ export class ReleaseComponent implements OnInit {
       10
     );
     window.open(url);
+  }
+
+  openDialog(id: string): void {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      width: 'auto',
+      data: { id: id}
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      // console.log(result);
+    });
   }
 }

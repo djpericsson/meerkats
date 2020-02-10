@@ -9,5 +9,5 @@ export interface IRelease {
   img: string
   artistImg: string
   songs: ISong[]
-  isClicked: boolean
+  id: string
 }
