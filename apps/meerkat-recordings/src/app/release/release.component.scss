@@ -1,7 +1,7 @@
 .mat-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   overflow: hidden;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -18,7 +18,7 @@
 }
 
 .mat-card-image {
-  transform: scale(0.95);
+  // transform: scale(0.95);
   transition: height 0.3s, opacity 0.3s;
 }
 
