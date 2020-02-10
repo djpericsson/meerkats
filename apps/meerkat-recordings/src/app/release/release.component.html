@@ -7,15 +7,17 @@
   fxFlex="100%"
   fxLayout.xs="column"
   fxLayout.sm="row wrap"
+  fxLayout.md="row wrap"
+  fxLayout.lg="row wrap"
   fxFill
 >
   <mat-card
     *ngFor="let release of releases$"
     fxFlex.xs="90%"
-    fxFlex.sm="47%"
-    fxFlex.md="31%"
-    fxFlex.lg="23.3%"
-    fxFlex.xl="18.5%"
+    fxFlex.sm="46.5%"
+    fxFlex.md="30.5%"
+    fxFlex.lg="22.8%"
+    fxFlex.xl="18%"
   >
 
     <img
@@ -40,7 +42,7 @@
 
     <mat-card-actions style="text-align: center;">
     <button mat-icon-button (click)="openDialog(release.id)" class="play">
-      <i class="fa fa-play-circle" style="font-size: 2em;"></i><br>
+      <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br>
     </button>
   </mat-card-actions>
 

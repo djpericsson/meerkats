@@ -1,21 +1,23 @@
 <ngx-spinner></ngx-spinner>
 
 <div
-  class="flex-container"
+  class="container"
   fxLayoutAlign="space-between stretch"
   fxLayout="row wrap"
   fxFlex="100%"
   fxLayout.xs="column"
   fxLayout.sm="row wrap"
+  fxLayout.md="row wrap"
+  fxLayout.lg="row wrap"
   fxFill
 >
   <mat-card
     *ngFor="let artist of artists$"
     fxFlex.xs="90%"
-    fxFlex.sm="47%"
-    fxFlex.md="31%"
-    fxFlex.lg="23.3%"
-    fxFlex.xl="18.5%"
+    fxFlex.sm="46.5%"
+    fxFlex.md="30.5%"
+    fxFlex.lg="22.8%"
+    fxFlex.xl="18%"
   >
     <!-- <mat-card-header style="padding-bottom: 10px;">
       <img mat-card-avatar src="{{ artist.img }}" />

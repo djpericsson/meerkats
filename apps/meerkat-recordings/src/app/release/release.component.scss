@@ -1,7 +1,7 @@
 .mat-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   overflow: hidden;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -52,30 +52,37 @@
 }
 
 .artist {
+  margin-bottom: 5px;
   margin-bottom: 0px;
   font-size: 1.05rem
 }
 
 .release {
-  margin-bottom: 3px;
+  margin-bottom: 0px;
   font-size: 1.1rem
 }
 
 .date {
   margin-top: 0px;
+  padding-bottom: 7px;
   font-size: 0.75rem;
   color: darkgray;
   margin: 5px 0px 0px;
 }
 
 .mat-card-actions {
-  padding: 0px 0px 0px;
-  margin: 5px 0px 0px;
+  padding: 5px 0px 0px;
+  margin: 0px 0px 0px;
 }
 
 .mat-button {
   font-size: 0.8rem;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.mat-button:hover {
+  color: darkorange;
+  transform: scale(1.03);
 }
 
 // .play {
@@ -84,4 +91,5 @@
 
 .play:hover {
   color: darkorange;
+    transform: scale(1.1);
 }
