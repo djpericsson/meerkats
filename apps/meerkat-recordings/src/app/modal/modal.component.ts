@@ -6,7 +6,7 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 @Component({
   selector: 'meerkat-recordings-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
 

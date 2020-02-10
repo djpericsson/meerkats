@@ -4,8 +4,14 @@
   margin-bottom: 0px;
 } */
 
-.mat-dialog-container {
-  padding: 10px !important;
+iframe{
+  border: 0;
+  width: 100%;
+  max-width: 350px;
+  min-height: 555px;
+  padding: 0px 0px 0px;
+  margin: 0px 0px 0px;
+  // max-height: 555px;
 }
 
 /* .close {
