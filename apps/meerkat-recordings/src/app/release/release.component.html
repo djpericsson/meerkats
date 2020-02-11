@@ -19,7 +19,6 @@
     fxFlex.lg="22.8%"
     fxFlex.xl="18%"
   >
-
     <img
       mat-card-image
       src="{{ release.img }}"
@@ -27,7 +26,6 @@
     />
 
     <div layout="row" layout-align="start start" style="text-align: center;">
-
       <p class="artist">
         <!-- <img mat-card-avatar src="{{ release.artistImg }}" /><br /> -->
         {{ release.artist }} <br />
@@ -41,16 +39,15 @@
     </div>
 
     <mat-card-actions style="text-align: center;">
-    <button mat-icon-button (click)="openDialog(release.id)" class="play">
-      <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br>
-    </button>
-  </mat-card-actions>
+      <button mat-icon-button (click)="openDialog(release.id)" class="play">
+        <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br />
+      </button>
+    </mat-card-actions>
 
     <mat-card-actions style="text-align: center;">
       <button mat-button (click)="onClick(release.url)">
         Release on Bandcamp
       </button>
     </mat-card-actions>
-
   </mat-card>
 </div>

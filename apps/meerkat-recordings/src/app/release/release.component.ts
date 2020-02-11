@@ -82,7 +82,7 @@ export class ReleaseComponent implements OnInit {
   openDialog(id: string): void {
     const dialogRef = this.dialog.open(ModalComponent, {
       width: 'auto',
-      data: { id: id}
+      data: { id: id }
     });
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);

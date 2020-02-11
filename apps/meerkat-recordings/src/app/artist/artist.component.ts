@@ -81,7 +81,7 @@ export class ArtistComponent implements OnInit {
           }
         });
       });
-    if (rel.length > 0) {
+      if (rel.length > 0) {
         artist.releases = rel;
       }
       if (features.length > 0) {
@@ -95,7 +95,7 @@ export class ArtistComponent implements OnInit {
   openDialog(id: string): void {
     const dialogRef = this.dialog.open(ModalComponent, {
       width: 'auto',
-      data: { id: id}
+      data: { id: id }
     });
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);

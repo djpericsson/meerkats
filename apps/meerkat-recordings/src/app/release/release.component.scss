@@ -43,7 +43,7 @@
 }
 
 .mat-card-title {
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
 .mat-card-header-text {
@@ -54,12 +54,12 @@
 .artist {
   padding-top: 7px;
   margin-bottom: 0px;
-  font-size: 1.05rem
+  font-size: 1.05rem;
 }
 
 .release {
   margin-bottom: 0px;
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
 .date {
@@ -81,7 +81,7 @@
 }
 
 .mat-button:hover {
-  color: #FF7E00;
+  color: #ff7e00;
   transform: scale(1.03);
 }
 
@@ -90,6 +90,6 @@
 // }
 
 .play:hover {
-  color: #FF7E00;
-    transform: scale(1.1);
+  color: #ff7e00;
+  transform: scale(1.1);
 }
