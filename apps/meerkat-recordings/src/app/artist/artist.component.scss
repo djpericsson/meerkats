@@ -1,7 +1,7 @@
 .mat-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   overflow: hidden;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -72,6 +72,6 @@
 }
 
 .mat-button:hover {
-  color: darkorange;
+  color: #FF7E00;
   transform: scale(1.02);
 }

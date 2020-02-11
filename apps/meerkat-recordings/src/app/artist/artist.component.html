@@ -50,7 +50,7 @@
     >
       <button
         mat-flat-button
-        (click)="onClick(release.url)"
+        (click)="openDialog(release.id)"
         *ngFor="let release of artist.releases"
         fxFlex="20%"
       >
@@ -70,7 +70,7 @@
     >
       <button
         mat-flat-button
-        (click)="onClick(feature.url)"
+        (click)="openDialog(feature.id)"
         *ngFor="let feature of artist.features"
         fxFlex="20%"
       >

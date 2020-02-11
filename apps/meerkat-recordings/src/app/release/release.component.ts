@@ -7,7 +7,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { IArtist } from '../model/iartist';
 import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
