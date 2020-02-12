@@ -21,11 +21,11 @@ export class ArtistComponent implements OnInit {
   isLoading = true;
 
   filter: string;
-  number;
-  fxFlexAlignProp = "space-between stretch"
+  fxFlexAlignProp = 'space-between stretch';
 
-  public releases: any[] = []
-  public artists: any[] = []
+  public releases: any[] = [];
+  public artists: any[] = [];
+  public filteredArtists: any[] = [];
 
   constructor(
     private artistService: ArtistService,
@@ -43,15 +43,14 @@ export class ArtistComponent implements OnInit {
       }
     }, 1000);
     this.getArtists();
+    this.filteredArtists = this.artists;
     this.filterService.filter.subscribe((value: string) => {
-      this.filter = value
-      this.number = (this.artists.filter(artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1)).length
-      if (this.number > 2 ) {
-        this.fxFlexAlignProp = "space-between stretch"
-      } else {
-        this.fxFlexAlignProp = "space-around stretch"
-      }
-    })
+      this.filter = value;
+      const artistFilter = this.artists.filter(
+        artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1
+      );
+      this.filteredArtists = artistFilter;
+    });
   }
 
   onClick(url: string) {
@@ -68,16 +67,14 @@ export class ArtistComponent implements OnInit {
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
-        this.artists.push(
-          {
-            name: artist.name,
-            description: artist.description,
-            img: artist.img,
-            url: artist.url,
-            releases: artist.releases,
-            features: artist.features
-          }
-        )
+        this.artists.push({
+          name: artist.name,
+          description: artist.description,
+          img: artist.img,
+          url: artist.url,
+          releases: artist.releases,
+          features: artist.features
+        });
       });
       this.getReleases();
     });
@@ -86,15 +83,13 @@ export class ArtistComponent implements OnInit {
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
       data.releases.forEach(release => {
-        this.releases.push(
-          {
-            name: release.name,
-            artist: release.artist,
-            img: release.img,
-            songs: release.songs,
-            id: release.id
-          }
-        )
+        this.releases.push({
+          name: release.name,
+          artist: release.artist,
+          img: release.img,
+          songs: release.songs,
+          id: release.id
+        });
       });
       this.listReleases();
     });
@@ -125,9 +120,6 @@ export class ArtistComponent implements OnInit {
       if (features.length > 0) {
         artist.features = features;
       }
-      // this.releases.forEach(release => {
-      //   release.songs.splice();
-      // });
     });
     this.isLoading = false;
     this.spinner.hide();
@@ -141,12 +133,5 @@ export class ArtistComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);
     });
-  }
-
-  setStyle() {
-    // const styles = {
-    //   'margin': this.number <= 2 ? '0px 16px 0px' : '',
-    // };
-    // return styles;
   }
 }

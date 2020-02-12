@@ -2,7 +2,7 @@
 
 <div
   class="container"
-  fxLayoutAlign={{fxFlexAlignProp}}
+  fxLayoutAlign="space-between stretch"
   fxLayout="row wrap"
   fxFlex="100%"
   fxLayout.xs="column"
@@ -12,15 +12,13 @@
   fxFill
 >
   <mat-card
-    *ngFor="let artist of artists | filter: filter"
+    *ngFor="let artist of filteredArtists | filter: filter"
     fxFlex.xs="90%"
     fxFlex.sm="46.5%"
     fxFlex.md="30.5%"
     fxFlex.lg="22.8%"
     fxFlex.xl="18%"
-    [ngStyle]="setStyle()"
   >
-
     <img
       mat-card-image
       src="{{ artist.img }}"
