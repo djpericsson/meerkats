@@ -2,6 +2,8 @@
   color: #2f4050;
   font-size: 1.05rem;
   padding-bottom: 15px;
+  padding-right: 16px;
+  margin-left: -16px;
 }
 
 .navbar-brand:hover {
@@ -10,4 +12,46 @@
 
 .active {
   color: #99a9b8;
+}
+
+.pull-right {
+  margin-left:auto;
+  margin-right:0;
+  margin-bottom: 0;
+  display:inline-block;
+}
+
+.form-control {
+  max-height: 25px;
+  margin-bottom: 0;
+  display:inline-block;
+  padding: 0px 0px 0px;
+}
+
+.main {
+  margin-left:auto;
+  margin-right:0;
+  margin-bottom: 0;
+  display:inline-block;
+  text-align: center;
+  min-width: 200px;
+}
+
+.btn-secondary {
+  max-height: 25px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.row {
+  margin-left:0;
+  margin-right:0;
+}
+
+div.container.row {
+  max-width: 100%;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { IRelease } from '../model/irelease';
 import { ReleaseService } from '../service/release.service';
 import { Observable } from 'rxjs';
@@ -10,6 +10,8 @@ import { GoogleAnalyticsService } from '../service/google-analytics.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
 
+import { FilterService } from '../service/filter.service';
+
 @Component({
   selector: 'meerkat-recordings-release',
   templateUrl: './release.component.html',
@@ -18,15 +20,20 @@ import { ModalComponent } from '../modal/modal.component';
 export class ReleaseComponent implements OnInit {
   isLoading = true;
 
-  public artists$: Observable<IArtist>;
-  public releases$: Observable<IRelease>;
+  filter: string;
+
+  fxFlexAlignProp = "space-between start"
+
+  public releases: any[] = []
+  public artists: any[] = []
 
   constructor(
     private releaseService: ReleaseService,
     private artistService: ArtistService,
     public googleAnalyticsService: GoogleAnalyticsService,
     private spinner: NgxSpinnerService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private filterService: FilterService
   ) {}
 
   ngOnInit() {
@@ -36,25 +43,58 @@ export class ReleaseComponent implements OnInit {
       }
     }, 1000);
     this.getReleases();
+    this.filterService.filter.subscribe((value: string) => {
+      this.filter = value
+      let number = 0;
+      const temp = (this.releases.filter(result =>
+        result.songs.filter(song =>
+          song.artist.toLocaleLowerCase().indexOf(value) !== -1
+          ).length));
+      number = temp.length
+      if (number > 2 ) {
+        this.fxFlexAlignProp = "space-between start"
+      } else {
+        this.fxFlexAlignProp = "space-around start"
+      }
+    })
   }
 
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
-      this.releases$ = data.releases;
+      data.releases.forEach(release => {
+        this.releases.push(
+          {
+            name: release.name,
+            artist: release.artist,
+            date: release.date,
+            img: release.img,
+            id: release.id,
+            url: release.url,
+            songs: release.songs
+          }
+        )
+      });
       this.getArtists();
     });
   }
 
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
-      this.artists$ = data.artists;
+      data.artists.forEach(artist => {
+        this.artists.push(
+          {
+            name: artist.name,
+            img: artist.img
+          }
+        )
+      });
       this.listArtist();
     });
   }
 
   listArtist() {
-    this.releases$.forEach(release => {
-      this.artists$.forEach(artist => {
+    this.releases.forEach(release => {
+      this.artists.forEach(artist => {
         if (release.artist.includes(artist.name)) {
           release.artistImg = artist.img;
           return false;

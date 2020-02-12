@@ -2,7 +2,7 @@
 
 <div
   class="container"
-  fxLayoutAlign="space-between start"
+  fxLayoutAlign={{fxFlexAlignProp}}
   fxLayout="row wrap"
   fxFlex="100%"
   fxLayout.xs="column"
@@ -12,7 +12,7 @@
   fxFill
 >
   <mat-card
-    *ngFor="let release of releases$"
+    *ngFor="let release of releases | filter: filter"
     fxFlex.xs="90%"
     fxFlex.sm="46.5%"
     fxFlex.md="30.5%"
@@ -26,10 +26,7 @@
     />
 
     <div layout="row" layout-align="start start" style="text-align: center;">
-      <p class="artist">
-        <!-- <img mat-card-avatar src="{{ release.artistImg }}" /><br /> -->
-        {{ release.artist }} <br />
-      </p>
+      <p class="artist">{{ release.artist }} <br /></p>
       <p class="release">
         <b>{{ release.name }}</b> <br />
       </p>

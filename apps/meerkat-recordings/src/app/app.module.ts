@@ -14,9 +14,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { MomentModule } from 'ngx-moment';
+import { FormsModule } from '@angular/forms';
 
 import { GoogleAnalyticsService } from './service/google-analytics.service';
 import { ModalComponent } from './modal/modal.component';
+import { FilterService } from './service/filter.service';
+
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -36,9 +40,11 @@ import { ModalComponent } from './modal/modal.component';
     RouterModule,
     NgxSpinnerModule,
     MomentModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
-  providers: [HomeComponent, ArtistComponent, GoogleAnalyticsService],
+  providers: [HomeComponent, ArtistComponent, GoogleAnalyticsService, FilterService],
   entryComponents: [HomeComponent, ArtistComponent],
   bootstrap: [AppComponent]
 })

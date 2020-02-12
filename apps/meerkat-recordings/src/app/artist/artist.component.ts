@@ -10,6 +10,8 @@ import { GoogleAnalyticsService } from '../service/google-analytics.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
 
+import { FilterService } from '../service/filter.service';
+
 @Component({
   selector: 'meerkat-recordings-artist',
   templateUrl: './artist.component.html',
@@ -18,15 +20,20 @@ import { ModalComponent } from '../modal/modal.component';
 export class ArtistComponent implements OnInit {
   isLoading = true;
 
-  public artists$: Observable<IArtist>;
-  public releases$: Observable<IRelease>;
+  filter: string;
+
+  fxFlexAlignProp = "space-between stretch"
+
+  public releases: any[] = []
+  public artists: any[] = []
 
   constructor(
     private artistService: ArtistService,
     private releaseService: ReleaseService,
     public googleAnalyticsService: GoogleAnalyticsService,
     private spinner: NgxSpinnerService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private filterService: FilterService
   ) {}
 
   ngOnInit() {
@@ -36,6 +43,15 @@ export class ArtistComponent implements OnInit {
       }
     }, 1000);
     this.getArtists();
+    this.filterService.filter.subscribe((value: string) => {
+      this.filter = value
+      const number = (this.artists.filter(artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1)).length
+      if (number > 2 ) {
+        this.fxFlexAlignProp = "space-between stretch"
+      } else {
+        this.fxFlexAlignProp = "space-around stretch"
+      }
+    })
   }
 
   onClick(url: string) {
@@ -51,23 +67,44 @@ export class ArtistComponent implements OnInit {
 
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
-      this.artists$ = data.artists;
+      data.artists.forEach(artist => {
+        this.artists.push(
+          {
+            name: artist.name,
+            description: artist.description,
+            img: artist.img,
+            url: artist.url,
+            releases: artist.releases,
+            features: artist.features
+          }
+        )
+      });
       this.getReleases();
     });
   }
 
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
-      this.releases$ = data.releases;
+      data.releases.forEach(release => {
+        this.releases.push(
+          {
+            name: release.name,
+            artist: release.artist,
+            img: release.img,
+            songs: release.songs,
+            id: release.id
+          }
+        )
+      });
       this.listReleases();
     });
   }
 
   listReleases() {
-    this.artists$.forEach(artist => {
+    this.artists.forEach(artist => {
       const rel: IRelease[] = [];
       const features: IRelease[] = [];
-      this.releases$.forEach(release => {
+      this.releases.forEach(release => {
         if (release.artist.includes(artist.name)) {
           if (!rel.includes(release)) {
             rel.push(release);
@@ -78,6 +115,7 @@ export class ArtistComponent implements OnInit {
             if (!features.includes(release) && !rel.includes(release)) {
               features.push(release);
             }
+          } else {
           }
         });
       });
@@ -87,6 +125,9 @@ export class ArtistComponent implements OnInit {
       if (features.length > 0) {
         artist.features = features;
       }
+      this.releases.forEach(release => {
+        release.songs.splice();
+      });
     });
     this.isLoading = false;
     this.spinner.hide();

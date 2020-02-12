@@ -1,25 +1,50 @@
-<nav class="navbar" [ngClass]="">
+<div class="container row">
   <div>
-    <a
-      class="navbar-brand"
-      [routerLink]="['/home']"
-      [routerLinkActive]="['active']"
-    >
-      Home
-    </a>
-    <a
-      class="navbar-brand"
-      [routerLink]="['/artists']"
-      [routerLinkActive]="['active']"
-    >
-      Artists
-    </a>
-    <a
-      class="navbar-brand"
-      [routerLink]="['/releases']"
-      [routerLinkActive]="['active']"
-    >
-      Releases
-    </a>
+    <nav class="navbar" [ngClass]="">
+      <div>
+        <a
+          class="navbar-brand"
+          [routerLink]="['/home']"
+          [routerLinkActive]="['active']"
+        >
+          Home
+        </a>
+        <a
+          class="navbar-brand"
+          [routerLink]="['/artists']"
+          [routerLinkActive]="['active']"
+        >
+          Artists
+        </a>
+        <a
+          class="navbar-brand"
+          [routerLink]="['/releases']"
+          [routerLinkActive]="['active']"
+        >
+          Releases
+        </a>
+      </div>
+    </nav>
   </div>
-</nav>
+  <div class="main" fxHide.xs fxFlex="23%">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder=""
+        (keyup)="updateFilter($event)"
+      />
+      <div class="input-group-append">
+        <button class="btn btn-secondary" type="button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <meerkat-recordings-release
+  hidden
+  [filter]="filter"
+  *ngIf="filter"
+></meerkat-recordings-release> -->
