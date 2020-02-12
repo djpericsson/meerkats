@@ -143,7 +143,7 @@ export class ReleaseComponent implements OnInit {
 
   setStyle() {
     const styles = {
-      'margin-right': this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3 ? '35px' : '',
+      'margin-right': this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3 ? '3%' : '',
     };
     return styles;
   }
