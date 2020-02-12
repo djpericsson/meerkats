@@ -53,7 +53,7 @@ export class ReleaseComponent implements OnInit {
 
       this.number = (artists.length + releases.length + dates.length)
 
-      if (this.number <= 2) {
+      if (this.number === 2) {
         this.fxFlexAlignProp = "start"
       } else {
         this.fxFlexAlignProp = "space-between start"
@@ -133,7 +133,7 @@ export class ReleaseComponent implements OnInit {
 
   setStyle() {
     const styles = {
-      'margin': this.number <= 2 ? '0px 16px 0px' : '',
+      'margin': this.number === 2 ? '0px 16px 0px' : '',
     };
     return styles;
   }
