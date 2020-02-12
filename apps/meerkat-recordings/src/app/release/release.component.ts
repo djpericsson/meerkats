@@ -26,6 +26,7 @@ export class ReleaseComponent implements OnInit {
 
   public releases: any[] = []
   public artists: any[] = []
+  public filteredReleases: any[] = [];
 
   constructor(
     private releaseService: ReleaseService,
@@ -43,6 +44,7 @@ export class ReleaseComponent implements OnInit {
       }
     }, 1000);
     this.getReleases();
+    this.filteredReleases = this.releases;
     this.filterService.filter.subscribe((value: string) => {
 
       this.filter = value
@@ -51,9 +53,18 @@ export class ReleaseComponent implements OnInit {
       const releases = (this.releases.filter(release => release.name.toLocaleLowerCase().indexOf(value) !== -1));
       const dates = (this.releases.filter(date => date.date.toLocaleLowerCase().indexOf(value) !== -1));
 
-      this.number = (artists.length + releases.length + dates.length)
+      this.filteredReleases = [];
+      if (artists.length > 0) {
+        this.filteredReleases = this.filteredReleases.concat(artists)
+      }
+      if (releases.length > 0) {
+        this.filteredReleases = this.filteredReleases.concat(releases)
+      }
+      if (dates.length > 0) {
+        this.filteredReleases = this.filteredReleases.concat(dates)
+      }
 
-      if (this.number === 2) {
+      if (this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3) {
         this.fxFlexAlignProp = "start"
       } else {
         this.fxFlexAlignProp = "space-between start"
@@ -72,7 +83,6 @@ export class ReleaseComponent implements OnInit {
             img: release.img,
             id: release.id,
             url: release.url
-            // songs: release.songs
           }
         )
       });
@@ -133,7 +143,7 @@ export class ReleaseComponent implements OnInit {
 
   setStyle() {
     const styles = {
-      'margin': this.number === 2 ? '0px 16px 0px' : '',
+      'margin-right': this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3 ? '35px' : '',
     };
     return styles;
   }
