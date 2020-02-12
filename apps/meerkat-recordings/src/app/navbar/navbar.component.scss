@@ -1,9 +1,7 @@
 .navbar-brand {
-  color: #2f4050;
+  color: #99a9b8;
   font-size: 1.05rem;
-  padding-bottom: 15px;
-  padding-right: 16px;
-  margin-left: -16px;
+  padding: 15px 0px 15px;
 }
 
 .navbar-brand:hover {
@@ -11,27 +9,16 @@
 }
 
 .active {
-  color: #99a9b8;
-}
-
-.pull-right {
-  margin-left:auto;
-  margin-right:0;
-  margin-bottom: 0;
-  display:inline-block;
+  color: #2f4050;
 }
 
 .form-control {
   max-height: 25px;
-  margin-bottom: 0;
   display:inline-block;
-  padding: 0px 0px 0px;
 }
 
 .main {
   margin-left:auto;
-  margin-right:0;
-  margin-bottom: 0;
   display:inline-block;
   text-align: center;
   min-width: 200px;
@@ -41,11 +28,21 @@
   max-height: 25px;
   font-size: 0.6rem;
   text-align: center;
+  background-color: #99a9b8;
+  border-color: #99a9b8;
 }
 
-.row {
-  margin-left:0;
-  margin-right:0;
+.btn-secondary:hover {
+  background-color: #99a9b8;
+  border-color: #99a9b8;
+  cursor: default;
+}
+
+.btn-secondary:focus {
+  // background-color: #FF7E00;
+  // border-color: #FF7E00;
+  cursor: default;
+  box-shadow: none;
 }
 
 div.container.row {
@@ -54,4 +51,24 @@ div.container.row {
 
 .form-control:focus {
   box-shadow: none;
+}
+
+.container {
+  align-items: center;
+}
+
+.row {
+  margin: 0px;
+}
+
+.navbar {
+  margin-left: -16px;
+}
+
+.form-control {
+  font-size: 14px !important;
+}
+
+.form-control:focus {
+  border-color: #FF7E00;
 }

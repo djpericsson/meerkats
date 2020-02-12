@@ -21,7 +21,7 @@ export class ArtistComponent implements OnInit {
   isLoading = true;
 
   filter: string;
-
+  number;
   fxFlexAlignProp = "space-between stretch"
 
   public releases: any[] = []
@@ -45,8 +45,8 @@ export class ArtistComponent implements OnInit {
     this.getArtists();
     this.filterService.filter.subscribe((value: string) => {
       this.filter = value
-      const number = (this.artists.filter(artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1)).length
-      if (number > 2 ) {
+      this.number = (this.artists.filter(artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1)).length
+      if (this.number > 2 ) {
         this.fxFlexAlignProp = "space-between stretch"
       } else {
         this.fxFlexAlignProp = "space-around stretch"
@@ -125,9 +125,9 @@ export class ArtistComponent implements OnInit {
       if (features.length > 0) {
         artist.features = features;
       }
-      this.releases.forEach(release => {
-        release.songs.splice();
-      });
+      // this.releases.forEach(release => {
+      //   release.songs.splice();
+      // });
     });
     this.isLoading = false;
     this.spinner.hide();
@@ -141,5 +141,12 @@ export class ArtistComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);
     });
+  }
+
+  setStyle() {
+    // const styles = {
+    //   'margin': this.number <= 2 ? '0px 16px 0px' : '',
+    // };
+    // return styles;
   }
 }

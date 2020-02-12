@@ -21,7 +21,7 @@ export class ReleaseComponent implements OnInit {
   isLoading = true;
 
   filter: string;
-
+  number;
   fxFlexAlignProp = "space-between start"
 
   public releases: any[] = []
@@ -44,17 +44,19 @@ export class ReleaseComponent implements OnInit {
     }, 1000);
     this.getReleases();
     this.filterService.filter.subscribe((value: string) => {
+
       this.filter = value
-      let number = 0;
-      const temp = (this.releases.filter(result =>
-        result.songs.filter(song =>
-          song.artist.toLocaleLowerCase().indexOf(value) !== -1
-          ).length));
-      number = temp.length
-      if (number > 2 ) {
-        this.fxFlexAlignProp = "space-between start"
+
+      const artists = (this.releases.filter(artist => artist.artist.toLocaleLowerCase().indexOf(value) !== -1));
+      const releases = (this.releases.filter(release => release.name.toLocaleLowerCase().indexOf(value) !== -1));
+      const dates = (this.releases.filter(date => date.date.toLocaleLowerCase().indexOf(value) !== -1));
+
+      this.number = (artists.length + releases.length + dates.length)
+
+      if (this.number <= 2) {
+        this.fxFlexAlignProp = "start"
       } else {
-        this.fxFlexAlignProp = "space-around start"
+        this.fxFlexAlignProp = "space-between start"
       }
     })
   }
@@ -69,8 +71,8 @@ export class ReleaseComponent implements OnInit {
             date: release.date,
             img: release.img,
             id: release.id,
-            url: release.url,
-            songs: release.songs
+            url: release.url
+            // songs: release.songs
           }
         )
       });
@@ -127,5 +129,12 @@ export class ReleaseComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);
     });
+  }
+
+  setStyle() {
+    const styles = {
+      'margin': this.number <= 2 ? '0px 16px 0px' : '',
+    };
+    return styles;
   }
 }
