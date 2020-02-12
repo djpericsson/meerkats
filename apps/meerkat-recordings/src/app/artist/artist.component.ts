@@ -53,7 +53,7 @@ export class ArtistComponent implements OnInit {
       if (artistFilter.length === 2) {
         this.fxFlexAlignProp = "start"
       } else {
-        this.fxFlexAlignProp = "space-between start"
+        this.fxFlexAlignProp = "space-between stretch"
       }
     });
   }
