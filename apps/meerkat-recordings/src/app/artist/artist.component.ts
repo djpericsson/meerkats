@@ -21,6 +21,7 @@ export class ArtistComponent implements OnInit {
   isLoading = true;
 
   filter: string;
+  number;
   fxFlexAlignProp = 'space-between stretch';
 
   public releases: any[] = [];
@@ -50,6 +51,12 @@ export class ArtistComponent implements OnInit {
         artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1
       );
       this.filteredArtists = artistFilter;
+      this.number = artistFilter.length
+      if (this.number <= 2) {
+        this.fxFlexAlignProp = "start"
+      } else {
+        this.fxFlexAlignProp = "space-between start"
+      }
     });
   }
 
@@ -133,5 +140,12 @@ export class ArtistComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);
     });
+  }
+
+  setStyle() {
+    const styles = {
+      'margin': this.number <= 2 ? '0px 16px 0px' : '',
+    };
+    return styles;
   }
 }
