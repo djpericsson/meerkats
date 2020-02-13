@@ -50,10 +50,13 @@ export class ArtistComponent implements OnInit {
         artist => artist.name.toLocaleLowerCase().indexOf(value) !== -1
       );
       this.filteredArtists = artistFilter;
-      if (artistFilter.length === 2) {
-        this.fxFlexAlignProp = "start"
+      if (
+        this.filteredArtists.length === 2 ||
+        this.filteredArtists.length === 3
+      ) {
+        this.fxFlexAlignProp = 'start';
       } else {
-        this.fxFlexAlignProp = "space-between stretch"
+        this.fxFlexAlignProp = 'space-between stretch';
       }
     });
   }
@@ -142,7 +145,10 @@ export class ArtistComponent implements OnInit {
 
   setStyle() {
     const styles = {
-      'margin-right': this.filteredArtists.length === 2 ?? this.filteredArtists.length === 3 ? '3%' : '',
+      'margin-right':
+        this.filteredArtists.length === 2 || this.filteredArtists.length === 3
+          ? '3%'
+          : ''
     };
     return styles;
   }

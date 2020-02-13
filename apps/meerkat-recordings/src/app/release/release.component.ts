@@ -22,10 +22,10 @@ export class ReleaseComponent implements OnInit {
 
   filter: string;
   number;
-  fxFlexAlignProp = "space-between start"
+  fxFlexAlignProp = 'space-between start';
 
-  public releases: any[] = []
-  public artists: any[] = []
+  public releases: any[] = [];
+  public artists: any[] = [];
   public filteredReleases: any[] = [];
 
   constructor(
@@ -46,45 +46,86 @@ export class ReleaseComponent implements OnInit {
     this.getReleases();
     this.filteredReleases = this.releases;
     this.filterService.filter.subscribe((value: string) => {
+      this.filter = value;
 
-      this.filter = value
-
-      const artists = (this.releases.filter(artist => artist.artist.toLocaleLowerCase().indexOf(value) !== -1));
-      const releases = (this.releases.filter(release => release.name.toLocaleLowerCase().indexOf(value) !== -1));
-      const dates = (this.releases.filter(date => date.date.toLocaleLowerCase().indexOf(value) !== -1));
+      const artists = this.releases.filter(
+        artist => artist.artist.toLocaleLowerCase().indexOf(value) !== -1
+      );
+      const releases = this.releases.filter(
+        release => release.name.toLocaleLowerCase().indexOf(value) !== -1
+      );
+      const dates = this.releases.filter(
+        date => date.date.toLocaleLowerCase().indexOf(value) !== -1
+      );
 
       this.filteredReleases = [];
       if (artists.length > 0) {
-        this.filteredReleases = this.filteredReleases.concat(artists)
+        if (this.filteredReleases.length === 0) {
+          this.filteredReleases = artists;
+        } else {
+          artists.forEach(artist => {
+            if (
+              this.filteredReleases.findIndex(
+                item => item.name === artist.name
+              ) > -1
+            ) {
+              this.filteredReleases.concat(artist);
+            }
+          });
+        }
       }
       if (releases.length > 0) {
-        this.filteredReleases = this.filteredReleases.concat(releases)
+        if (this.filteredReleases.length === 0) {
+          this.filteredReleases = releases;
+        } else {
+          releases.forEach(release => {
+            if (
+              this.filteredReleases.findIndex(
+                item => item.name === release.name
+              ) > -1
+            ) {
+              this.filteredReleases.concat(release);
+            }
+          });
+        }
       }
       if (dates.length > 0) {
-        this.filteredReleases = this.filteredReleases.concat(dates)
+        if (this.filteredReleases.length === 0) {
+          this.filteredReleases = dates;
+        } else {
+          dates.forEach(date => {
+            if (
+              this.filteredReleases.findIndex(item => item.name === date.name) >
+              -1
+            ) {
+              this.filteredReleases.concat(date);
+            }
+          });
+        }
       }
 
-      if (this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3) {
-        this.fxFlexAlignProp = "start"
+      if (
+        this.filteredReleases.length === 2 ||
+        this.filteredReleases.length === 3
+      ) {
+        this.fxFlexAlignProp = 'start';
       } else {
-        this.fxFlexAlignProp = "space-between start"
+        this.fxFlexAlignProp = 'space-between start';
       }
-    })
+    });
   }
 
   async getReleases() {
     this.releaseService.getJSON().subscribe(data => {
       data.releases.forEach(release => {
-        this.releases.push(
-          {
-            name: release.name,
-            artist: release.artist,
-            date: release.date,
-            img: release.img,
-            id: release.id,
-            url: release.url
-          }
-        )
+        this.releases.push({
+          name: release.name,
+          artist: release.artist,
+          date: release.date,
+          img: release.img,
+          id: release.id,
+          url: release.url
+        });
       });
       this.getArtists();
     });
@@ -93,12 +134,10 @@ export class ReleaseComponent implements OnInit {
   async getArtists() {
     this.artistService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
-        this.artists.push(
-          {
-            name: artist.name,
-            img: artist.img
-          }
-        )
+        this.artists.push({
+          name: artist.name,
+          img: artist.img
+        });
       });
       this.listArtist();
     });
@@ -143,7 +182,10 @@ export class ReleaseComponent implements OnInit {
 
   setStyle() {
     const styles = {
-      'margin-right': this.filteredReleases.length === 2 ?? this.filteredReleases.length === 3 ? '3%' : '',
+      'margin-right':
+        this.filteredReleases.length === 2 || this.filteredReleases.length === 3
+          ? '3%'
+          : ''
     };
     return styles;
   }
