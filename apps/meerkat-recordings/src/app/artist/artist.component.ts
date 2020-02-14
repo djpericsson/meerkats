@@ -147,7 +147,7 @@ export class ArtistComponent implements OnInit {
     const styles = {
       'margin-right':
         this.filteredArtists.length === 2 || this.filteredArtists.length === 3
-          ? '3%'
+          ? '3.8%'
           : ''
     };
     return styles;
