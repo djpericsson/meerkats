@@ -134,6 +134,13 @@ export class ArtistComponent implements OnInit {
   }
 
   openDialog(id: string): void {
+    this.googleAnalyticsService.eventEmitter(
+      id,
+      'release',
+      'button',
+      'click',
+      10
+    );
     const dialogRef = this.dialog.open(ModalComponent, {
       width: 'auto',
       data: { id: id }

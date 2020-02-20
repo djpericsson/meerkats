@@ -27,9 +27,9 @@
     fxHide.md
     fxHide.sm
   />
-  <!-- <h1>Welcome to {{ title }}!</h1> -->
 </header>
 <main>
   <meerkat-recordings-navbar></meerkat-recordings-navbar>
   <router-outlet></router-outlet>
+  <button mat-flat-button *ngIf="isShow" (click)="gotoTop()"><i class="fa fa-chevron-up"></i></button>
 </main>

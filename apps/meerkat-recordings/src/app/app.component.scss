@@ -19,3 +19,17 @@
 // ::ng-deep .search   {
 //   text-align: center !important
 // }
+
+button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  font-size: 2em;
+  color:#FF7E00;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: 0px;
+}

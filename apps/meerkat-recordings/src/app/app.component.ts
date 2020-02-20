@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -16,6 +16,10 @@ declare const gtag: Function;
 })
 export class AppComponent {
   title = 'Meerkat Recordings';
+
+  isShow: boolean;
+  topPosToStartShowing = 100;
+
   constructor(public router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -23,6 +27,29 @@ export class AppComponent {
           page_path: event.urlAfterRedirects
         });
       }
+    });
+  }
+
+  @HostListener('window:scroll')
+  checkScroll() {
+    const scrollPosition =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+
+  gotoTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
     });
   }
 }
