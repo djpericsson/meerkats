@@ -25,11 +25,15 @@ button {
   bottom: 15px;
   right: 15px;
   text-align: center;
-  font-size: 2em;
-  color:#FF7E00;
+  font-size: 1.5em;
+  color: black;
   background-color: transparent;
 }
 
 button:focus {
   outline: 0px;
+}
+
+button:hover {
+  color: #ff7e00;
 }
