@@ -22,12 +22,15 @@
 
 button {
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 20px;
+  right: 20px;
   text-align: center;
-  font-size: 1.5em;
-  color: black;
-  background-color: transparent;
+  font-size: 15px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 40px;
+  height: 40px;
 }
 
 button:focus {
@@ -35,5 +38,6 @@ button:focus {
 }
 
 button:hover {
-  color: #ff7e00;
+  background-color: #ff7e00;
+  transform: scale(1.05);
 }
