@@ -1,3 +1,32 @@
-.col-md-11 {
-  font-size: 0.9rem
+p {
+  font-size: 1.0rem
+}
+
+button {
+  text-align: center;
+  font-size: 25px;
+  // color: white;
+  // background: rgb(0, 0, 0);
+  // background: rgba(0, 0, 0, 0.7);
+  // width: 40px;
+  // height: 40px;
+}
+
+
+.mat-card-image {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+button:focus {
+  outline: 0px;
+}
+
+button:hover {
+  // background-color: #ff7e00;
+  transform: scale(1.05);
+}
+
+element.style {
+  margin: 0px 0px 0px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
 @Component({
   selector: 'meerkat-recordings-home',
@@ -6,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(
+    public googleAnalyticsService: GoogleAnalyticsService
+  ) {}
 
   ngOnInit() {}
+
+  onClick(url: string) {
+    this.googleAnalyticsService.eventEmitter(
+      url,
+      'release',
+      'button',
+      'click',
+      10
+    );
+    window.open(url);
+  }
 }

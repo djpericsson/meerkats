@@ -1,13 +1,73 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%">
-  <main>
-    <div class="col-md-12" center>
+<ngx-spinner></ngx-spinner>
+
+<div
+  class="container"
+  fxLayoutAlign="start"
+  fxLayout="row wrap"
+  fxFlex="100%"
+  fxFill
+>
+  <div
+    class="test"
+    fxLayoutAlign="center"
+    fxLayout="row wrap"
+    style="margin-bottom: 30px;"
+  >
+    <p>
       Like Meerkats in the Kalahari we fiercely promote subversive dubs from
       underground headquarters constantly relocated in the world. Following the
       sound system tradition, Meerkat Recordings is a platform for artists with
       a purpose beyond the music industry. Like sound system culture, Meerkat
       Recordings is dedicated to the BASS as a voice of the people
-    </div>
-  </main>
+    </p>
+    <img
+      src="./assets/images/site/turntable.jpg"
+      fxFlex="100%"
+      class="image-blurred"
+    />
+  </div>
+
+  <div
+    class="container"
+    fxLayoutAlign="space-around center"
+    fxFlex="60%"
+    fxFill
+  >
+    <button
+      mat-flat-button
+      (click)="onClick('https://meerkatrecordings.bandcamp.com/')"
+    >
+      <img mat-card-image src="./assets/images/site/bandcamp.jpg" />
+    </button>
+    <button
+      mat-flat-button
+      (click)="onClick('https://soundcloud.com/meerkatrecordings')"
+    >
+      <img mat-card-image src="./assets/images/site/soundcloud.png" />
+    </button>
+    <button
+      mat-flat-button
+      (click)="onClick('https://www.junodownload.com/search/?facet%5Blabel_facet%5D%5B%5D=meerkat+recordings')"
+    >
+      <img mat-card-image src="./assets/images/site/juno.jpg" />
+    </button>
+    <button
+      mat-flat-button
+      (click)="onClick('https://www.beatport.com/search?q=Meerkat+Recordings')"
+    >
+      <img mat-card-image src="./assets/images/site/beatport.png" />
+    </button>
+    <button
+      mat-flat-button
+      (click)="onClick('https://meerkatrecordings.bigcartel.com/')"
+    >
+      <img mat-card-image src="./assets/images/site/bigcartel.jpg" />
+    </button>
+    <button
+    mat-flat-button
+    (click)="onClick('https://www.facebook.com/meerkatallstars/')"
+  >
+    <img mat-card-image src="./assets/images/site/facebook.jpg" />
+  </button>
+  </div>
 </div>
-
-
