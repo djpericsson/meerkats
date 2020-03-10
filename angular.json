@@ -27,9 +27,7 @@
               "apps/meerkat-recordings/src/_redirects"
             ],
             "styles": ["apps/meerkat-recordings/src/styles.scss"],
-            "scripts": [
-              "node_modules/hammerjs/hammer.min.js"
-            ]
+            "scripts": ["node_modules/hammerjs/hammer.min.js"]
           },
           "configurations": {
             "production": {
@@ -94,7 +92,8 @@
           "options": {
             "jestConfig": "apps/meerkat-recordings/jest.config.js",
             "tsConfig": "apps/meerkat-recordings/tsconfig.spec.json",
-            "setupFile": "apps/meerkat-recordings/src/test-setup.ts"
+            "setupFile": "apps/meerkat-recordings/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       }
