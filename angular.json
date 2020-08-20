@@ -84,15 +84,13 @@
               "apps/meerkat-recordings/tsconfig.app.json",
               "apps/meerkat-recordings/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings/**"]
+            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/meerkat-recordings/jest.config.js",
-            "tsConfig": "apps/meerkat-recordings/tsconfig.spec.json",
-            "setupFile": "apps/meerkat-recordings/src/test-setup.ts",
             "passWithNoTests": true
           }
         }
@@ -120,7 +118,10 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/meerkat-recordings-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings-e2e/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/meerkat-recordings-e2e/**/*"
+            ]
           }
         }
       }
