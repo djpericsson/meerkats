@@ -1,7 +1,7 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, OnDestroy } from '@angular/core';
 import { IRelease } from '../model/irelease';
 import { ReleaseService } from '../service/release.service';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { ArtistService } from '../service/artist.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { IArtist } from '../model/iartist';
@@ -17,8 +17,9 @@ import { FilterService } from '../service/filter.service';
   templateUrl: './release.component.html',
   styleUrls: ['./release.component.scss']
 })
-export class ReleaseComponent implements OnInit {
+export class ReleaseComponent implements OnInit, OnDestroy {
   isLoading = true;
+  unsubscribe$ = new Subject<void>()
 
   filter: string;
   number;
@@ -113,6 +114,11 @@ export class ReleaseComponent implements OnInit {
         this.fxFlexAlignProp = 'space-between start';
       }
     });
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next()
+    this.unsubscribe$.complete()
   }
 
   async getReleases() {

@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { IArtist } from '../model/iartist';
 import { ArtistService } from '../service/artist.service';
 import { ReleaseService } from '../service/release.service';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { IRelease } from '../model/irelease';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { GoogleAnalyticsService } from '../service/google-analytics.service';
@@ -17,8 +17,9 @@ import { FilterService } from '../service/filter.service';
   templateUrl: './artist.component.html',
   styleUrls: ['./artist.component.scss']
 })
-export class ArtistComponent implements OnInit {
+export class ArtistComponent implements OnInit, OnDestroy {
   isLoading = true;
+  unsubscribe$ = new Subject<void>()
 
   filter: string;
   fxFlexAlignProp = 'space-between stretch';
@@ -59,6 +60,11 @@ export class ArtistComponent implements OnInit {
         this.fxFlexAlignProp = 'space-between stretch';
       }
     });
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next()
+    this.unsubscribe$.complete()
   }
 
   onClick(url: string) {
