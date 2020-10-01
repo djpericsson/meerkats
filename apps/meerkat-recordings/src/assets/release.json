@@ -1,6 +1,42 @@
 {
   "releases": [
     {
+      "name": "Greek Dub EP",
+      "artist": "Gavana",
+      "date": "2020-10-27",
+      "url": "https://meerkatrecordings.bandcamp.com/album/greek-dub-ep",
+      "id": "1543541822",
+      "img": "./assets/images/release/greek_dub_ep.jpg",
+      "songs": [
+        {
+          "name": "Rebetissa Dub",
+          "artist": "Gavana"
+        },
+        {
+          "name": "Before Dawn Dub",
+          "artist": "Gavana"
+        }
+      ]
+    },
+    {
+      "name": "We Are Pufferfisk",
+      "artist": "Pufferfisk",
+      "date": "2020-10-27",
+      "url": "https://meerkatrecordings.bandcamp.com/album/we-are-pufferfisk",
+      "id": "2492764454",
+      "img": "./assets/images/release/we_are_pufferfisk.jpg",
+      "songs": [
+        {
+          "name": "We Are Pufferfisk",
+          "artist": "Pufferfisk"
+        },
+        {
+          "name": "Aci",
+          "artist": "Pufferfisk"
+        }
+      ]
+    },
+    {
       "name": "Härlig var jorden",
       "artist": "Sidstar",
       "date": "2019-12-28",
