@@ -43,7 +43,7 @@
     "@angular/platform-browser-dynamic": "^10.2.4",
     "@angular/router": "^10.2.4",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
-    "@nrwl/angular": "^10.0.13",
+    "@nrwl/angular": "^11.3.0",
     "bootstrap": "^4.6.0",
     "core-js": "^3.9.0",
     "font-awesome": "^4.7.0",
