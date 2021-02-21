@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "name": "Come Ruff",
+      "artist": "Aimnbreak",
+      "date": "2021-03-17",
+      "url": "https://meerkatrecordings.bandcamp.com/album/come-ruff",
+      "id": "108535965",
+      "img": "./assets/images/release/greek_dub_ep.jpg",
+      "songs": [
+        {
+          "name": "Come Ruff",
+          "artist": "Aimnbreak"
+        },
+        {
+          "name": "Roughneck",
+          "artist": "Aimnbreak"
+        },
+        {
+          "name": "Run It",
+          "artist": "Aimnbreak"
+        },
+        {
+          "name": "Ain´t It Funky",
+          "artist": "Aimnbreak"
+        }
+      ]
+    },
+    {
       "name": "Greek Dub EP",
       "artist": "Gavana",
       "date": "2020-10-27",
