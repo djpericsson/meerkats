@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Mind the Stairs",
+      "artist": "Dub Tower",
+      "date": "2021-05-26",
+      "url": "https://meerkatrecordings.bandcamp.com/album/mind-the-stairs",
+      "id": "2603386301",
+      "img": "./assets/images/release/mind_the_stairs.jpg",
+      "songs": [
+        {
+          "name": "Top Floor Dub",
+          "artist": "Dub Tower"
+        },
+        {
+          "name": "Split-Level Dub",
+          "artist": "Dub Tower"
+        },
+        {
+          "name": "Cupola Dub",
+          "artist": "Dub Tower"
+        }
+      ]
+    },
+    {
       "name": "Come Ruff",
       "artist": "Aimnbreak",
       "date": "2021-03-17",

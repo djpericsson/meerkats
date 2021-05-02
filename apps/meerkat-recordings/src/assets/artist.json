@@ -29,6 +29,13 @@
       "releases": ""
     },
     {
+      "name": "Dub Tower",
+      "description": "Dub Tower is a former techno DJ and owner of the legendary Svaj music café in Stockholm.",
+      "url": "https://meerkatrecordings.bandcamp.com/album/mind-the-stairs",
+      "img": "./assets/images/artist/dub_tower.jpg",
+      "releases": ""
+    },
+    {
       "name": "WireFire",
       "description": "WireFire is a Swedish Breakcore, Acid and Jungle producer, as well as a DJ, club owner and promoter. Inspired by funky acid lines, old school jungle breaks and with hardcore elements, WireFire blazes with 303 acid lines, happy-go-lucky melodies and irresistible breaks.",
       "url": "https://meerkatrecordings.bandcamp.com/album/breaks-on-fire",
