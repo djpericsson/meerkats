@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'meerkat-recordings-aimnbreak',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AimnbreakComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (evt instanceof NavigationEnd) {
+         document.body.scrollTop = 0;
+      }
+   });
+}
 
 }

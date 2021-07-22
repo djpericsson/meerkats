@@ -72,7 +72,7 @@ export class NomadsComponent implements OnInit {
       'click',
       10
     );
-    window.open(url);
+    window.open(url, "_self");
   }
 
   async getArtists() {
