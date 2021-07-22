@@ -4,64 +4,99 @@
       "name": "Aimnbreak",
       "description": "For this project I wanted to explore new grounds and to combine my roots from Hip-Hop and IDM with instrumental Grime. I wanted my track to sound digital, clean and punchy with a rough edge. I have always been inspired by the UK underground dance scene and wanted to venture out in that direction, but with a more modern sound than previous projects.",
       "url": "/nomads/aimnbreak",
-      "img": "./assets/images/artist/aimnbreak.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/aimnbreak.jpg",
+      "song": "Shape the Future"
     },
     {
       "name": "Bass Trolls",
-      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
+      "description": "Meerkat Anthem is a steppers dub track that celebrates the anniversary of Meerkat Recordings through an ode to the Meerkat Recordings Studio, an analogue Stockholm based hardware studio. Meerkat Recordings Studio has the aim to create warm, bass heavy and dubby sounds and thereby promote our vision of “auditive health.”",
       "url": "https://soundcloud.com/basstrolls",
-      "img": "./assets/images/artist/basstrolls.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/bass_trolls.jpg",
+      "song": "Meerkat Anthem"
+    },
+    {
+      "name": "Dhangsha",
+      "description": "Sincronizar 2021 is a new version / improvisation of this track that first appeared on the self titled Dhangsha album of 2020 on sound~space. It’s a celebration of individual creativity combined with collective action and responsibility. At 93.3 BPM (it’s probably that exact tempo to match the original noise loop) I could have made a typical hip hop break but I’m not interested in reproducing what is expected.",
+      "url": "https://soundcloud.com/donnamaya",
+      "img": "./assets/images/nomads/dhangsha.jpg",
+      "song": "Sincronizar"
+    },
+    {
+      "name": "Donna Maya",
+      "description": " Its about individuals, as meerkats, that build a collective to be successful together. The track starts with few water sounds and drops, self-recorded around a river flooding into the Atlantic ocean after a severe storm, that condense more and more to become an ocean like fluid that is able to dictate its own rhythm to its environment and make it move.",
+      "url": "https://soundcloud.com/donnamaya",
+      "img": "./assets/images/nomads/donna_maya.jpg",
+      "song": "Live Terminal"
     },
     {
       "name": "Gavana",
-      "description": "“Being a DJ, producer, remixer, music culture researcher as well as a label owner, Anna Gavanas is a mainstay of the Swedish electronic music scene. When producing, her perfect sense for musical intensity and mellowness guarantees a captivating listening experience.” (Gearjunkies, August 2012)",
+      "description": "This is a posthumous collaboration with my brother Christos, who died 20 years ago in a motorcycle accident (at the age of 25). I’ve been inspired by his music and voice (which I found on a cassette he recorded for a pirate radio show) and this lead to a happy outdoor nineties rave vibe: a vessel for getting together beyond life and death, time and space.",
       "url": "https://soundcloud.com/gavana",
-      "img": "./assets/images/artist/gavana.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/gavana.jpg",
+      "song": "Christos Dubquake"
     },
     {
       "name": "HAb",
       "description": "Swedish electronic music pioneer Hans Carlsson makes intricate melodic electronica with vague echoes of hip-hop and drum'n'bass under the name Hab. His music is a stunning collection of both rhythmically stunning and melodically engaging post-techno, interweaving thin, intricately syncopated percussion with thematic figures.",
       "url": "https://soundcloud.com/hab",
       "img": "./assets/images/artist/hab.jpg",
-      "releases": ""
+      "song": "Worlds (on fire)"
+    },
+    {
+      "name": "Joxaren",
+      "description": "This is one of several tracks where I have explored a certain drive and rythmics that have interested me, based on my live setup from 2018 with only analogue hardware, step sequensers, arpeggiators and no samples. I feel that the result became contemplative and simultaneously urgent.",
+      "url": "https://soundcloud.com/joxaren",
+      "img": "./assets/images/nomads/joxaren.jpg",
+      "song": "Vålnad"
+    },
+    {
+      "name": "King L Man",
+      "description": "Most of my beats are hip hop tempo, around 70-105 bpm, and I felt it was time to do something out of that range, and something potentially for the dancefloor. I love the energy of Jungle, DnB & Footwork but I don't have the technical knowledge right now to pull off that kind of sound, so I did the next best thing, come up with my own take on the vibe.",
+      "url": "https://soundcloud.com/joxaren",
+      "img": "./assets/images/nomads/kingl_man.jpg",
+      "song": "Adaptor"
     },
     {
       "name": "Nuphlo",
-      "description": "Like no other producer, Nuphlo combines unexpected textures: from Leeds to Mumbai and everywhere inbetween. Spanning over references from ambient, acid, jungle, IDM, grime and hip hop he makes it seem effortless, coming across like a mesh rather than a clash. His music is approached from the Asian Underground.",
+      "description": "Like most of my tunes, I have contributed East-West flavoured tracks. Not too mild and not too spicy.",
       "url": "https://soundcloud.com/nuphlo",
-      "img": "./assets/images/artist/nuphlo.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/nuphlo.jpg",
+      "song": "Neverland"
     },
     {
       "name": "Ombudsman",
-      "description": "Ombudsman's music has more in common with hip hop than four-on-the-floor techno with tempo variations and rhythmic liberties of hip hop. Simultaneously, Ombudsman’s tracks are emotionally ambivalent – never clear cut as happy, sad, aggressive, and especially not accommodating.",
+      "description": "The nomadic aspect is both utopian in freedom and dystopian in terms of disconnect from society as we know it. I was quite intrigued to work on these contrast sof calm and serene against fast paced rythms. Glooming doom and cosiness. I like the idea of making music for a post apocalyptic society. Like the generators are on and people are using the last bit of fuel to power up a giant party.",
       "url": "https://meerkatrecordings.bandcamp.com/album/sentiment",
-      "img": "./assets/images/artist/ombudsman.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/ombudsman.jpg",
+      "song": "Petroleum Ann"
     },
     {
       "name": "PhOniAndFlOrE",
-      "description": "PhOniAndFlOrE is a french producer who began in 2010 in MAO. Hooked on dub and all what surrounds him, he creates sounds in souhaitan and continuation. He is also a part of the collective Marée Bass that organizes free parties to enable networks and collaborations between dub artists.",
+      "description": "The song I produced for the compilation is a mixture of influences from Arabic songs with some atmospheres from various countries in a nod to the term Nomads.",
       "url": "https://soundcloud.com/pafdub",
-      "img": "./assets/images/artist/phoniandfiore.jpg",
-      "releases": ""
+      "img": "./assets/images/nomads/paf.jpg",
+      "song": "Special Time"
     },
     {
       "name": "Pufferfisk",
       "description": "Pufferfisk is a Swedish electronic music duo. With influences from artists such as Laserdance, Jean Michel Jarre and Fancy they make retro Italo/Electro influenced music. The group was formed in 2011 and have released music on Meerkat Recordings and Clubstream.",
       "url": "https://soundcloud.com/pufferfisk",
       "img": "./assets/images/artist/pufferfisk.jpg",
-      "releases": ""
+      "song": "Hello Ladies"
+    },
+    {
+      "name": "Sagra Selecta y Olya Sound",
+      "description": "This is a special track, recorded and mixed for this compilation. We are presenting “Corazón Tribulado” a collaboration between Saqra Selekta and the reggae cumbia and peruvian fusion band, Olaya Sound System. The idea behind this contribution is to share different approach to rhythm and sound textures, enjoying a Peruvian way of making dub.",
+      "url": "https://soundcloud.com/pufferfisk",
+      "img": "./assets/images/nomads/ss_y_oo.jpg",
+      "song": "Corazon Tribulado"
     },
     {
       "name": "Uzul",
-      "description": "French Bass music Dj/producer who gives true live performances shooting Bass music into live unexplored areas. Respected and remixed by artists such as such as Skream or N-Type. He is also a part of the dub collective Kaly Live Dub",
+      "description": "I’m participating in this compilation because I have already released a track on this great label, managed with class by my Swedish friends Anna and Peter. That I met at the Clandestino festival, on the lawn and in music!",
       "url": "https://soundcloud.com/uzul",
       "img": "./assets/images/artist/uzul.jpg",
-      "releases": ""
+      "song": "Sub Oscillation"
     }
   ]
 }

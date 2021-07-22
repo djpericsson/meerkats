@@ -16,6 +16,13 @@
     fxLayout="row"
     style="margin-bottom: 20px;"
   >
+  <div class="col-md-3">
+    <img
+    src="./assets/images/nomads/nomads_in_sound_4.jpg"
+    class="image-blurred"
+    style="width: 100%;height: auto;"
+  />
+</div>
   <div class="col-md-9">
     <p style="padding-bottom: 30px;">
         <strong>
@@ -35,13 +42,6 @@
                 Release party: at Time Bar in Stockholm, Thursday 11 November 2021
             </i>
         </p>
-    </div>
-    <div class="col-md-3">
-        <img
-        src="./assets/images/nomads/nomads_in_sound_4.jpg"
-        class="image-blurred"
-        style="width: 100%;height: auto;"
-      />
     </div>
   </div>
 
@@ -76,50 +76,15 @@
 
     <div layout="row" layout-align="start start" style="text-align: center;">
       <p class="artist">{{ artist.name }} <br /></p>
+      <p class="song">
+        <i>"{{ artist.song }}"</i> <br />
+      </p>
     </div>
 
     <div class="description" layout="row" layout-align="start start">
       <p>
         {{ artist.description }}
       </p>
-    </div>
-
-    <p class="title" *ngIf="artist.releases">Releases:</p>
-    <div
-      *ngIf="artist.releases"
-      style="flex-direction: row; box-sizing: border-box; /*! display: flex; */"
-    >
-      <button
-        mat-flat-button
-        (click)="openDialog(release.id)"
-        *ngFor="let release of artist.releases"
-      >
-        <img
-          alt="Avatar"
-          class="avatar"
-          src="{{ release.img }}"
-          alt="Photo of {{ release.name }}"
-        />
-      </button>
-    </div>
-
-    <p class="title" *ngIf="artist.features">Featured on:</p>
-    <div
-      *ngIf="artist.features"
-      style="flex-direction: row; box-sizing: border-box; /*! display: flex; */"
-    >
-      <button
-        mat-flat-button
-        (click)="openDialog(feature.id)"
-        *ngFor="let feature of artist.features"
-      >
-        <img
-          alt="Avatar"
-          class="avatar"
-          src="{{ feature.img }}"
-          alt="Photo of {{ feature.name }}"
-        />
-      </button>
     </div>
 
     <mat-card-content></mat-card-content>

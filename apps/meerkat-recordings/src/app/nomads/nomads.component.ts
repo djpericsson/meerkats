@@ -83,8 +83,7 @@ export class NomadsComponent implements OnInit {
           description: artist.description,
           img: artist.img,
           url: artist.url,
-          releases: artist.releases,
-          features: artist.features
+          song: artist.song
         });
       });
     });
