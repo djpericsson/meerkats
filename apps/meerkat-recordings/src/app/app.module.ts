@@ -21,6 +21,7 @@ import { ModalComponent } from './modal/modal.component';
 import { FilterService } from './service/filter.service';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NomadsComponent } from './nomads/nomads.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     HomeComponent,
     NavbarComponent,
     ReleaseComponent,
-    ModalComponent
+    ModalComponent,
+    NomadsComponent
   ],
   imports: [
     BrowserModule,

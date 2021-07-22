@@ -1,13 +1,6 @@
 {
   "artists": [
     {
-      "name": "Sidstar",
-      "description": "The Swedish chiptune artist Sidstar makes his music while travelling with portable synthesizers. Sidstar´s releases have been on the Juno Records as well as iTunes recommendation lists for electronic music, as well as being heavily played by Swedish student radio.",
-      "url": "https://soundcloud.com/sidstar",
-      "img": "./assets/images/artist/sidstar.jpg",
-      "releases": ""
-    },
-    {
       "name": "Gavana",
       "description": "“Being a DJ, producer, remixer, music culture researcher as well as a label owner, Anna Gavanas is a mainstay of the Swedish electronic music scene. When producing, her perfect sense for musical intensity and mellowness guarantees a captivating listening experience.” (Gearjunkies, August 2012)",
       "url": "https://soundcloud.com/gavana",
@@ -22,24 +15,17 @@
       "releases": ""
     },
     {
+      "name": "Bass Trolls",
+      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
+      "url": "https://soundcloud.com/basstrolls",
+      "img": "./assets/images/artist/basstrolls.jpg",
+      "releases": ""
+    },
+    {
       "name": "Pufferfisk",
       "description": "Pufferfisk is a Swedish electronic music duo. With influences from artists such as Laserdance, Jean Michel Jarre and Fancy they make retro Italo/Electro influenced music. The group was formed in 2011 and have released music on Meerkat Recordings and Clubstream.",
       "url": "https://soundcloud.com/pufferfisk",
       "img": "./assets/images/artist/pufferfisk.jpg",
-      "releases": ""
-    },
-    {
-      "name": "Dub Tower",
-      "description": "Dub Tower is a former techno DJ and owner of the legendary Svaj music café in Stockholm.",
-      "url": "https://meerkatrecordings.bandcamp.com/album/mind-the-stairs",
-      "img": "./assets/images/artist/dub_tower.jpg",
-      "releases": ""
-    },
-    {
-      "name": "WireFire",
-      "description": "WireFire is a Swedish Breakcore, Acid and Jungle producer, as well as a DJ, club owner and promoter. Inspired by funky acid lines, old school jungle breaks and with hardcore elements, WireFire blazes with 303 acid lines, happy-go-lucky melodies and irresistible breaks.",
-      "url": "https://meerkatrecordings.bandcamp.com/album/breaks-on-fire",
-      "img": "./assets/images/artist/wirefire.jpg",
       "releases": ""
     },
     {
@@ -49,13 +35,7 @@
       "img": "./assets/images/artist/ombudsman.jpg",
       "releases": ""
     },
-    {
-      "name": "Bass Trolls",
-      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
-      "url": "https://soundcloud.com/basstrolls",
-      "img": "./assets/images/artist/basstrolls.jpg",
-      "releases": ""
-    },
+
     {
       "name": "Nuphlo",
       "description": "Like no other producer, Nuphlo combines unexpected textures: from Leeds to Mumbai and everywhere inbetween. Spanning over references from ambient, acid, jungle, IDM, grime and hip hop he makes it seem effortless, coming across like a mesh rather than a clash. His music is approached from the Asian Underground.",
@@ -82,6 +62,27 @@
       "description": "PhOniAndFlOrE is a french producer who began in 2010 in MAO. Hooked on dub and all what surrounds him, he creates sounds in souhaitan and continuation. He is also a part of the collective Marée Bass that organizes free parties to enable networks and collaborations between dub artists.",
       "url": "https://soundcloud.com/pafdub",
       "img": "./assets/images/artist/phoniandfiore.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Sidstar",
+      "description": "The Swedish chiptune artist Sidstar makes his music while travelling with portable synthesizers. Sidstar´s releases have been on the Juno Records as well as iTunes recommendation lists for electronic music, as well as being heavily played by Swedish student radio.",
+      "url": "https://soundcloud.com/sidstar",
+      "img": "./assets/images/artist/sidstar.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Dub Tower",
+      "description": "Dub Tower is a former techno DJ and owner of the legendary Svaj music café in Stockholm.",
+      "url": "https://meerkatrecordings.bandcamp.com/album/mind-the-stairs",
+      "img": "./assets/images/artist/dub_tower.jpg",
+      "releases": ""
+    },
+    {
+      "name": "WireFire",
+      "description": "WireFire is a Swedish Breakcore, Acid and Jungle producer, as well as a DJ, club owner and promoter. Inspired by funky acid lines, old school jungle breaks and with hardcore elements, WireFire blazes with 303 acid lines, happy-go-lucky melodies and irresistible breaks.",
+      "url": "https://meerkatrecordings.bandcamp.com/album/breaks-on-fire",
+      "img": "./assets/images/artist/wirefire.jpg",
       "releases": ""
     },
     {

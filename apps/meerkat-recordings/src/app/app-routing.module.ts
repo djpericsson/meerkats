@@ -30,12 +30,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { ReleaseComponent } from './release/release.component';
+import { NomadsComponent } from './nomads/nomads.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'releases', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'artists', component: ArtistComponent },
   { path: 'releases', component: ReleaseComponent },
+  { path: 'nomads', component: NomadsComponent },
   { path: '**', redirectTo: 'releases' }
 ];
 

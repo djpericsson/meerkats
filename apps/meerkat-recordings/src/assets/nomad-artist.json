@@ -1,0 +1,67 @@
+{
+  "artists": [
+    {
+      "name": "Aimnbreak",
+      "description": "For this project I wanted to explore new grounds and to combine my roots from Hip-Hop and IDM with instrumental Grime. I wanted my track to sound digital, clean and punchy with a rough edge. I have always been inspired by the UK underground dance scene and wanted to venture out in that direction, but with a more modern sound than previous projects.",
+      "url": "https://soundcloud.com/aimnbreak",
+      "img": "./assets/images/artist/aimnbreak.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Bass Trolls",
+      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
+      "url": "https://soundcloud.com/basstrolls",
+      "img": "./assets/images/artist/basstrolls.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Gavana",
+      "description": "“Being a DJ, producer, remixer, music culture researcher as well as a label owner, Anna Gavanas is a mainstay of the Swedish electronic music scene. When producing, her perfect sense for musical intensity and mellowness guarantees a captivating listening experience.” (Gearjunkies, August 2012)",
+      "url": "https://soundcloud.com/gavana",
+      "img": "./assets/images/artist/gavana.jpg",
+      "releases": ""
+    },
+    {
+      "name": "HAb",
+      "description": "Swedish electronic music pioneer Hans Carlsson makes intricate melodic electronica with vague echoes of hip-hop and drum'n'bass under the name Hab. His music is a stunning collection of both rhythmically stunning and melodically engaging post-techno, interweaving thin, intricately syncopated percussion with thematic figures.",
+      "url": "https://soundcloud.com/hab",
+      "img": "./assets/images/artist/hab.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Nuphlo",
+      "description": "Like no other producer, Nuphlo combines unexpected textures: from Leeds to Mumbai and everywhere inbetween. Spanning over references from ambient, acid, jungle, IDM, grime and hip hop he makes it seem effortless, coming across like a mesh rather than a clash. His music is approached from the Asian Underground.",
+      "url": "https://soundcloud.com/nuphlo",
+      "img": "./assets/images/artist/nuphlo.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Ombudsman",
+      "description": "Ombudsman's music has more in common with hip hop than four-on-the-floor techno with tempo variations and rhythmic liberties of hip hop. Simultaneously, Ombudsman’s tracks are emotionally ambivalent – never clear cut as happy, sad, aggressive, and especially not accommodating.",
+      "url": "https://meerkatrecordings.bandcamp.com/album/sentiment",
+      "img": "./assets/images/artist/ombudsman.jpg",
+      "releases": ""
+    },
+    {
+      "name": "PhOniAndFlOrE",
+      "description": "PhOniAndFlOrE is a french producer who began in 2010 in MAO. Hooked on dub and all what surrounds him, he creates sounds in souhaitan and continuation. He is also a part of the collective Marée Bass that organizes free parties to enable networks and collaborations between dub artists.",
+      "url": "https://soundcloud.com/pafdub",
+      "img": "./assets/images/artist/phoniandfiore.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Pufferfisk",
+      "description": "Pufferfisk is a Swedish electronic music duo. With influences from artists such as Laserdance, Jean Michel Jarre and Fancy they make retro Italo/Electro influenced music. The group was formed in 2011 and have released music on Meerkat Recordings and Clubstream.",
+      "url": "https://soundcloud.com/pufferfisk",
+      "img": "./assets/images/artist/pufferfisk.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Uzul",
+      "description": "French Bass music Dj/producer who gives true live performances shooting Bass music into live unexplored areas. Respected and remixed by artists such as such as Skream or N-Type. He is also a part of the dub collective Kaly Live Dub",
+      "url": "https://soundcloud.com/uzul",
+      "img": "./assets/images/artist/uzul.jpg",
+      "releases": ""
+    }
+  ]
+}
