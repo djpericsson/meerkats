@@ -55,6 +55,8 @@ export class NomadsComponent implements OnInit {
         this.fxFlexAlignProp = 'space-between stretch';
       }
     });
+    this.isLoading = false;
+    this.spinner.hide();
   }
 
   ngOnDestroy() {

@@ -22,6 +22,7 @@ import { FilterService } from './service/filter.service';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NomadsComponent } from './nomads/nomads.component';
+import { AimnbreakComponent } from './nomads/aimnbreak/aimnbreak.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NomadsComponent } from './nomads/nomads.component';
     NavbarComponent,
     ReleaseComponent,
     ModalComponent,
-    NomadsComponent
+    NomadsComponent,
+    AimnbreakComponent
   ],
   imports: [
     BrowserModule,

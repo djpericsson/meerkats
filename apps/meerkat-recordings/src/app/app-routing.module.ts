@@ -31,6 +31,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { ReleaseComponent } from './release/release.component';
 import { NomadsComponent } from './nomads/nomads.component';
+import { AimnbreakComponent } from './nomads/aimnbreak/aimnbreak.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'releases', pathMatch: 'full' },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'artists', component: ArtistComponent },
   { path: 'releases', component: ReleaseComponent },
   { path: 'nomads', component: NomadsComponent },
+  { path: 'nomads/aimnbreak', component: AimnbreakComponent },
   { path: '**', redirectTo: 'releases' }
 ];
 
