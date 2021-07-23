@@ -1,5 +1,5 @@
-<div class="container row">
-  <div>
+<div class="row">
+  <div class="col-md-11">
     <nav class="navbar" [ngClass]="">
       <div>
         <a
@@ -25,9 +25,25 @@
         </a>
       </div>
     </nav>
+    <div class="main auto" fxHide.xs style="float: right;margin-top: -48px;margin-right: -120px;">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          (keyup)="updateFilter($event)"
+        />
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button" >
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
-  <!-- <div class="main" fxHide.xs fxFlex="23%">
+  <!-- <div class="main col-md-4" fxHide.xs fxFlex="23%">
     <div class="input-group">
       <input
         type="text"
