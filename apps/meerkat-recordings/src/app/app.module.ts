@@ -23,6 +23,20 @@ import { FilterService } from './service/filter.service';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NomadsComponent } from './nomads/nomads.component';
 import { AimnbreakComponent } from './nomads/aimnbreak/aimnbreak.component';
+import { BasstrollsComponent } from './nomads/basstrolls/basstrolls.component';
+import { DhangshaComponent } from './nomads/dhangsha/dhangsha.component';
+import { DonnamayaComponent } from './nomads/donnamaya/donnamaya.component';
+import { GavanaComponent } from './nomads/gavana/gavana.component';
+import { HabComponent } from './nomads/hab/hab.component';
+import { JoxarenComponent } from './nomads/joxaren/joxaren.component';
+import { KinglmanComponent } from './nomads/kinglman/kinglman.component';
+import { NuphloComponent } from './nomads/nuphlo/nuphlo.component';
+import { OmbudsmanComponent } from './nomads/ombudsman/ombudsman.component';
+import { PhoniandfloreComponent } from './nomads/phoniandflore/phoniandflore.component';
+import { PufferfiskComponent } from './nomads/pufferfisk/pufferfisk.component';
+import { SagraselektaComponent } from './nomads/sagraselekta/sagraselekta.component';
+import { UzulComponent } from './nomads/uzul/uzul.component';
+import { WdgwComponent } from './nomads/wdgw/wdgw.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +47,21 @@ import { AimnbreakComponent } from './nomads/aimnbreak/aimnbreak.component';
     ReleaseComponent,
     ModalComponent,
     NomadsComponent,
-    AimnbreakComponent
+    AimnbreakComponent,
+    BasstrollsComponent,
+    DhangshaComponent,
+    DonnamayaComponent,
+    GavanaComponent,
+    HabComponent,
+    JoxarenComponent,
+    KinglmanComponent,
+    NuphloComponent,
+    OmbudsmanComponent,
+    PhoniandfloreComponent,
+    PufferfiskComponent,
+    SagraselektaComponent,
+    UzulComponent,
+    WdgwComponent
   ],
   imports: [
     BrowserModule,

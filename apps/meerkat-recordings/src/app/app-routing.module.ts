@@ -32,6 +32,20 @@ import { MatTreeModule } from '@angular/material/tree';
 import { ReleaseComponent } from './release/release.component';
 import { NomadsComponent } from './nomads/nomads.component';
 import { AimnbreakComponent } from './nomads/aimnbreak/aimnbreak.component';
+import { BasstrollsComponent } from './nomads/basstrolls/basstrolls.component';
+import { DhangshaComponent } from './nomads/dhangsha/dhangsha.component';
+import { DonnamayaComponent } from './nomads/donnamaya/donnamaya.component';
+import { GavanaComponent } from './nomads/gavana/gavana.component';
+import { HabComponent } from './nomads/hab/hab.component';
+import { JoxarenComponent } from './nomads/joxaren/joxaren.component';
+import { KinglmanComponent } from './nomads/kinglman/kinglman.component';
+import { NuphloComponent } from './nomads/nuphlo/nuphlo.component';
+import { OmbudsmanComponent } from './nomads/ombudsman/ombudsman.component';
+import { PhoniandfloreComponent } from './nomads/phoniandflore/phoniandflore.component';
+import { PufferfiskComponent } from './nomads/pufferfisk/pufferfisk.component';
+import { SagraselektaComponent } from './nomads/sagraselekta/sagraselekta.component';
+import { UzulComponent } from './nomads/uzul/uzul.component';
+import { WdgwComponent } from './nomads/wdgw/wdgw.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'releases', pathMatch: 'full' },
@@ -40,6 +54,20 @@ const routes: Routes = [
   { path: 'releases', component: ReleaseComponent },
   { path: 'nomads', component: NomadsComponent },
   { path: 'nomads/aimnbreak', component: AimnbreakComponent },
+  { path: 'nomads/basstrolls', component: BasstrollsComponent },
+  { path: 'nomads/dhangsha', component: DhangshaComponent },
+  { path: 'nomads/donnamaya', component: DonnamayaComponent },
+  { path: 'nomads/gavana', component: GavanaComponent },
+  { path: 'nomads/hab', component: HabComponent },
+  { path: 'nomads/joxaren', component: JoxarenComponent },
+  { path: 'nomads/kinglman', component: KinglmanComponent },
+  { path: 'nomads/nuphlo', component: NuphloComponent },
+  { path: 'nomads/ombudsman', component: OmbudsmanComponent },
+  { path: 'nomads/phoniandflore', component: PhoniandfloreComponent },
+  { path: 'nomads/pufferfisk', component: PufferfiskComponent },
+  { path: 'nomads/sagraselekta', component: SagraselektaComponent },
+  { path: 'nomads/uzul', component: UzulComponent },
+  { path: 'nomads/wdgw', component: WdgwComponent },
   { path: '**', redirectTo: 'releases' }
 ];
 
