@@ -37,7 +37,7 @@
                   "with": "apps/meerkat-recordings/src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": false,
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
