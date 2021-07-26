@@ -7,44 +7,133 @@
   fxFlex.xs="100%"
   fxFill
 >
-  <div
-    class="row"
-    fxLayoutAlign="center"
-    fxLayout="row"
-    style="margin-bottom: 15px;"
-  >
-  <div class="col-md-2">
-    <img
-    src="./assets/images/nomads/kingl_man.jpg"
-    alt="Photo of King L Man"
-    class="image-blurred"
-    style="width: 100%;height: auto;"
-  />
-  </div>
-  <div class="col-md-10">
-    <p style="padding-bottom: 15px;">
-        <strong>
-            <h3>King L Man</h3>
-            <h5>"Adaptor"</h5>
-        </strong>
-    </p>
-        <p style="padding-bottom: 15px;">
-            <span>
-            <h5>How would you describe your musical background?</h5>
-            Whoa, okay, we best go for the short version.....Apparently I was really captured by The Beatles as a three-four year-old, and when asked what my name was I replied "Paul". 
-            It's kind of weird since I don't have a single Beatles record in my collection, nor do I remember ever having one.
-            I was give a crystal radio set as a kit, and I had to put it together.  I found the newly formed BBC Radio 1 station and was enthralled by being able to capture radio waves.  My Mum and Dad had records naturally, and one early memory is of my Mum buying me a cassette player and a cassette of Jimi Hendrix.  I wore them out.
-        </span>
-        </p> 
+
+  <mat-card fxFlex="13" fxFlex.lg="15%" fxFlex.sm="65%" fxFlex.xs="80%" style="box-shadow: none;">
+    <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
+      <img mat-card-image src="./assets/images/nomads/kingl_man.jpg" alt="image"> 
+    </a>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content fxFlex="70">
+    <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%" >
+        Artist:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        King L Man
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%">
+        Song:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Adaptor
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+        fxLayout="row">
+      <div fxFlex="15%"
+          fxFlex.sm="30%"
+          fxFlex.xs="20%">
+      Album:
+      </div>
+      <div fxFlex="70%"
+          fxFlex.sm="70%"
+          fxFlex.xs="80%"
+          style="font-size: 1.15em;cursor: pointer;"
+          (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      Nomads in Sound 4
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Home Page:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em;cursor: pointer;"
+        (click)="onClick('https://soundcloud.com/')">
+        Soundcloud
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Social Media:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em">
+      Twitter, Instagram, Facebook
+      </div>
     </div>
+
+    <div fxLayoutAlign="start"
+      fxLayout="row"
+      fxHide.md
+      fxHide.sm
+      fxHide.xs
+      style="margin-top: 15px;">
+      <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+      </div>
+
+  </mat-card-content>
+
+  <div fxFlex="99%"
+  fxHide.xl
+  fxHide.lg
+  style="margin-bottom: 15px;">
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>How would you describe your musical background?</h5>
+
+      Whoa, okay, we best go for the short version.....Apparently I was really captured by The Beatles as a three-four year-old, and when asked what my name was I replied "Paul". 
+      It's kind of weird since I don't have a single Beatles record in my collection, nor do I remember ever having one.
+      I was give a crystal radio set as a kit, and I had to put it together.  I found the newly formed BBC Radio 1 station and was enthralled by being able to capture radio waves. 
+       My Mum and Dad had records naturally, and one early memory is of my Mum buying me a cassette player and a cassette of Jimi Hendrix.  I wore them out.
+      
+  </span>
+  </p> 
   </div>
 
   <div>
     <p style="padding-bottom: 15px;">
       <span>
       <h5>What is your main musical influence and/ or collective?</h5>
-        I was mad heavy into Parliament / Funkadelic, how many records did they put out under all the various guises? Over 100 no?
-        I used to have a cassette that had Mark Stewart + The Maffia's "As The Veneer of Democracy Starts to Fade" on one side, and on the other was "Yo, Bum Rush The Show" by Public Enemy.  It was the sonics and words, messages of those two projects that really resonated. I didn't know you could do the kinds of things they did, it was pure musical freedom. Those two hit me hard, On-U Sound and P.E.
+
+      I was mad heavy into Parliament / Funkadelic, how many records did they put out under all the various guises? Over 100 no?
+      I used to have a cassette that had Mark Stewart + The Maffia's "As The Veneer of Democracy Starts to Fade" on one side, and on the other was "Yo, Bum Rush The Show" by 
+      Public Enemy.  It was the sonics and words, messages of those two projects that really resonated. I didn't know you could do the kinds of things they did, it was pure 
+      musical freedom. Those two hit me hard, On-U Sound and P.E.
   </span>
   </p> 
   </div>
@@ -53,8 +142,16 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Can you describe the main milestones in your earlier production/ projects?</h5>
-        Back in the day, I would create Pause-Button Edits on my BFR (Big Fuckin' Radio) aka GhettoBlaster, I continued doing that type of editing when I joined Fun-da-Mental.  I brought tape edits into the studio for my first contributions to their records.  Only recently I found out that some of the first tunes by Public Enemy and A Tribe Called Quest featured tracks that Chuck D and Q-Tip had started as Pause-Button Edits/Loops before they actually started their respective groups!
-        I DJ'd with Rich McLean aka DJ Overhaul, and we'd throw everything into the mix, we'd have three turntables, a cassette and a couple CD players, so we could ram it up. We also made one track as The Nation World Service for a Nation-label compilation that had like 70 samples in it - you would know the track if you ever watched the early episodes of Kobra, which they never paid us for, fuckers!
+
+        Back in the day, I would create Pause-Button Edits on my BFR (Big Fuckin' Radio) aka GhettoBlaster, I continued doing that type of editing when I joined Fun-da-Mental. 
+        I brought tape edits into the studio for my first contributions to their records.  Only recently I found out that some of the first tunes by Public Enemy and A Tribe Called 
+        Quest featured tracks that Chuck D and Q-Tip had started as Pause-Button Edits/Loops before they actually started their respective groups!
+
+        <br/><br/>
+
+        I DJ'd with Rich McLean aka DJ Overhaul, and we'd throw everything into the mix, we'd have three turntables, a cassette and a couple CD players, so we could ram it up. We also 
+        made one track as The Nation World Service for a Nation-label compilation that had like 70 samples in it - you would know the track if you ever watched the early episodes of Kobra, 
+        which they never paid us for, fuckers!
     </span>
     </p> 
   </div>
@@ -63,13 +160,21 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your current projects and what inspires you the most at the moment?</h5>
-        As you know, I've just finished the KingL Man album, 'Headonix', so I'm gonna start on the Instrumental / Remixes version, and also have to get back to finishing the music for a project called 'M' for a dancer/singer from Tenerife called Élida Dorta.  It started out as a performance piece, and has since expanded to a recording project for a CD release.
-        I've contributed to a compilation for Keroxen, our local festival here.  That track has Nick Page on it, and it's fuckin' dope as hell.<br/><br/>
-        
-        On another tip, there is a situation here in Tenerife with many migrants arriving in pateras (fishing boats)  from Senegal, Mali, Gambia, Morocco etc.  Something needs to be done, so  we are trying to come up with a compilation to raise awareness and funds for things such as visits to the Dentist.  Two of the contributors to the ´Headonix´album arrived in Tenerife on pateras, so time to payback.<br/><br/>
-        
+
+        As you know, I've just finished the KingL Man album, 'Headonix', so I'm gonna start on the Instrumental / Remixes version, and also have to get back to finishing the 
+        music for a project called 'M' for a dancer/singer from Tenerife called Élida Dorta.  It started out as a performance piece, and has since expanded to a recording 
+        project for a CD release.
+        I've contributed to a compilation for Keroxen, our local festival here.  That track has Nick Page on it, and it's fuckin' dope as hell.
+
+        <br/><br/>
+
+        On another tip, there is a situation here in Tenerife with many migrants arriving in pateras (fishing boats)  from Senegal, Mali, Gambia, Morocco etc.  Something needs to 
+        be done, so  we are trying to come up with a compilation to raise awareness and funds for things such as visits to the Dentist.  Two of the contributors to the 
+        ´Headonix´album arrived in Tenerife on pateras, so time to payback.
+
+        <br/><br/>
+
         Inspiration is coming from all ports, new and old producers, J.Dilla, Madlib, nature, the birds in the garden, rain drops hitting the bucket outside.
-        
     </span>
     </p> 
   </div>
@@ -78,6 +183,7 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your greatest passions as an artist?</h5>
+        
         Just being able to make the music, search for music and buy music.
     </span>
     </p> 
@@ -87,7 +193,10 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>What are your ideas behind your contribution to the Nomads in Sound anniversary compilation?</h5>
-        Most of my beats are hip hop tempo, around 70-105 bpm, and I felt it was time to do something out of that range, and something potentially for the dancefloor. I love the energy of Jungle, DnB & Footwork but I don't have the technical knowledge right now to pull off that kind of sound, so I did the next best thing, come up with my own take on the vibe.
+        
+        Most of my beats are hip hop tempo, around 70-105 bpm, and I felt it was time to do something out of that range, and something potentially for the dancefloor. I love 
+        the energy of Jungle, DnB & Footwork but I don't have the technical knowledge right now to pull off that kind of sound, so I did the next best thing, come up with my 
+        own take on the vibe.
     </span>
     </p> 
   </div>

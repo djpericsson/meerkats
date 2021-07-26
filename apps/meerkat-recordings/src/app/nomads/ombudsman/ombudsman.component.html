@@ -7,46 +7,149 @@
   fxFlex.xs="100%"
   fxFill
 >
-  <div
-    class="row"
-    fxLayoutAlign="center"
-    fxLayout="row"
-    style="margin-bottom: 15px;"
-  >
-  <div class="col-md-2">
-    <img
-    src="./assets/images/nomads/ombudsman.jpg"
-    alt="Photo of Ombudsman"
-    class="image-blurred"
-    style="width: 100%;height: auto;"
-  />
-  </div>
-  <div class="col-md-10">
-    <p style="padding-bottom: 15px;">
-        <strong>
-            <h3>Ombudsman</h3>
-            <h5>"Petroleum Ann"</h5>
-        </strong>
-    </p>
-        <p style="padding-bottom: 15px;">
-            <span>
-            <h5>How would you describe your musical background?</h5>
-            A long time ago I actually had plans to become a concert pianist. Well, I don’t think I could uphold the work ethics for that kind of position. Also whenever I get interested in a subject I’m quite keen on going into the mechanics behind it. Coming from a classical piano background and listening to quite a lot of electronic dance music it was quite natural to get into synthezisers and try to learn how to make unusual sounds.<br/><br/>
-            I’ve learned a few other instruments on the way, and tried to work towards different genres of music. Although I think I have a natural tendency to misunderstand some fundamental conventions in every genre I approach. It’s usually fine, because I personally find the dogmatic approach quite uninspiring. Then again it’s not always about inspiration, sometimes you just want to get the pure adrenalin rush, and who then cares if you’ve filtered 808-kicks for fourteen hours while connecting a Buchla module to the tip of you penis?
-        </span>
-        </p> 
+
+  <mat-card fxFlex="13" fxFlex.lg="15%" fxFlex.sm="65%" fxFlex.xs="80%" style="box-shadow: none;">
+    <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
+      <img mat-card-image src="./assets/images/nomads/ombudsman.jpg" alt="image"> 
+    </a>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content fxFlex="70">
+    <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%" >
+        Artist:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Ombudsman
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%">
+        Song:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Petroleum Ann
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+        fxLayout="row">
+      <div fxFlex="15%"
+          fxFlex.sm="30%"
+          fxFlex.xs="20%">
+      Album:
+      </div>
+      <div fxFlex="70%"
+          fxFlex.sm="70%"
+          fxFlex.xs="80%"
+          style="font-size: 1.15em;cursor: pointer;"
+          (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      Nomads in Sound 4
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Home Page:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em;cursor: pointer;"
+        (click)="onClick('https://soundcloud.com/')">
+        Soundcloud
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Social Media:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em">
+      Twitter, Instagram, Facebook
+      </div>
     </div>
+
+    <div fxLayoutAlign="start"
+      fxLayout="row"
+      fxHide.md
+      fxHide.sm
+      fxHide.xs
+      style="margin-top: 15px;">
+      <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+      </div>
+
+  </mat-card-content>
+
+  <div fxFlex="99%"
+  fxHide.xl
+  fxHide.lg
+  style="margin-bottom: 15px;">
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>How would you describe your musical background?</h5>
+
+      A long time ago I actually had plans to become a concert pianist. Well, I don’t think I could uphold the work ethics for that kind of position. Also whenever I get 
+      interested in a subject I’m quite keen on going into the mechanics behind it. Coming from a classical piano background and listening to quite a lot of electronic 
+      dance music it was quite natural to get into synthezisers and try to learn how to make unusual sounds.
+
+      <br/><br/>
+
+      I’ve learned a few other instruments on the way, and tried to work towards different genres of music. Although I think I have a natural tendency to misunderstand some 
+      fundamental conventions in every genre I approach. It’s usually fine, because I personally find the dogmatic approach quite uninspiring. Then again it’s not always about 
+      inspiration, sometimes you just want to get the pure adrenalin rush, and who then cares if you’ve filtered 808-kicks for fourteen hours while connecting a Buchla module to 
+      the tip of you penis?      
+  </span>
+  </p> 
   </div>
 
   <div>
     <p style="padding-bottom: 15px;">
       <span>
       <h5>What is your main musical influence and/ or collective?</h5>
-      I’m still quite inspired by classical music. Old french farts such as Debussy, Ravel, Satie and some of the crazy Russian composers from the late 19th/early 20th century. It’s a nice musical era when every concept was being expanded on; harmony, melody, rythms etc.<br/><br/>
 
-    I am of course quite inspired by quite a lot of the old Warp artists. They released some really good ”smatterbands”-techno, and some really good pop-experimental electronic music. I get a feeling that electronic music was allowed to be fun when they started out, and nowdays it’s more about sounding slick and polished. I really like artists like Spinform/Unai and Clark for being able to combine well made productions with really beautiful music. That’s what inspires me most when it comes to electronic music today, beautiful stuff that makes you want to dance. <br/><br/>
+      I’m still quite inspired by classical music. Old french farts such as Debussy, Ravel, Satie and some of the crazy Russian composers from the late 19th/early 20th century. 
+      It’s a nice musical era when every concept was being expanded on; harmony, melody, rythms etc.
 
-    I’m quite into hiphop, or derivatives of hiphop. Like the beat scenes that were quite prominent in the mid 2000. I found it weird that this never really seemed to take off here in Sweden. I think the electronic music scene that get attention here in Sweden is really boring actually.  Lots of people wearing  Brian Enos ”runkelektronika”-glasses using old acid xox-machines and looking back on something that they believe is more authentic. 
+      <br/><br/>
+
+      I am of course quite inspired by quite a lot of the old Warp artists. They released some really good ”smatterbands”-techno, and some really good pop-experimental electronic 
+      music. I get a feeling that electronic music was allowed to be fun when they started out, and nowdays it’s more about sounding slick and polished. I really like artists like 
+      Spinform/Unai and Clark for being able to combine well made productions with really beautiful music. That’s what inspires me most when it comes to electronic music today, 
+      beautiful stuff that makes you want to dance. 
+
+      <br/><br/>
+
+      I’m quite into hiphop, or derivatives of hiphop. Like the beat scenes that were quite prominent in the mid 2000. I found it weird that this never really seemed to take off h
+      ere in Sweden. I think the electronic music scene that get attention here in Sweden is really boring actually.  Lots of people wearing  Brian Enos ”runkelektronika”-glasses 
+      using old acid xox-machines and looking back on something that they believe is more authentic. 
   </span>
   </p> 
   </div>
@@ -55,9 +158,14 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Can you describe the main milestones in your earlier production/ projects?</h5>
-        I believe releasing my album Sentiment on Meerkats Records in a way was a milestone. At least the way that album was structured and written it was sort of a more free approach for me on what my music was about. <br/><br/>
 
-        Quite often when you discard conventions and aesthetics it quickly gets weird, and not always in a good way. It’s good to have a filter but it takes some work to know when to turn it on or off. 
+        I believe releasing my album Sentiment on Meerkats Records in a way was a milestone. At least the way that album was structured and written it was sort of a more free 
+        approach for me on what my music was about. 
+
+        <br/><br/>
+
+        Quite often when you discard conventions and aesthetics it quickly gets weird, and not always in a good way. It’s good to have a filter but it takes some work to know 
+        when to turn it on or off. 
     </span>
     </p> 
   </div>
@@ -66,12 +174,21 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your current projects and what inspires you the most at the moment?</h5>
-        Well, I’ve had quite a low key period from releasing music the last couple of years. Perhaps it’s just adjusting to the new formats of listening. I grew up on listening to albums. And actually listing. It was something you could do as an active activity and not as a passive part of you’re connected lifestyle. And in that sense releasing music into the world seems less urgent. <br/><br/>
 
-    I’ve been working quite a loot with this artist named Kristina Abelli Erlander. I’ve made quite a lot of music that she can pick and choose from, which is nice because I like my music to be put in a framework where it’s not completely under my control. <br/><br/>
+        Well, I’ve had quite a low key period from releasing music the last couple of years. Perhaps it’s just adjusting to the new formats of listening. I grew up on listening to 
+        albums. And actually listing. It was something you could do as an active activity and not as a passive part of you’re connected lifestyle. And in that sense releasing music 
+        into the world seems less urgent.
+        <br/><br/>
 
-    The last year I’ve been really inspired by this Russian composer named Scriabin. Playing through his piano sonatas while on parental leave. I’ve also been really into this style of dancing called Strutting, or Steppin’, which sprung out in the 70’s around California. Especially groups like Medea Sirkas who dances to really heavy, and speed up, Electro. 
-    </span>
+        I’ve been working quite a loot with this artist named Kristina Abelli Erlander. I’ve made quite a lot of music that she can pick and choose from, which is nice because I 
+        like my music to be put in a framework where it’s not completely under my control. 
+
+        <br/><br/>
+
+        The last year I’ve been really inspired by this Russian composer named Scriabin. Playing through his piano sonatas while on parental leave. I’ve also been really into this 
+        style of dancing called Strutting, or Steppin’, which sprung out in the 70’s around California. Especially groups like Medea Sirkas who dances to really heavy, and speed up, 
+        Electro. 
+      </span>
     </p> 
   </div>
 
@@ -79,9 +196,15 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your greatest passions as an artist?</h5>
-        Being something of an introverted exhibitionist I would say I really like when people hear my music, but I’m not that keen on playing it live. But it’s mainly that the way my music is made is really not that transferable to a live setting. Sure I sometimes go all Jackson Pollock in the studio, just throwing sounds around, and sometimes it actually ends up being something quite beautiful. But that’s what I would like to have all the time in a live situation. <br/><br/>
+        
+        Being something of an introverted exhibitionist I would say I really like when people hear my music, but I’m not that keen on playing it live. But it’s mainly that the 
+        way my music is made is really not that transferable to a live setting. Sure I sometimes go all Jackson Pollock in the studio, just throwing sounds around, and sometimes 
+        it actually ends up being something quite beautiful. But that’s what I would like to have all the time in a live situation. 
 
-        I really love learning new instruments, and new things. I always imagine I’d be really good at different instruments, which I never am of course. One day I might find the right instrument that doesn’t require me to put in any practice hours. I assume it’ll be the most boring experience ever for me…        
+        <br/><br/>
+
+        I really love learning new instruments, and new things. I always imagine I’d be really good at different instruments, which I never am of course. One day I might find the 
+        right instrument that doesn’t require me to put in any practice hours. I assume it’ll be the most boring experience ever for me…        
     </span>
     </p> 
   </div>
@@ -90,9 +213,16 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>What are your ideas behind your contribution to the Nomads in Sound anniversary compilation?</h5>
-        Well, the nomadic aspect is both utopian in freedom and dystopian in terms of disconnect from society as we know it. I was quite intrigued to work on these contrast sof calm and serene against fast paced rythms. Glooming doom and cosiness. I like the idea of making music for a post apocalyptic society. Like the generators are on and people are using the last bit of fuel to power up a giant party.<br/><br/>
+        
+        Well, the nomadic aspect is both utopian in freedom and dystopian in terms of disconnect from society as we know it. I was quite intrigued to work on these contrast soft 
+        calm and serene against fast paced rythms. Glooming doom and cosiness. I like the idea of making music for a post apocalyptic society. Like the generators are on and people 
+        are using the last bit of fuel to power up a giant party.
 
-Taking the word Nomad quite literally I found out through this project that the thing that really gets me going in the creative work is not really knowing where I’d end up. It’s not about getting to a finished song that complies to this and that mental picture or even genre of music. Rather it’s starting from a vision and then going through sets of revisions and see what musical landscape you’ve ended up in. 
+        <br/><br/>
+
+      Taking the word Nomad quite literally I found out through this project that the thing that really gets me going in the creative work is not really knowing where I’d end up. 
+      It’s not about getting to a finished song that complies to this and that mental picture or even genre of music. Rather it’s starting from a vision and then going through 
+      sets of revisions and see what musical landscape you’ve ended up in. 
     </span>
     </p> 
   </div>

@@ -7,41 +7,131 @@
   fxFlex.xs="100%"
   fxFill
 >
-  <div
-    class="row"
-    fxLayoutAlign="center"
-    fxLayout="row"
-    style="margin-bottom: 15px;"
-  >
-  <div class="col-md-2">
-    <img
-    src="./assets/images/nomads/dhangsha.jpg"
-    alt="Photo of Dhangsha"
-    class="image-blurred"
-    style="width: 100%;height: auto;"
-  />
-  </div>
-  <div class="col-md-10">
-    <p style="padding-bottom: 15px;">
-        <strong>
-            <h3>Dhangsha</h3>
-            <h5>"Sincronizar"</h5>
-        </strong>
-    </p>
-        <p style="padding-bottom: 15px;">
-            <span>
-            <h5>How would you describe your musical background?</h5>
-            My musical background is as an experimental dub and noise musician. My use of 'dub' has little to do with 'genre' but more with the 'principles' of dub, particularly the use of space and repetition, and, as a bassist, the use of cyclical melody. Also, I’ve always considered ‘dub’ as a framework within which to audition sounds from different sources, often considered to be disparate. I've applied these ideas to whatever project I've worked on, including Asian Dub Foundation.  
-        </span>
-        </p> 
+
+  <mat-card fxFlex="13" fxFlex.lg="15%" fxFlex.sm="65%" fxFlex.xs="80%" style="box-shadow: none;">
+    <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
+      <img mat-card-image src="./assets/images/nomads/dhangsha.jpg" alt="image"> 
+    </a>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content fxFlex="70">
+    <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%" >
+        Artist:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Dhangsha
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%">
+        Song:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Sincronizar
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+        fxLayout="row">
+      <div fxFlex="15%"
+          fxFlex.sm="30%"
+          fxFlex.xs="20%">
+      Album:
+      </div>
+      <div fxFlex="70%"
+          fxFlex.sm="70%"
+          fxFlex.xs="80%"
+          style="font-size: 1.15em;cursor: pointer;"
+          (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      Nomads in Sound 4
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Home Page:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em;cursor: pointer;"
+        (click)="onClick('https://soundcloud.com/')">
+        Soundcloud
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Social Media:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em">
+      Twitter, Instagram, Facebook
+      </div>
     </div>
+
+    <div fxLayoutAlign="start"
+      fxLayout="row"
+      fxHide.md
+      fxHide.sm
+      fxHide.xs
+      style="margin-top: 15px;">
+      <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+      </div>
+
+  </mat-card-content>
+
+  <div fxFlex="99%"
+  fxHide.xl
+  fxHide.lg
+  style="margin-bottom: 15px;">
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>How would you describe your musical background?</h5>
+
+      My musical background is as an experimental dub and noise musician. My use of 'dub' has little to do with 'genre' but more with the 'principles' of dub, particularly 
+      the use of space and repetition, and, as a bassist, the use of cyclical melody. Also, I’ve always considered ‘dub’ as a framework within which to audition sounds from 
+      different sources, often considered to be disparate. I've applied these ideas to whatever project I've worked on, including Asian Dub Foundation.  
+  </span>
+  </p> 
   </div>
 
   <div>
     <p style="padding-bottom: 15px;">
       <span>
       <h5>What is your main musical influence and/ or collective?</h5>
-      Though ‘dub’ has informed my practice from when I first started playing music in the 1980s, I was inspired mostly by percussion based musics and groups such as 23 Skidoo. My main influence of the last 20 years has been Miles Davis, particularly the music he created in the 1970s, with its emphasis on minimalism, repetition of cyclical patterns and modality. His general attitude of intensive exploration of a certain musical area and then moving on and not wishing to repeat himself also strongly resonates with me. 
+
+      Though ‘dub’ has informed my practice from when I first started playing music in the 1980s, I was inspired mostly by percussion based musics and groups such as 23 Skidoo. 
+      My main influence of the last 20 years has been Miles Davis, particularly the music he created in the 1970s, with its emphasis on minimalism, repetition of cyclical 
+      patterns and modality. His general attitude of intensive exploration of a certain musical area and then moving on and not wishing to repeat himself also strongly resonates 
+      with me. 
   </span>
   </p> 
   </div>
@@ -50,9 +140,17 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Can you describe the main milestones in your earlier production/ projects?</h5>
-        What I’m doing today as Dhangsha all flows from my post-ADF experiments began in the early 2000s. In 2006 I released “Emergency Basslines” CD where, using Ableton software, I stripped my productions down to only bass guitar, drum programming and indian and arabic percussion loops. Distorting the percussion generated noise and harmonics which then informed my bass melodies. I called this approach “dubnoiz,” and released 3 more such albums. The last one, “Caustic” in 2017, demonstrated the rationalisation of my bass lines and a move towards a sparser electronic sound. <br/><br/>
 
-        In 2018, I went totally electronic and switched to hardware, namely the Digitakt sampler/sequencer and effects pedals. Not only did I refrain from using the bass guitar in this work, I stopped programming bass lines altogether and used kicks and low frequency fragments of sound to create ‘implied bass lines.’ I wanted to be as minimal as possible and relinquished percussion loops and started to base compositions around alien ‘call and response’ motifs. 
+        What I’m doing today as Dhangsha all flows from my post-ADF experiments began in the early 2000s. In 2006 I released “Emergency Basslines” CD where, using Ableton 
+        software, I stripped my productions down to only bass guitar, drum programming and indian and arabic percussion loops. Distorting the percussion generated noise and 
+        harmonics which then informed my bass melodies. I called this approach “dubnoiz,” and released 3 more such albums. The last one, “Caustic” in 2017, demonstrated the 
+        rationalisation of my bass lines and a move towards a sparser electronic sound.
+
+        <br/><br/>
+
+        In 2018, I went totally electronic and switched to hardware, namely the Digitakt sampler/sequencer and effects pedals. Not only did I refrain from using the bass 
+        guitar in this work, I stopped programming bass lines altogether and used kicks and low frequency fragments of sound to create ‘implied bass lines.’ I wanted to be as 
+        minimal as possible and relinquished percussion loops and started to base compositions around alien ‘call and response’ motifs.  
     </span>
     </p> 
   </div>
@@ -61,9 +159,16 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your current projects and what inspires you the most at the moment?</h5>
-        Which are your current projects and what inspires you the most at the moment?
-        My current projects are Dhangsha, where I explore minimalism, repetition and fragmentation, disrupting and destroying rhythms with distortion and aggressive delays to create a ‘mutant dancehall,’ and DSPSSSSD (“dispossessed”) where I manipulate non-metric sample-based noise. I’m also embarking on an AHRC funded project with other musicians of colour to highlight and challenge the lack of cultural diversity in experimental music practice in the UK. 
-        ‘Noise’ inspires me most at the moment, and its political implications, and how to express that within the context of rhythm. My favourite current artists are Evichen, Yuko Araki, 2K from West Bengal, India, and Abu Ama. I’m also heavily influenced by Anarchist, Mutual Aid and Black Vegan initiatives, and the tracks I make are an attempt to create sonic backdrops and spiritual propulsion for these movements. 
+
+        My current projects are Dhangsha, where I explore minimalism, repetition and fragmentation, disrupting and destroying rhythms with distortion and aggressive delays to 
+        create a ‘mutant dancehall,’ and DSPSSSSD (“dispossessed”) where I manipulate non-metric sample-based noise. I’m also embarking on an AHRC funded project with other 
+        musicians of colour to highlight and challenge the lack of cultural diversity in experimental music practice in the UK.
+
+        <br/><br/>
+
+        ‘Noise’ inspires me most at the moment, and its political implications, and how to express that within the context of rhythm. My favourite current artists are Evichen, 
+        Yuko Araki, 2K from West Bengal, India, and Abu Ama. I’m also heavily influenced by Anarchist, Mutual Aid and Black Vegan initiatives, and the tracks I make are an 
+        attempt to create sonic backdrops and spiritual propulsion for these movements.   
     </span>
     </p> 
   </div>
@@ -72,7 +177,10 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your greatest passions as an artist?</h5>
-        My greatest passion is to play live and to improvise so each performance is different and on the edge, to create music that will challenge people and nudge them out of their comfort zones. We as listeners, myself included, have ample supplies of familiar music and music we can dance to easily. I’m not interested in competing with any of that or making music just to be liked as an artist or satisfy the market. Each track for me is an opportunity to move things forward.
+        
+        My greatest passion is to play live and to improvise so each performance is different and on the edge, to create music that will challenge people and nudge them out of 
+        their comfort zones. We as listeners, myself included, have ample supplies of familiar music and music we can dance to easily. I’m not interested in competing with any 
+        of that or making music just to be liked as an artist or satisfy the market. Each track for me is an opportunity to move things forward.
     </span>
     </p> 
   </div>
@@ -81,7 +189,12 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>What are your ideas behind your contribution to the Nomads in Sound anniversary compilation?</h5>
-        Sincronizar 2021 is a new version / improvisation of this track that first appeared on the self titled Dhangsha album of 2020 on sound~space. It’s a celebration of individual creativity combined with collective action and responsibility. At 93.3 BPM (it’s probably that exact tempo to match the original noise loop) I could have made a typical hip hop break but I’m not interested in reproducing what is expected. I chose to programme the kick and hi hats more like the syncopated conga patterns I used to play as a percussionist, to give a forward motion that exudes more urgency and militancy. The distortion in my sound is pronounced and deliberate. It is not meant to be pretty. It is the sound of questioning and unrest, of internal and external struggle.
+        
+        Sincronizar 2021 is a new version / improvisation of this track that first appeared on the self titled Dhangsha album of 2020 on sound~space. It’s a celebration of 
+        individual creativity combined with collective action and responsibility. At 93.3 BPM (it’s probably that exact tempo to match the original noise loop) I could have 
+        made a typical hip hop break but I’m not interested in reproducing what is expected. I chose to programme the kick and hi hats more like the syncopated conga patterns 
+        I used to play as a percussionist, to give a forward motion that exudes more urgency and militancy. The distortion in my sound is pronounced and deliberate. It is not 
+        meant to be pretty. It is the sound of questioning and unrest, of internal and external struggle. 
     </span>
     </p> 
   </div>

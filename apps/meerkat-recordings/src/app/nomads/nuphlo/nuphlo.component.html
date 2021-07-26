@@ -7,42 +7,132 @@
   fxFlex.xs="100%"
   fxFill
 >
-  <div
-    class="row"
-    fxLayoutAlign="center"
-    fxLayout="row"
-    style="margin-bottom: 15px;"
-  >
-  <div class="col-md-2">
-    <img
-    src="./assets/images/nomads/nuphlo.jpg"
-    alt="Photo of Nuphlo"
-    class="image-blurred"
-    style="width: 100%;height: auto;"
-  />
-  </div>
-  <div class="col-md-10">
-    <p style="padding-bottom: 15px;">
-        <strong>
-            <h3>Nuphlo/Miyagi</h3>
-            <h5>"Neverland/Nectair"</h5>
-        </strong>
-    </p>
-        <p style="padding-bottom: 15px;">
-            <span>
-            <h5>How would you describe your musical background?</h5>
-            I started djing in the late 90s, and then began producing shortly after that. Early on i was making all tracks on an akai mpc 2000xl. I was at art college in Leeds with Dj Kidkanevil, he taught me the basics of how to use the mpc to sample and make beats. I have a degree in fine art and chose music technology as a side elective under Colin McGuire. 
-        </span>
-        </p> 
+
+  <mat-card fxFlex="13" fxFlex.lg="15%" fxFlex.sm="65%" fxFlex.xs="80%" style="box-shadow: none;">
+    <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
+      <img mat-card-image src="./assets/images/nomads/nuphlo.jpg" alt="image"> 
+    </a>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content fxFlex="70">
+    <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%" >
+        Artist:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Nuphlo/Miyagi
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%">
+        Song:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Neverland/Nectair
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+        fxLayout="row">
+      <div fxFlex="15%"
+          fxFlex.sm="30%"
+          fxFlex.xs="20%">
+      Album:
+      </div>
+      <div fxFlex="70%"
+          fxFlex.sm="70%"
+          fxFlex.xs="80%"
+          style="font-size: 1.15em;cursor: pointer;"
+          (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      Nomads in Sound 4
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Home Page:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em;cursor: pointer;"
+        (click)="onClick('https://soundcloud.com/')">
+        Soundcloud
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Social Media:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em">
+      Twitter, Instagram, Facebook
+      </div>
     </div>
+
+    <div fxLayoutAlign="start"
+      fxLayout="row"
+      fxHide.md
+      fxHide.sm
+      fxHide.xs
+      style="margin-top: 15px;">
+      <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+      </div>
+
+  </mat-card-content>
+
+  <div fxFlex="99%"
+  fxHide.xl
+  fxHide.lg
+  style="margin-bottom: 15px;">
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>How would you describe your musical background?</h5>
+
+      I started djing in the late 90s, and then began producing shortly after that. Early on i was making all tracks on an akai mpc 2000xl. I was at art college in Leeds 
+      with Dj Kidkanevil, he taught me the basics of how to use the mpc to sample and make beats. I have a degree in fine art and chose music technology as a side elective 
+      under Colin McGuire. 
+  </span>
+  </p> 
   </div>
 
   <div>
     <p style="padding-bottom: 15px;">
       <span>
       <h5>What is your main musical influence and/ or collective?</h5>
-        Sample based music has always been influential to me, digging for samples and using them creatively.<br/><br/>
-        My main inspirations have been from the 90s Asian underground movement. I try to make music which is a development of that. 
+
+      Sample based music has always been influential to me, digging for samples and using them creatively. 
+
+      <br/><br/>
+
+      My main inspirations have been from the 90s Asian underground movement. I try to make music which is a development of that.      
   </span>
   </p> 
   </div>
@@ -51,7 +141,11 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Can you describe the main milestones in your earlier production/ projects?</h5>
-        Having tunes played on the radio early on was motivating and inspiring.<br/><br/>
+
+        Having tunes played on the radio early on was motivating and inspiring.
+
+        <br/><br/>
+
         Working and being mentored by artists like Ges-e, Osmani Soundz, Tony Thorpe and more recently John Rolodex have shaped my musical developent.
     </span>
     </p> 
@@ -61,6 +155,7 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your current projects and what inspires you the most at the moment?</h5>
+
         I recently started a label along with some friends. The label is called Hundred Colours Music. The freedom to release music that I want is great.
     </span>
     </p> 
@@ -70,7 +165,11 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>Which are your greatest passions as an artist?</h5>
-        As well as music production I also enjoy oil painting. 
+        
+        As well as music production I also enjoy oil painting.
+
+        <br/><br/>
+
         I have a hectic and stressful work life, I feel lucky to have creative outlets in order to relax and de-stress.
     </span>
     </p> 
@@ -80,6 +179,7 @@
     <p style="padding-bottom: 15px;">
         <span>
         <h5>What are your ideas behind your contribution to the Nomads in Sound anniversary compilation?</h5>
+        
         Like most of my tunes, I have contributed East-West flavoured tracks. Not too mild and not too spicy.
     </span>
     </p> 

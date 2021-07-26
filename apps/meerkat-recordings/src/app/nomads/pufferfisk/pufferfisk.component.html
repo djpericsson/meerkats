@@ -1,1 +1,178 @@
-<p>pufferfisk works!</p>
+<div
+  class="container"
+  fxLayoutAlign="start"
+  fxLayout="row wrap"
+  fxFlex="100%"
+  fxFlex.sm="100%"
+  fxFlex.xs="100%"
+  fxFill
+>
+
+  <mat-card fxFlex="13" fxFlex.lg="15%" fxFlex.sm="65%" fxFlex.xs="80%" style="box-shadow: none;">
+    <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
+      <img mat-card-image src="./assets/images/nomads/pufferfisk.jpg" alt="image"> 
+    </a>
+  </mat-card>
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content fxFlex="70">
+    <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%" >
+        Artist:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Pufferfisk
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+          fxLayout="row">
+      <div fxFlex="15%"
+            fxFlex.sm="30%"
+            fxFlex.xs="20%">
+        Song:
+      </div>
+      <div fxFlex="70%"
+            fxFlex.sm="70%"
+            fxFlex.xs="80%"
+            style="font-size: 1.15em">
+        Hola Mujeres
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+        fxLayout="row">
+      <div fxFlex="15%"
+          fxFlex.sm="30%"
+          fxFlex.xs="20%">
+      Album:
+      </div>
+      <div fxFlex="70%"
+          fxFlex.sm="70%"
+          fxFlex.xs="80%"
+          style="font-size: 1.15em;cursor: pointer;"
+          (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      Nomads in Sound 4
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Home Page:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em;cursor: pointer;"
+        (click)="onClick('https://soundcloud.com/')">
+        Soundcloud
+      </div>
+      </div>
+
+      <div fxLayoutAlign="start"
+      fxLayout="row">
+      <div fxFlex="15%"
+        fxFlex.sm="30%"
+        fxFlex.xs="20%">
+      Social Media:
+      </div>
+      <div fxFlex="70%"
+        fxFlex.sm="70%"
+        fxFlex.xs="80%"
+        style="font-size: 1.15em">
+      Twitter, Instagram, Facebook
+      </div>
+    </div>
+
+    <div fxLayoutAlign="start"
+      fxLayout="row"
+      fxHide.md
+      fxHide.sm
+      fxHide.xs
+      style="margin-top: 15px;">
+      <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+      </div>
+
+  </mat-card-content>
+
+  <div fxFlex="99%"
+  fxHide.xl
+  fxHide.lg
+  style="margin-bottom: 15px;">
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=3120674145/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>How would you describe your musical background?</h5>
+
+
+  </span>
+  </p> 
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+      <span>
+      <h5>What is your main musical influence and/ or collective?</h5>
+
+
+  </span>
+  </p> 
+  </div>
+  
+  <div>
+    <p style="padding-bottom: 15px;">
+        <span>
+        <h5>Can you describe the main milestones in your earlier production/ projects?</h5>
+
+        
+    </span>
+    </p> 
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+        <span>
+        <h5>Which are your current projects and what inspires you the most at the moment?</h5>
+
+        
+    </span>
+    </p> 
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+        <span>
+        <h5>Which are your greatest passions as an artist?</h5>
+        
+
+    </span>
+    </p> 
+  </div>
+
+  <div>
+    <p style="padding-bottom: 15px;">
+        <span>
+        <h5>What are your ideas behind your contribution to the Nomads in Sound anniversary compilation?</h5>
+        
+        
+    </span>
+    </p> 
+  </div>
+
+  <button
+  mat-flat-button
+  [routerLink]="['/nomads']" target="_self"
+>Back to Nomads
+</button>
