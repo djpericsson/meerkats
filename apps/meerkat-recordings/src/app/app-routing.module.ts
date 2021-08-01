@@ -65,7 +65,7 @@ const routes: Routes = [
   { path: 'nomads/ombudsman', component: OmbudsmanComponent },
   { path: 'nomads/phoniandflore', component: PhoniandfloreComponent },
   { path: 'nomads/pufferfisk', component: PufferfiskComponent },
-  { path: 'nomads/sagraselekta', component: SagraselektaComponent },
+  { path: 'nomads/saqrselekta', component: SagraselektaComponent },
   { path: 'nomads/uzul', component: UzulComponent },
   { path: 'nomads/wdgw', component: WdgwComponent },
   { path: '**', redirectTo: 'releases' }
