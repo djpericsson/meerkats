@@ -78,13 +78,16 @@ export class NomadsComponent implements OnInit {
   async getArtists() {
     this.nomadsService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
-        this.artists.push({
-          name: artist.name,
-          description: artist.description,
-          img: artist.img,
-          url: artist.url,
-          song: artist.song
-        });
+        if (artist.name != 'WGDW Collective')
+        {
+          this.artists.push({
+            name: artist.name,
+            description: artist.description,
+            img: artist.img,
+            url: artist.url,
+            song: artist.song
+          });
+        }
       });
     });
   }
