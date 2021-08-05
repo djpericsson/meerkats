@@ -8,129 +8,106 @@
   fxFill
 >
 
-<mat-card fxFlex="20" fxFlex.lg="15%" fxFlex.md="14%" fxFlex.sm="65%" fxFlex.xs="90%" style="box-shadow: none;">
-  <a (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" style="cursor: pointer;">
-    <img mat-card-image src="./assets/images/nomads/joxaren.jpg" alt="image"> 
-  </a>
-</mat-card>
-<mat-card-header>
-</mat-card-header>
-<mat-card-content fxFlex="72" fxFlex.lg="69%" fxFlex.md="64%" fxFlex.sm="95%" fxFlex.xs="100%">
-  <div fxLayoutAlign="start"
-        fxLayout="row">
-    <div fxFlex="15%"
-          fxFlex.md="20%"
-          fxFlex.sm="30%"
-          fxFlex.xs="35%" >
-      Artist:
+<div class="card mb-2 border-0" fxFlex="100%">
+  <div class="row no-gutters">
+    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;padding-right: 25px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
+      <img src="./assets/images/nomads/joxaren.jpg" class="card-img" alt="..." style="max-width: 250px;max-height: 100%;" fxHide.xs>
+      <img src="./assets/images/nomads/joxaren.jpg" class="card-img" alt="..." style="max-width: 100%;max-height: 100%;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
     </div>
-    <div fxFlex="85%"
-          fxFlex.md="80%"
-          fxFlex.sm="70%"
-          fxFlex.xs="65%"
-          style="font-size: 1.15em">
-      Joxaren
-    </div>
-    </div>
+    <div class="col-md-9">
+      <div class="card-body" style="max-width: 1040px;padding-top: 0;padding-left: 0;padding-right: 0;">
 
-    <div fxLayoutAlign="start"
-        fxLayout="row">
-    <div fxFlex="15%"
-        fxFlex.md="20%"
-        fxFlex.sm="30%"
-        fxFlex.xs="35%">
-      Song:
-    </div>
-    <div fxFlex="85%"
-        fxFlex.md="80%"
-        fxFlex.sm="70%"
-        fxFlex.xs="65%"
-          style="font-size: 1.15em">
-      Vålnad
-    </div>
-    </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-4" fxHide.sm fxHide.xs>
+            <p style="margin-bottom: 5px;" class="text-muted">Artist:</p>
+          </div>
+          <div class="ccol-md-10 col-md-8">
+            <p style="font-size: 1.1em;margin-bottom: 5px;" fxHide.xs>
+              Joxaren
+            </p>
+            <p style="font-size: 1.1em;margin-bottom: 5px;text-align:center;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+              <strong>
+                Joxaren
+              </strong>
+            </p>
+          </div>
+        </div>
 
-    <div fxLayoutAlign="start"
-      fxLayout="row">
-    <div fxFlex="15%"
-        fxFlex.md="20%"
-        fxFlex.sm="30%"
-        fxFlex.xs="35%">
-    Album:
-    </div>
-    <div fxFlex="85%"
-        fxFlex.md="80%"
-        fxFlex.sm="70%"
-        fxFlex.xs="65%"
-        style="font-size: 1.15em;cursor: pointer;"
-        (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')">
-    Nomads in Sound 4
-    </div>
-    </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-4" fxHide.sm fxHide.xs>
+            <p style="margin-bottom: 5px;" class="text-muted">Song:</p>
+          </div>
+          <div class="ccol-md-10 col-md-8">
+            <p style="font-size: 1.1em;margin-bottom: 5px;" fxHide.xs>
+              Vålnad
+            </p>
+            <p style="font-size: 1.0em;margin-bottom: 5px;text-align: center;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+              Vålnad
+            </p>
+          </div>
+        </div>
 
-    <div fxLayoutAlign="start"
-    fxLayout="row">
-    <div fxFlex="15%"
-        fxFlex.md="20%"
-        fxFlex.sm="30%"
-        fxFlex.xs="35%">
-    Home Page:
-    </div>
-    <div fxFlex="85%"
-        fxFlex.md="80%"
-        fxFlex.sm="70%"
-        fxFlex.xs="65%"
-      style="font-size: 1.15em;cursor: pointer;"
-      (click)="onClick('https://soundcloud.com/joxaren')">
-      Soundcloud
-    </div>
-    </div>
+        <div class="row">
+          <div class="col-md-2 col-sm-4" fxHide.sm fxHide.xs>
+            <p style="margin-bottom: 5px;" class="text-muted">Album:</p>
+          </div>
+          <div class="ccol-md-10 col-md-8">
+            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" fxHide.xs>Nomads in Sound 4</p>
+            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4')" fxHide.xl fxHide.lg fxHide.md fxHide.sm><small>Nomads in Sound 4</small></p>
+          </div>
+        </div>
 
-    <div fxLayoutAlign="start"
-    fxLayout="row">
-    <div fxFlex="15%"
-        fxFlex.md="20%"
-        fxFlex.sm="30%"
-        fxFlex.xs="35%">
-    Social Media:
-    </div>
-    <div fxFlex="85%"
-        fxFlex.md="80%"
-        fxFlex.sm="70%"
-        fxFlex.xs="65%"
-      style="font-size: 1.15em">
-    Twitter, Instagram, Facebook
+        <div class="row">
+          <div class="col-md-2 col-sm-4" fxHide.sm fxHide.xs>
+            <p style="margin-bottom: 5px;" class="text-muted">Home Page:</p>
+          </div>
+          <div class="ccol-md-10 col-md-8">
+            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;"
+                (click)="onClick('https://soundcloud.com/joxaren')" fxHide.xs>
+              Soundcloud
+            </p>
+            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;"
+                (click)="onClick('https://soundcloud.com/joxaren')" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+              <small>
+                Soundcloud
+              </small>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 col-sm-4" fxHide.sm fxHide.xs>
+            <p style="margin-bottom: 5px;" class="text-muted">Social Media:</p>
+          </div>
+          <div class="ccol-md-10 col-md-8">
+            <p style="font-size: 1.1em;margin-bottom: 5px;" fxHide.xs>
+              Twitter, Instagram, Facebook
+            </p>
+            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+              <small>
+                Twitter, Instagram, Facebook
+              </small>
+            </p>
+          </div>
+        </div>
+
+        <iframe 
+          fxHide.md
+          fxHide.sm
+          fxHide.xs 
+          style="border: 0; width: 100%; height: 42px;margin-top: 25px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a>
+      </iframe>
+
+      </div>
     </div>
   </div>
+</div>
 
-  <div fxLayoutAlign="start"
-    fxLayout="row"
-    fxHide.lg
-    fxHide.md
-    fxHide.sm
-    fxHide.xs
-    style="margin-top: 15px;">
-    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
-    </div>
-
-    <div fxLayoutAlign="start"
-    fxLayout="row"
-    fxHide.xl
-    fxHide.md
-    fxHide.sm
-    fxHide.xs
-    style="margin-top: 15px;">
-    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
-    </div>
-
-</mat-card-content>
-
-<div fxFlex="100%"
+<iframe 
 fxHide.xl
 fxHide.lg
-style="margin-bottom: 15px;">
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a></iframe>
-</div>
+style="border: 0; width: 100%; height: 42px;margin-bottom: 15px;" src="https://bandcamp.com/EmbeddedPlayer/album=108535965/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless><a href="https://meerkatrecordings.bandcamp.com/album/come-ruff">Come Ruff by Aimnbreak</a>
+</iframe>
 
   <div>
     <p style="padding-bottom: 15px;">
