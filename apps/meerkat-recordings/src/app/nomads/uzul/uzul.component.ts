@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from '../../service/google-analytics.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'meerkat-recordings-uzul',
   templateUrl: './uzul.component.html',
   styleUrls: ['./uzul.component.css']
 })
-export class UzulComponent implements OnInit {
+export class UzulComponent implements OnInit, OnDestroy {
+  unsubscribe$ = new Subject<void>()
 
   constructor(
     private router: Router,
@@ -23,6 +25,11 @@ export class UzulComponent implements OnInit {
         10
       );
       window.open(url);
+    }
+
+    ngOnDestroy() {
+      this.unsubscribe$.next()
+      this.unsubscribe$.complete()
     }
 
   ngOnInit(): void {

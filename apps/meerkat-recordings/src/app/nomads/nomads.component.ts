@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { GoogleAnalyticsService } from '../service/google-analytics.service';
@@ -13,7 +13,7 @@ import { ModalComponent } from '../modal/modal.component';
   templateUrl: './nomads.component.html',
   styleUrls: ['./nomads.component.css']
 })
-export class NomadsComponent implements OnInit {
+export class NomadsComponent implements OnInit, OnDestroy {
   isLoading = true;
   unsubscribe$ = new Subject<void>()
 

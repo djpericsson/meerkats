@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from '../../service/google-analytics.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'meerkat-recordings-phoniandflore',
   templateUrl: './phoniandflore.component.html',
   styleUrls: ['./phoniandflore.component.css']
 })
-export class PhoniandfloreComponent implements OnInit {
+export class PhoniandfloreComponent implements OnInit, OnDestroy {
+  unsubscribe$ = new Subject<void>()
 
   constructor(
     private router: Router,
@@ -23,6 +25,11 @@ export class PhoniandfloreComponent implements OnInit {
         10
       );
       window.open(url);
+    }
+
+    ngOnDestroy() {
+      this.unsubscribe$.next()
+      this.unsubscribe$.complete()
     }
 
   ngOnInit(): void {
