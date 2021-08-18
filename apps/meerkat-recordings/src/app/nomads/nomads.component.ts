@@ -78,8 +78,6 @@ export class NomadsComponent implements OnInit, OnDestroy {
   async getArtists() {
     this.nomadsService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
-        // if (artist.name != 'WGDW Collective')
-        // {
           this.artists.push({
             name: artist.name,
             description: artist.description,
@@ -87,7 +85,6 @@ export class NomadsComponent implements OnInit, OnDestroy {
             url: artist.url,
             song: artist.song
           });
-        // }
       });
     });
   }
