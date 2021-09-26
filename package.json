@@ -63,7 +63,7 @@
     "@angular/compiler-cli": "^12.2.7",
     "@angular/language-service": "^12.2.7",
     "@nrwl/cypress": "^12.9.0",
-    "@nrwl/jest": "^12.5.9",
+    "@nrwl/jest": "^12.9.0",
     "@nrwl/workspace": "^12.5.9",
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.0",
