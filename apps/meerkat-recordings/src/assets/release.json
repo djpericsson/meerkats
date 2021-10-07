@@ -6,7 +6,7 @@
       "date": "2021-11-11",
       "url": "https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-steppe-edition",
       "id": "2592989262",
-      "img": "./assets/images/release/nomads_in_sound_4.png",
+      "img": "./assets/images/nomads/nomads_in_sound_4.png",
       "songs": [
         {
           "name": "Corazon Tribulado",
@@ -48,7 +48,7 @@
       "date": "2021-11-11",
       "url": "https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition",
       "id": "680881785",
-      "img": "./assets/images/release/nomads_in_sound_4.png",
+      "img": "./assets/images/nomads/nomads_in_sound_4.png",
       "songs": [
         {
           "name": "Worlds (on fire)",
