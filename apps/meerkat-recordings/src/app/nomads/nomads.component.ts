@@ -78,7 +78,7 @@ export class NomadsComponent implements OnInit, OnDestroy {
   async getArtists() {
     this.nomadsService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
-        if (artist.name !== "WDGW Collective") {
+        if (artist.name != "WGDW Collective") {
           this.artists.push({
             name: artist.name,
             description: artist.description,
