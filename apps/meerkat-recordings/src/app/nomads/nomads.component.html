@@ -12,23 +12,34 @@
 
 <div class="card border-0" fxFlex="100%">
   <div class="row no-gutters">
-    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;padding-right: 15px;" fxHide.xs>
-      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 250px;max-height: 100%;">
+    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;padding-right: 5px;cursor: pointer;" fxHide.xs>
+      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 275px;max-height: 100%;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')">
     </div>
-    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
-      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 100%;max-height: 100%;">
+    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;cursor: pointer;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 100%;max-height: 100%;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')">
     </div>
     <div class="col-md-9">
       <div class="card-body" style="max-width: 750px;padding-top: 0;padding-left: 0;padding-right: 0;">
-        <h3 class="card-title">From the Peruvian Andes to the Asian Underground</h3>
+        <h3 class="card-title" style="margin-bottom: 15px;">From the Peruvian Andes to the Asian Underground</h3>
 
         <h5 class="card-text">Meerkat Recording’s 10 yr anniversary compilation, Nomads in Sound 04</h5>
 
-        <p style="font-size: 0.9rem;" class="card-text" fxHide.sm fxHide.xs>Stockholm based label Meerkat Recordings celebrates 10 years of dedication to the dub/bass/d&b/breakbeat continuum. With the Nomads 04 compilation, we 
+        <p style="font-size: 0.95rem;" class="card-text" fxHide.sm fxHide.xs>Stockholm based label Meerkat Recordings celebrates 10 years of dedication to the dub/bass/d&b/breakbeat continuum. With the Nomads 04 compilation, we 
           follow the meerkats trails between steppes and burrows: in urgency, contemplation and collective action. The Meerkats have invited their favourite artists based in the UK, 
           France, Peru, Germany, Sweden and the Canaries – with influences ranging from the Peruvian Andres to the Asian Underground. BASS is the common foundation on the journeys of 
           the contributing artists.
         </p>
+
+        <span style="display: table-row;vertical-align: bottom;" fxHide.xs>
+          <span style="font-size: 1.1em;">Nomads in Sound 4: </span>
+          <span style="font-size: 1.1em;cursor: pointer;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-steppe-edition')">
+            Steppe Edition
+          </span>
+          <span> | </span>
+          <span style="font-size: 1.1em;cursor: pointer;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')">
+            Burrow Edition
+          </span>
+        </span>
         
           <p style="display: table-row;vertical-align: bottom;" class="card-text" fxHide.md fxHide.sm fxHide.xs>
           <small style="display: table-row;vertical-align: bottom;" class="text-muted">Release Date: digital: 11 nov 2021 (vinyl release: Feb 2022)<br>

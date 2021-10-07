@@ -75,6 +75,17 @@ export class NomadsComponent implements OnInit, OnDestroy {
     window.open(url, "_self");
   }
 
+  onClickNew(url: string) {
+    this.googleAnalyticsService.eventEmitter(
+      url,
+      'nomads',
+      'link',
+      'click',
+      10
+    );
+    window.open(url);
+  }
+
   async getArtists() {
     this.nomadsService.getJSON().subscribe(data => {
       data.artists.forEach(artist => {
