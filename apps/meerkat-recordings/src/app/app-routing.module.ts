@@ -48,7 +48,7 @@ import { UzulComponent } from './nomads/uzul/uzul.component';
 import { WdgwComponent } from './nomads/wdgw/wdgw.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'releases', pathMatch: 'full' },
+  { path: '', redirectTo: 'nomads', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'artists', component: ArtistComponent },
   { path: 'releases', component: ReleaseComponent },
