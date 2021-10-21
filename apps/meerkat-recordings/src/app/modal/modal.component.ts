@@ -25,7 +25,7 @@ export class ModalComponent implements OnInit {
     if (this.data.id === '3292092130') {
       if (this.data.track) {
         this.url = this.sanitizer.bypassSecurityTrustResourceUrl(
-          `https://bandcamp.com/EmbeddedPlayer/track=${this.data.id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=${this.data.track}/transparent=true/`
+          `https://bandcamp.com/EmbeddedPlayer/track=${this.data.id}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=${this.data.track}/transparent=true/esig=c60edceb295af7ba6683bd2ea8bd6823/`
         );
       } else {
         this.url = this.sanitizer.bypassSecurityTrustResourceUrl(
@@ -35,7 +35,7 @@ export class ModalComponent implements OnInit {
     } else {
       if (this.data.track) {
         this.url = this.sanitizer.bypassSecurityTrustResourceUrl(
-          `https://bandcamp.com/EmbeddedPlayer/album=${this.data.id}/size=large/bgcol=ffffff/linkcol=0687f5/track=${this.data.track}/transparent=true/`
+          `https://bandcamp.com/EmbeddedPlayer/album=${this.data.id}/size=large/bgcol=ffffff/linkcol=0687f5/track=${this.data.track}/transparent=true/esig=c60edceb295af7ba6683bd2ea8bd6823/`
         );
       }
       else {
