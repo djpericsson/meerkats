@@ -95,14 +95,16 @@ export class NomadsComponent implements OnInit, OnDestroy {
             description: artist.description,
             img: artist.img,
             url: artist.url,
-            song: artist.song
+            song: artist.song,
+            album: artist.album,
+            track: artist.track
           });
         }
       });
     });
   }
 
-  openDialog(id: string): void {
+  openDialog(id: string, track: string): void {
     this.googleAnalyticsService.eventEmitter(
       id,
       'release',
@@ -112,7 +114,7 @@ export class NomadsComponent implements OnInit, OnDestroy {
     );
     const dialogRef = this.dialog.open(ModalComponent, {
       width: 'auto',
-      data: { id: id }
+      data: { id: id, track: track }
     });
     dialogRef.afterClosed().subscribe(result => {
       // console.log(result);

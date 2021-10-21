@@ -5,105 +5,135 @@
       "description": "For this project I wanted to explore new grounds and to combine my roots from Hip-Hop and IDM with instrumental Grime. I wanted my track to sound digital, clean and punchy with a rough edge. I have always been inspired by the UK underground dance scene and wanted to venture out in that direction, but with a more modern sound than previous projects.",
       "url": "/nomads/aimnbreak",
       "img": "./assets/images/nomads/aimnbreak.jpg",
-      "song": "Shape the Future"
+      "song": "Shape the Future",
+      "album": "2592989262",
+      "track": "1075484610"
     },
     {
       "name": "Bass Trolls",
       "description": "Meerkat Anthem is a steppers dub track that celebrates the anniversary of Meerkat Recordings through an ode to the Meerkat Recordings Studio, an analogue Stockholm based hardware studio. Meerkat Recordings Studio has the aim to create warm, bass heavy and dubby sounds and thereby promote our vision of “auditive health.”",
       "url": "/nomads/basstrolls",
       "img": "./assets/images/nomads/bass_trolls.jpg",
-      "song": "Meerkat Anthem"
+      "song": "Meerkat Anthem",
+      "album": "2592989262",
+      "track": "278979737"
     },
     {
       "name": "Dhangsha",
       "description": "Sincronizar 2021 is a new version / improvisation of this track that first appeared on the self titled Dhangsha album of 2020 on sound~space. It’s a celebration of individual creativity combined with collective action and responsibility. At 93.3 BPM (it’s probably that exact tempo to match the original noise loop) I could have made a typical hip hop break but I’m not interested in reproducing what is expected.",
       "url": "/nomads/dhangsha",
       "img": "./assets/images/nomads/dhangsha.jpg",
-      "song": "Sincronizar"
+      "song": "Sincronizar",
+      "album": "680881785",
+      "track": "2252007076"
     },
     {
       "name": "Donna Maya",
       "description": " Its about individuals, as meerkats, that build a collective to be successful together. The track starts with few water sounds and drops, self-recorded around a river flooding into the Atlantic ocean after a severe storm, that condense more and more to become an ocean like fluid that is able to dictate its own rhythm to its environment and make it move.",
       "url": "/nomads/donnamaya",
       "img": "./assets/images/nomads/donna_maya.jpg",
-      "song": "Live Terminal"
+      "song": "Live Terminal",
+      "album": "680881785",
+      "track": "3894285679"
     },
     {
       "name": "Gavana",
       "description": "This is a posthumous collaboration with my brother Christos, who died 20 years ago in a motorcycle accident (at the age of 25). I’ve been inspired by his music and voice (which I found on a cassette he recorded for a pirate radio show) and this lead to a happy outdoor nineties rave vibe: a vessel for getting together beyond life and death, time and space.",
       "url": "/nomads/gavana",
       "img": "./assets/images/nomads/gavana.jpg",
-      "song": "Christos Gavanas"
+      "song": "Christos Gavanas",
+      "album": "2592989262",
+      "track": "822833735"
     },
     {
       "name": "HAb",
       "description": "Swedish electronic music pioneer Hans Carlsson makes intricate melodic electronica with vague echoes of hip-hop and drum'n'bass under the name Hab. His music is a stunning collection of both rhythmically stunning and melodically engaging post-techno, interweaving thin, intricately syncopated percussion with thematic figures.",
       "url": "/nomads/hab",
       "img": "./assets/images/nomads/hab.png",
-      "song": "Worlds (on fire)"
+      "song": "Worlds (on fire)",
+      "album": "680881785",
+      "track": "3504795046"
     },
     {
       "name": "Joxaren",
       "description": "This is one of several tracks where I have explored a certain drive and rythmics that have interested me, based on my live setup from 2018 with only analogue hardware, step sequensers, arpeggiators and no samples. I feel that the result became contemplative and simultaneously urgent.",
       "url": "/nomads/joxaren",
       "img": "./assets/images/nomads/joxaren.jpg",
-      "song": "Vålnad"
+      "song": "Vålnad",
+      "album": "2592989262",
+      "track": "1580585194"
     },
     {
       "name": "King L Man",
       "description": "Most of my beats are hip hop tempo, around 70-105 bpm, and I felt it was time to do something out of that range, and something potentially for the dancefloor. I love the energy of Jungle, DnB & Footwork but I don't have the technical knowledge right now to pull off that kind of sound, so I did the next best thing, come up with my own take on the vibe.",
       "url": "/nomads/kinglman",
       "img": "./assets/images/nomads/kingl_man.jpg",
-      "song": "Adaptor"
+      "song": "Adaptor",
+      "album": "680881785",
+      "track": "2208535901"
     },
     {
       "name": "Nuphlo/Miyagi",
       "description": "Like most of my tunes, I have contributed East-West flavoured tracks. Not too mild and not too spicy.",
       "url": "/nomads/nuphlo",
       "img": "./assets/images/nomads/nuphlo.jpg",
-      "song": "Neverland\" \"Nectair"
+      "song": "Neverland/Nectair",
+      "album": "2592989262",
+      "track": "2931539894"
     },
     {
       "name": "Ombudsman",
       "description": "The nomadic aspect is both utopian in freedom and dystopian in terms of disconnect from society as we know it. I was quite intrigued to work on these contrast sof calm and serene against fast paced rythms. Glooming doom and cosiness. I like the idea of making music for a post apocalyptic society. Like the generators are on and people are using the last bit of fuel to power up a giant party.",
       "url": "/nomads/ombudsman",
       "img": "./assets/images/nomads/ombudsman.jpg",
-      "song": "Petroleum Ann"
+      "song": "Petroleum Ann",
+      "album": "680881785",
+      "track": "419316870"
     },
     {
       "name": "PhOniAndFlOrE",
       "description": "The song I produced for the compilation is a mixture of influences from Arabic songs with some atmospheres from various countries in a nod to the term Nomads.",
       "url": "/nomads/phoniandflore",
       "img": "./assets/images/nomads/paf.jpg",
-      "song": "Special Time"
+      "song": "Special Time",
+      "album": "2592989262",
+      "track": "2294417693"
     },
     {
       "name": "Pufferfisk",
       "description": "We watched the old TV show Knight Rider and were impressed by David Hasselhoff: his poofy hair, his phenomenal self confidence and his womanizing swagger. So we made the tribute “Hola Mujeres”.",
       "url": "/nomads/pufferfisk",
       "img": "./assets/images/nomads/pufferfisk.jpg",
-      "song": "Hola Mujeres"
+      "song": "Hola Mujeres",
+      "album": "680881785",
+      "track": "1755275432"
     },
     {
       "name": "Saqra Selekta y Olaya Sound System",
       "description": "This is a special track, recorded and mixed for this compilation. We are presenting “Corazón Tribulado” a collaboration between Saqra Selekta and the reggae cumbia and peruvian fusion band, Olaya Sound System. The idea behind this contribution is to share different approach to rhythm and sound textures, enjoying a Peruvian way of making dub.",
       "url": "/nomads/saqrselekta",
       "img": "./assets/images/nomads/ss_y_oo.jpg",
-      "song": "Corazon Tribulado"
+      "song": "Corazon Tribulado",
+      "album": "2592989262",
+      "track": "3893861907"
     },
     {
       "name": "Uzul",
       "description": "I’m participating in this compilation because I have already released a track on this great label, managed with class by my Swedish friends Anna and Peter. That I met at the Clandestino festival, on the lawn and in music!",
       "url": "/nomads/uzul",
       "img": "./assets/images/nomads/uzul.jpg",
-      "song": "Sub Oscillation"
+      "song": "Sub Oscillation",
+      "album": "680881785",
+      "track": "3615705114"
     },
     {
       "name": "WGDW Collective",
       "description": "I’m participating in this compilation because I have already released a track on this great label, managed with class by my Swedish friends Anna and Peter. That I met at the Clandestino festival, on the lawn and in music!",
       "url": "/nomads/wdgw",
       "img": "./assets/images/nomads/wdgw_collective.jpg",
-      "song": "We Got This (dub mix)"
+      "song": "We Got This (dub mix)",
+      "album": "680881785",
+      "track": "1517290485"
     }
   ]
 }

@@ -126,6 +126,15 @@
     <mat-card-content></mat-card-content>
 
     <mat-card-actions style="text-align: center;">
+      <button mat-icon-button 
+      (click)="openDialog(artist.album, artist.track)" 
+      class="play"
+      matTooltip="{{ artist.song }} by {{ artist.name }}">
+        <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br />
+      </button>
+    </mat-card-actions>
+
+    <mat-card-actions style="text-align: center;">
       <button mat-button 
       (click)="onClick(artist.url)"
       matTooltip="{{ artist.name }} profile page">
