@@ -10,10 +10,10 @@
 
 <div class="card mb-2 border-0" fxFlex="100%">
   <div class="row no-gutters">
-    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;padding-right: 25px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" fxHide.xs>
+    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;padding-right: 25px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" matTooltip="Burrow Edition on Bandcamp" fxHide.xs>
       <img src="./assets/images/nomads/kingl_man.jpg" class="card-img" alt="..." style="max-width: 300px;max-height: 100%;">
     </div>
-    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+    <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" matTooltip="Burrow Edition on Bandcamp" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
       <img src="./assets/images/nomads/kingl_man.jpg" class="card-img" alt="..." style="max-width: 100%;max-height: 100%;">
     </div>
     <div class="col-md-9">
@@ -54,8 +54,8 @@
             <p style="margin-bottom: 5px;" class="text-muted">Album:</p>
           </div>
           <div class="ccol-md-10 col-md-8">
-            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" fxHide.xs>Nomads in Sound 4 - Burrow Edition</p>
-            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" fxHide.xl fxHide.lg fxHide.md fxHide.sm><small>Nomads in Sound 4 - Burrow Edition</small></p>
+            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" matTooltip="Burrow Edition on Bandcamp" fxHide.xs>Nomads in Sound 4 - Burrow Edition</p>
+            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;" (click)="onClick('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')" matTooltip="Burrow Edition on Bandcamp" fxHide.xl fxHide.lg fxHide.md fxHide.sm><small>Nomads in Sound 4 - Burrow Edition</small></p>
           </div>
         </div>
 
@@ -64,11 +64,11 @@
             <p style="margin-bottom: 5px;" class="text-muted">Home Page:</p>
           </div>
           <div class="ccol-md-10 col-md-8">
-            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;"
+            <p style="font-size: 1.1em;margin-bottom: 5px;cursor: pointer;" matTooltip="Artist on Soundcloud"
                 (click)="onClick('https://soundcloud.com/user-433633173-135697896')" fxHide.xs>
                 soundcloud.com/user-433633173-135697896
             </p>
-            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;"
+            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;cursor: pointer;" matTooltip="Artist on Soundcloud"
                 (click)="onClick('https://soundcloud.com/user-433633173-135697896')" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
               <small>
                 soundcloud.com/user-433633173-135697896
@@ -82,10 +82,10 @@
             <p style="margin-bottom: 5px;" class="text-muted">Social Media:</p>
           </div>
           <div class="ccol-md-10 col-md-8">
-            <p style="font-size: 1.1em;margin-bottom: 5px;" fxHide.xs>
+            <p class="text-muted" style="font-size: 1.1em;margin-bottom: 5px;" fxHide.xs>
               Twitter, Instagram, Facebook
             </p>
-            <p style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
+            <p class="text-muted" style="font-size: 1.0em;margin-bottom: 5px;font-style: italic;text-align: center;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
               <small>
                 Twitter, Instagram, Facebook
               </small>
@@ -205,5 +205,6 @@ style="border: 0; width: 100%; height: 42px;margin-bottom: 15px;" src="https://b
   <button
   mat-flat-button
   [routerLink]="['/nomads']" target="_self"
+  matTooltip="Back to Nomads main page"
 >Back to Nomads
 </button>

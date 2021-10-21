@@ -13,10 +13,20 @@
 <div class="card border-0" fxFlex="100%">
   <div class="row no-gutters">
     <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: -12px;padding-right: 5px;cursor: pointer;" fxHide.xs>
-      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 285px;max-height: 100%;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')">
+      <img src="./assets/images/nomads/nomads_in_sound_4.png" 
+      class="card-img" 
+      alt="..." 
+      style="max-width: 285px;max-height: 100%;" 
+      (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')"
+      matTooltip="Meerkat Recordings on Bandcamp">
     </div>
     <div class="col-md-3 mb-2 mt-0" style="padding-top: 0;padding-left: 0;cursor: pointer;" fxHide.xl fxHide.lg fxHide.md fxHide.sm>
-      <img src="./assets/images/nomads/nomads_in_sound_4.png" class="card-img" alt="..." style="max-width: 100%;max-height: 100%;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')">
+      <img src="./assets/images/nomads/nomads_in_sound_4.png" 
+      class="card-img" 
+      alt="..." 
+      style="max-width: 100%;max-height: 100%;" 
+      (click)="onClickNew('https://meerkatrecordings.bandcamp.com/')"
+      matTooltip="Meerkat Recordings on Bandcamp">
     </div>
     <div class="col-md-9">
       <div class="card-body" style="max-width: 850px;padding-top: 0;padding-left: 0;padding-right: 0;">
@@ -32,17 +42,25 @@
 
         <span style="display: table-row;vertical-align: bottom;" fxHide.xs>
           <span style="font-size: 1.1em;">Nomads in Sound 4: </span>
-          <span style="font-size: 1.1em;cursor: pointer;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-steppe-edition')">
+          <span style="font-size: 1.1em;cursor: pointer;" 
+          (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-steppe-edition')"
+          matTooltip="Steppe Edition on Bandcamp">
             Steppe Edition
           </span>
           <span> | </span>
-          <span style="font-size: 1.1em;cursor: pointer;" (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')">
+          <span style="font-size: 1.1em;cursor: pointer;" 
+          (click)="onClickNew('https://meerkatrecordings.bandcamp.com/album/nomads-in-sound-4-burrow-edition')"
+          matTooltip="Burrow Edition on Bandcamp">
             Burrow Edition
           </span>
         </span>
         
           <p style="display: table-row;vertical-align: bottom;" class="card-text" fxHide.md fxHide.sm fxHide.xs>
-          <small style="display: table-row;vertical-align: bottom;" class="text-muted">Release Date: digital: 11 nov 2021 (vinyl release: Feb 2022)<br>
+          <small style="display: table-row;vertical-align: bottom;" 
+          class="text-muted"
+          style="cursor: pointer;"
+          (click)="onClickNew('https://fb.me/e/1QG4GiCjs')"
+          matTooltip="Event on Facebook">Release Date: digital: 11 nov 2021 (vinyl release: Feb 2022)<br>
           Release party: at Time Bar in Stockholm, Thursday 11 November 2021</small>
         </p>
       </div>
@@ -82,7 +100,9 @@
     fxFlex.xl="18.5%"
     [ngStyle]="setStyle()"
   >
-  <a (click)="onClick(artist.url)" style="cursor: pointer;">
+  <a (click)="onClick(artist.url)" 
+      style="cursor: pointer;"
+      matTooltip="{{ artist.name }} profile page">
     <img
       mat-card-image
       src="{{ artist.img }}"
@@ -106,7 +126,9 @@
     <mat-card-content></mat-card-content>
 
     <mat-card-actions style="text-align: center;">
-      <button mat-button (click)="onClick(artist.url)">
+      <button mat-button 
+      (click)="onClick(artist.url)"
+      matTooltip="{{ artist.name }} profile page">
         Artist page
       </button>
     </mat-card-actions>
