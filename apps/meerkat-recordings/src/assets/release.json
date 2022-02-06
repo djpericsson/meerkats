@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Massive One",
+      "artist": "PhOniAndFlOrE",
+      "date": "2022-02-24",
+      "url": "https://meerkatrecordings.bandcamp.com/album/massive-one",
+      "id": "634310701",
+      "img": "./assets/images/release/mind_the_stairs.jpg",
+      "songs": [
+        {
+          "name": "Make Some Noise",
+          "artist": "PhOniAndFlOrE"
+        },
+        {
+          "name": "Massive One",
+          "artist": "PhOniAndFlOrE"
+        },
+        {
+          "name": "Kill The Groove",
+          "artist": "PhOniAndFlOrE"
+        }
+      ]
+    },
+    {
       "name": "Nomads in Sound 4 - Steppe Edition",
       "artist": "Various",
       "date": "2021-11-11",
