@@ -1,13 +1,6 @@
 {
   "artists": [
     {
-      "name": "Gavana",
-      "description": "“Being a DJ, producer, remixer, music culture researcher as well as a label owner, Anna Gavanas is a mainstay of the Swedish electronic music scene. When producing, her perfect sense for musical intensity and mellowness guarantees a captivating listening experience.” (Gearjunkies, August 2012)",
-      "url": "https://soundcloud.com/gavana",
-      "img": "./assets/images/artist/gavana.jpg",
-      "releases": ""
-    },
-    {
       "name": "Aimnbreak",
       "description": "Aimnbreak is a DJ, producer and record label owner who has been DJ:ing for over twenty years, and been making music since he was a young child. A former Hardcore drummer, fierce Breakcore & Jungle DJ, and now an electronic music and analogue synth aficionado.",
       "url": "https://soundcloud.com/aimnbreak",
@@ -15,10 +8,17 @@
       "releases": ""
     },
     {
-      "name": "Bass Trolls",
-      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
-      "url": "https://soundcloud.com/basstrolls",
-      "img": "./assets/images/artist/basstrolls.jpg",
+      "name": "Gavana",
+      "description": "“Being a DJ, producer, remixer, music culture researcher as well as a label owner, Anna Gavanas is a mainstay of the Swedish electronic music scene. When producing, her perfect sense for musical intensity and mellowness guarantees a captivating listening experience.” (Gearjunkies, August 2012)",
+      "url": "https://soundcloud.com/gavana",
+      "img": "./assets/images/artist/gavana.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Sidstar",
+      "description": "The Swedish chiptune artist Sidstar makes his music while travelling with portable synthesizers. Sidstar´s releases have been on the Juno Records as well as iTunes recommendation lists for electronic music, as well as being heavily played by Swedish student radio.",
+      "url": "https://soundcloud.com/sidstar",
+      "img": "./assets/images/artist/sidstar.jpg",
       "releases": ""
     },
     {
@@ -26,6 +26,13 @@
       "description": "Pufferfisk is a Swedish electronic music duo. With influences from artists such as Laserdance, Jean Michel Jarre and Fancy they make retro Italo/Electro influenced music. The group was formed in 2011 and have released music on Meerkat Recordings and Clubstream.",
       "url": "https://soundcloud.com/pufferfisk",
       "img": "./assets/images/artist/pufferfisk.jpg",
+      "releases": ""
+    },
+    {
+      "name": "Bass Trolls",
+      "description": "Bass Trolls is a DIY live-and studio band. Both members come from a background as vinyl DJs and music producers. For the Bass Trolls project they play with live instruments and gadgets, as wel as working with synthesizers. They also collaborate with a number of vocalists and MCs.",
+      "url": "https://soundcloud.com/basstrolls",
+      "img": "./assets/images/artist/basstrolls.jpg",
       "releases": ""
     },
     {
@@ -61,13 +68,6 @@
       "description": "French Bass music Dj/producer who gives true live performances shooting Bass music into live unexplored areas. Respected and remixed by artists such as such as Skream or N-Type. He is also a part of the dub collective Kaly Live Dub",
       "url": "https://soundcloud.com/uzul",
       "img": "./assets/images/artist/uzul.jpg",
-      "releases": ""
-    },
-    {
-      "name": "Sidstar",
-      "description": "The Swedish chiptune artist Sidstar makes his music while travelling with portable synthesizers. Sidstar´s releases have been on the Juno Records as well as iTunes recommendation lists for electronic music, as well as being heavily played by Swedish student radio.",
-      "url": "https://soundcloud.com/sidstar",
-      "img": "./assets/images/artist/sidstar.jpg",
       "releases": ""
     },
     {
