@@ -5,93 +5,93 @@
     overflow: hidden;
     font-family: 'Titillium Web', sans-serif;
     padding: 12px;
-  }
+}
   
-  .mat-card:hover {
-    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    transform: scale(1.02);
-  }
-  
-  .mat-card-content {
-    flex: 1;
-    font-size: 0.84vw;
-  }
-  
-  .mat-card-image {
-    transition: height 0.3s, opacity 0.3s;
-  }
-  
-  .avatar {
-    overflow: auto;
-    max-width: 35px;
-  }
-  
-  .avatar:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    transform: scale(1.04);
-  }
-  
-  .title {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    font-size: 84%;
-  }
-  
-  .mat-card-header-text {
-    height: auto;
-    margin: 0;
-  }
-  
-  .description {
-    font-size: 0.85rem;
-  }
-  
-  .mat-flat-button {
-    min-width: 35px;
-    padding: 6px 6px 6px;
-    line-height: 0px;
-  }
-  
-  .artist {
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-  }
+.mat-card:hover {
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  transform: scale(1.02);
+}
 
-  .song {
-    margin-bottom: 0px;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
+.mat-card-content {
+  flex: 1;
+  font-size: 0.84vw;
+}
 
-  .mat-button {
-    font-size: 0.8rem;
-    font-family: 'Titillium Web', sans-serif;
-  }
-  
-  .mat-button:hover {
-    color: #ff7e00;
-    transform: scale(1.02);
-  }
-  
-  .mat-card-content {
-    margin: 2px 0px 0px;
-  }
+.mat-card-image {
+  transition: height 0.3s, opacity 0.3s;
+}
 
-  .card-img {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    font-family: 'Titillium Web', sans-serif;
-  }
-  
-  .card-img:hover {
-    box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    transform: scale(1.09);
-    padding: 12px;
-  }
+.avatar {
+  overflow: auto;
+  max-width: 35px;
+}
 
-  .mat-card-actions {
-    padding: 0px 0;
+.avatar:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  transform: scale(1.04);
+}
+
+.title {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 84%;
+}
+
+.mat-card-header-text {
+  height: auto;
+  margin: 0;
+}
+
+.description {
+  font-size: 0.85rem;
+}
+
+.mat-flat-button {
+  min-width: 35px;
+  padding: 6px 6px 6px;
+  line-height: 0px;
+}
+
+.artist {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.song {
+  margin-bottom: 0px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.mat-button {
+  font-size: 0.8rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.mat-button:hover {
+  color: #ff7e00;
+  transform: scale(1.02);
+}
+
+.mat-card-content {
+  margin: 2px 0px 0px;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.card-img:hover {
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  transform: scale(1.09);
+  padding: 12px;
+}
+
+.mat-card-actions {
+  padding: 0px 0;
 }
 
 .play:hover {
