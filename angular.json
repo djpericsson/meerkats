@@ -76,16 +76,6 @@
             "browserTarget": "meerkat-recordings:build"
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "apps/meerkat-recordings/tsconfig.app.json",
-              "apps/meerkat-recordings/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!apps/meerkat-recordings/**/*"]
-          }
-        },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
@@ -111,16 +101,6 @@
             "production": {
               "devServerTarget": "meerkat-recordings:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["apps/meerkat-recordings-e2e/tsconfig.e2e.json"],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/meerkat-recordings-e2e/**/*"
-            ]
           }
         }
       }
