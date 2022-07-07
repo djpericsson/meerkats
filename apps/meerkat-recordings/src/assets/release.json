@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Rave Alien Invasion",
+      "artist": "Sidstar",
+      "date": "2022-02-24",
+      "url": "https://meerkatrecordings.bandcamp.com/album/rave-alien-invasion",
+      "id": "634310701",
+      "img": "./assets/images/release/rave_alien_invasion.jpg",
+      "songs": [
+        {
+          "name": "Rave Alien Invasion",
+          "artist": "Sidstar"
+        },
+        {
+          "name": "There Will Be Trouble",
+          "artist": "Sidstar"
+        },
+        {
+          "name": "Revenge Of The Bass Muncher",
+          "artist": "Sidstar"
+        }
+      ]
+    },
+    {
       "name": "Massive One",
       "artist": "PhOniAndFlOrE",
       "date": "2022-02-24",
