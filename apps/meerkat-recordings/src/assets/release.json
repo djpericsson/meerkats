@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Krifi Ammos",
+      "artist": "Thessaly Hifi",
+      "date": "2022-11-23",
+      "url": "https://meerkatrecordings.bandcamp.com/album/krifi-ammos",
+      "id": "2705569451",
+      "img": "./assets/images/release/krifi_ammos.jpg",
+      "songs": [
+        {
+          "name": "Plakes",
+          "artist": "Thessaly Hifi"
+        },
+        {
+          "name": "Krifi Ammos",
+          "artist": "Thessaly Hifi"
+        },
+        {
+          "name": "Anatoli",
+          "artist": "Thessaly Hifi"
+        }
+      ]
+    },
+    {
       "name": "Rave Alien Invasion",
       "artist": "Sidstar",
       "date": "2022-10-13",
