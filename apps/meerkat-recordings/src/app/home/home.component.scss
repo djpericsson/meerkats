@@ -8,10 +8,16 @@ button {
 }
 
 
-.mat-card-image {
+.mat-mdc-card-image {
   max-height: 30px;
   max-width: 30px;
 }
+
+.mat-mdc-flat-button {
+  max-height: 30px;
+  max-width: 30px;
+}
+
 
 button:focus {
   outline: 0px;

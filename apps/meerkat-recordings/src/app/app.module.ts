@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReleaseComponent } from './release/release.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+// import { FlexModule } from '@angular/flex-layout/flex';
+// import { GridModule } from '@angular/flex-layout/grid';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { MomentModule } from 'ngx-moment';
@@ -68,6 +70,8 @@ import { WdgwComponent } from './nomads/wdgw/wdgw.component';
         AppRoutingModule,
         HttpClientModule,
         NgbModule,
+        // FlexModule,
+        // GridModule,
         FlexLayoutModule,
         RouterModule,
         NgxSpinnerModule,

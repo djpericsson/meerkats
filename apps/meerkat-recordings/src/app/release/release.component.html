@@ -5,7 +5,7 @@
   fxLayoutAlign={{fxFlexAlignProp}}
   fxLayout="row wrap"
   fxFlex="100%"
-  fxLayout.xs="column"
+  fxLayout.xs="row wrap"
   fxLayout.sm="row wrap"
   fxLayout.md="row wrap"
   fxLayout.lg="row wrap"
@@ -13,15 +13,15 @@
 >
   <mat-card
     *ngFor="let release of filteredReleases"
-    fxFlex.xs="90%"
-    fxFlex.sm="47.0%"
-    fxFlex.md="31.0%"
-    fxFlex.lg="23.3%"
-    fxFlex.xl="18.5%"
+    fxFlex.xs="100%"
+    fxFlex.sm="49%"
+    fxFlex.md="32%"
+    fxFlex.lg="24%"
+    fxFlex.xl="19%"
     [ngStyle]="setStyle()"
   >
     <img
-      mat-card-image
+      mat-mdc-card-image
       src="{{ release.img }}"
       alt="Photo of {{ release.name }}"
     />
@@ -37,7 +37,7 @@
     </div>
 
     <mat-card-actions style="text-align: center;">
-      <button mat-icon-button (click)="openDialog(release.id)" class="play">
+      <button mat-mdc-icon-button (click)="openDialog(release.id)" class="play">
         <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br />
       </button>
     </mat-card-actions>
