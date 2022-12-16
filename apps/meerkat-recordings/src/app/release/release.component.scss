@@ -20,7 +20,13 @@
 }
 
 .mat-card-image {
+  margin: 0 -6px 6px -6px;
+  width: calc(100% + 12px);
   transition: height 0.3s, opacity 0.3s;
+}
+
+.mat-card-image:first-child {
+  margin-top: 0;
 }
 
 .mat-card-image:hover {
