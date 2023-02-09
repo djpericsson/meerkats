@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Watch Your Back",
+      "artist": "Aimnbreak",
+      "date": "2023-03-30",
+      "url": "https://meerkatrecordings.bandcamp.com/album/watch-your-back",
+      "id": "2705569451",
+      "img": "./assets/images/release/watch_your_back.jpg",
+      "songs": [
+        {
+          "name": "Watch Your Back",
+          "artist": "Aimnbreak"
+        },
+        {
+          "name": "Y'all Trippin'",
+          "artist": "Aimnbreak"
+        },
+        {
+          "name": "Remember The Nintees",
+          "artist": "Aimnbreak"
+        }
+      ]
+    },
+    {
       "name": "Krifi Ammos",
       "artist": "Thessaly Hifi",
       "date": "2022-11-24",

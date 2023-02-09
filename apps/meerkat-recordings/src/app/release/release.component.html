@@ -32,18 +32,23 @@
         <b>{{ release.name }}</b> <br />
       </p>
       <p class="date">
-        <i>{{ release.date | amDateFormat: 'LL' }}</i>
+        <i *ngIf="(release.date | date:'yyyy-MM-dd') <= (today | date:'yyyy-MM-dd')">{{ release.date | amDateFormat: 'LL' }}</i>
+        <i *ngIf="(release.date | date:'yyyy-MM-dd') > (today | date:'yyyy-MM-dd')" class="text-secondary">{{ release.date | amDateFormat: 'LL' }}</i>
       </p>
     </div>
 
     <mat-card-actions style="text-align: center;">
-      <button mat-icon-button (click)="openDialog(release.id)" class="play">
+      <button *ngIf="(release.date | date:'yyyy-MM-dd') <= (today | date:'yyyy-MM-dd')" mat-icon-button (click)="openDialog(release.id)" class="play">
         <i class="fa fa-play-circle" style="font-size: 2.1em;"></i><br />
       </button>
+      <div *ngIf="(release.date | date:'yyyy-MM-dd') > (today | date:'yyyy-MM-dd')" mat-icon-button class="text-warning" class="pause">
+        <i class="fa fa-pause-circle" style="font-size: 2.1em;"></i><br />
+        Available soon
+      </div>
     </mat-card-actions>
 
     <mat-card-actions style="text-align: center;">
-      <button mat-button (click)="onClick(release.url)">
+      <button *ngIf="(release.date | date:'yyyy-MM-dd') <= (today | date:'yyyy-MM-dd')" mat-button (click)="onClick(release.url)">
         Release on Bandcamp
       </button>
     </mat-card-actions>

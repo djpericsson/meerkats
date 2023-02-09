@@ -21,6 +21,8 @@ export class ReleaseComponent implements OnInit, OnDestroy {
   isLoading = true;
   unsubscribe$ = new Subject<void>()
 
+  today = new Date()
+
   filter: string;
   number;
   fxFlexAlignProp = 'space-between start';
