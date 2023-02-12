@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { GoogleAnalyticsService } from '../service/google-analytics.service';
+// import { GoogleAnalyticsService } from '../service/google-analytics.service';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 export class HomeComponent implements OnInit, OnDestroy {
   unsubscribe$ = new Subject<void>()
   constructor(
-    public googleAnalyticsService: GoogleAnalyticsService
+    // public googleAnalyticsService: GoogleAnalyticsService
   ) {}
 
   ngOnInit() {}
@@ -21,13 +21,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   onClick(url: string) {
-    this.googleAnalyticsService.eventEmitter(
-      url,
-      'release',
-      'button',
-      'click',
-      10
-    );
+    // this.googleAnalyticsService.eventEmitter(
+    //   url,
+    //   'release',
+    //   'button',
+    //   'click',
+    //   10
+    // );
     window.open(url);
   }
 }

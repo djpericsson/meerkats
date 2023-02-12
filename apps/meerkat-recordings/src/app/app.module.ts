@@ -18,7 +18,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { MomentModule } from 'ngx-moment';
 import { FormsModule } from '@angular/forms';
 
-import { GoogleAnalyticsService } from './service/google-analytics.service';
+// import { GoogleAnalyticsService } from './service/google-analytics.service';
 import { ModalComponent } from './modal/modal.component';
 import { FilterService } from './service/filter.service';
 
@@ -80,7 +80,7 @@ import { WdgwComponent } from './nomads/wdgw/wdgw.component';
         FormsModule,
         Ng2SearchPipeModule
     ],
-    providers: [HomeComponent, ArtistComponent, GoogleAnalyticsService, FilterService],
+    providers: [HomeComponent, ArtistComponent, FilterService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

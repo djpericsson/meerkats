@@ -5,7 +5,7 @@ import { ReleaseService } from '../service/release.service';
 import { Observable, Subject } from 'rxjs';
 import { IRelease } from '../model/irelease';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { GoogleAnalyticsService } from '../service/google-analytics.service';
+// import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
@@ -31,7 +31,7 @@ export class ArtistComponent implements OnInit, OnDestroy {
   constructor(
     private artistService: ArtistService,
     private releaseService: ReleaseService,
-    public googleAnalyticsService: GoogleAnalyticsService,
+    // public googleAnalyticsService: GoogleAnalyticsService,
     private spinner: NgxSpinnerService,
     public dialog: MatDialog,
     private filterService: FilterService
@@ -68,13 +68,13 @@ export class ArtistComponent implements OnInit, OnDestroy {
   }
 
   onClick(url: string) {
-    this.googleAnalyticsService.eventEmitter(
-      url,
-      'artist',
-      'image',
-      'click',
-      10
-    );
+    // this.googleAnalyticsService.eventEmitter(
+    //   url,
+    //   'artist',
+    //   'image',
+    //   'click',
+    //   10
+    // );
     window.open(url);
   }
 
@@ -140,13 +140,13 @@ export class ArtistComponent implements OnInit, OnDestroy {
   }
 
   openDialog(id: string): void {
-    this.googleAnalyticsService.eventEmitter(
-      id,
-      'release',
-      'button',
-      'click',
-      10
-    );
+    // this.googleAnalyticsService.eventEmitter(
+    //   id,
+    //   'release',
+    //   'button',
+    //   'click',
+    //   10
+    // );
     const dialogRef = this.dialog.open(ModalComponent, {
       width: 'auto',
       data: { id: id }

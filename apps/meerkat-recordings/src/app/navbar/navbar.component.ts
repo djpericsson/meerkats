@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FilterService } from '../service/filter.service';
-import { GoogleAnalyticsService } from '../service/google-analytics.service';
+// import { GoogleAnalyticsService } from '../service/google-analytics.service';
 
 @Component({
   selector: 'meerkat-recordings-navbar',
@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private filterService: FilterService,
-    public googleAnalyticsService: GoogleAnalyticsService
+    // public googleAnalyticsService: GoogleAnalyticsService
   ) {}
 
   ngOnInit() {}
@@ -23,13 +23,13 @@ export class NavbarComponent implements OnInit {
   }
 
   onClick(url: string) {
-    this.googleAnalyticsService.eventEmitter(
-      url,
-      'release',
-      'button',
-      'click',
-      10
-    );
+    // this.googleAnalyticsService.eventEmitter(
+    //   url,
+    //   'release',
+    //   'button',
+    //   'click',
+    //   10
+    // );
     window.open(url);
   }
 }
