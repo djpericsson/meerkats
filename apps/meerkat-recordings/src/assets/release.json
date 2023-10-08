@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "name": "Pyr Gyni Thalassa Jungle",
+      "artist": "Sidstar",
+      "date": "2023-11-04",
+      "url": "https://meerkatrecordings.bandcamp.com/album/pyr-gyni-thalassa-jungle-2",
+      "id": "3759126842",
+      "img": "./assets/images/release/pyr_gyni_thalassa_jungle.jpg",
+      "songs": [
+        {
+          "name": "Pyr Gyni Thalassa Jungle",
+          "artist": "Sidstar"
+        },
+        {
+          "name": "Huevos En La Playa (ragga-jungle mix)",
+          "artist": "Sidstar"
+        },
+        {
+          "name": "Huevos En La Playa (cumbia mix)",
+          "artist": "Sidstar"
+        }
+      ]
+    },
+    {
       "name": "Watch Your Back",
       "artist": "Aimnbreak",
       "date": "2023-03-30",
