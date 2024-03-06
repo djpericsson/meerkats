@@ -1,0 +1,1213 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.7",
+  "deps": {
+    "@angular-devkit/core": "^17.2.2",
+    "@angular-devkit/schematics": "^17.2.2",
+    "@angular/animations": "^17.2.3",
+    "@angular/cdk": "^17.2.1",
+    "@angular/common": "^17.2.3",
+    "@angular/compiler": "^17.2.3",
+    "@angular/core": "^17.2.3",
+    "@angular/flex-layout": "15.0.0-beta.42",
+    "@angular/forms": "^17.2.3",
+    "@angular/localize": "^17.2.3",
+    "@angular/material": "^17.2.1",
+    "@angular/platform-browser": "^17.2.3",
+    "@angular/platform-browser-dynamic": "^17.2.3",
+    "@angular/router": "^17.2.3",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
+    "@nrwl/angular": "^18.0.7",
+    "@popperjs/core": "^2.11.8",
+    "@schematics/angular": "^17.2.2",
+    "bootstrap": "^5.3.3",
+    "core-js": "^3.36.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.1",
+    "jsdom": "^24.0.0",
+    "moment": "^2.30.1",
+    "ng2-search-filter": "^0.5.1",
+    "ngx-moment": "^6.0.2",
+    "ngx-spinner": "^16.0.2",
+    "polyfills": "^2.1.1",
+    "popper.js": "^1.16.1",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.2",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.90.3",
+    "zone.js": "^0.14.4",
+    "@angular-devkit/build-angular": "^17.2.2",
+    "@angular/cli": "^17.2.2",
+    "@angular/compiler-cli": "^17.2.3",
+    "@angular/language-service": "^17.2.3",
+    "@nrwl/cypress": "^18.0.7",
+    "@nrwl/jest": "^18.0.7",
+    "@nrwl/workspace": "^18.0.7",
+    "@types/node": "^20.11.24",
+    "dotenv": "16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "jest-preset-angular": "^14.0.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tslint": "~6.1.3",
+    "typescript": "^5.3.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "13280348497499601141"
+      },
+      {
+        "file": "tslint.json",
+        "hash": "4416031395844323560"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11426451898248235068"
+      },
+      {
+        "file": "tools/schematics/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "5864009640613726360"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "15755601163234065565"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "15036214574332298676"
+      },
+      {
+        "file": "decorate-angular-cli.js",
+        "hash": "11706464733759336431"
+      },
+      {
+        "file": "package.json",
+        "hash": "11155733939606748320"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "README.md",
+        "hash": "13690006961801662592"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "1324685984948235314"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "18291152829715996510"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3798089011180698108"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "5650295198995641628"
+      },
+      {
+        "file": "angular.json",
+        "hash": "14931166224745687468"
+      }
+    ],
+    "projectFileMap": {
+      "meerkat-recordings-e2e": [
+        {
+          "file": "apps/meerkat-recordings-e2e/cypress.json",
+          "hash": "13928846900712327322"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/fixtures/example.json",
+          "hash": "17341819486505642070"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/integration/app.spec.ts",
+          "hash": "9772499589596875980"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/plugins/index.js",
+          "hash": "1536397649080683784",
+          "deps": [
+            "npm:@nrwl/cypress"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/app.po.ts",
+          "hash": "5364106453863571025"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/commands.ts",
+          "hash": "12130045679248419058"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/index.ts",
+          "hash": "15928825062325902088"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tsconfig.e2e.json",
+          "hash": "17230193539068221751"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tsconfig.json",
+          "hash": "4573555006180383730"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tslint.json",
+          "hash": "5492850002378172202"
+        }
+      ],
+      "meerkat-recordings": [
+        {
+          "file": "apps/meerkat-recordings/browserslist",
+          "hash": "17510788877013526380"
+        },
+        {
+          "file": "apps/meerkat-recordings/jest.config.js",
+          "hash": "14513810126227603314"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/_redirects",
+          "hash": "17397769218001865064"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app-routing.module.ts",
+          "hash": "2856772942517874575",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app.component.html",
+          "hash": "3451872595124685937"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app.component.scss",
+          "hash": "6957438346991673588"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app.component.spec.ts",
+          "hash": "17219746221981375508",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app.component.ts",
+          "hash": "7537610881322268291",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/app.module.ts",
+          "hash": "647099726287078131",
+          "deps": [
+            "npm:@angular/platform-browser",
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@ng-bootstrap/ng-bootstrap",
+            "npm:@angular/flex-layout",
+            "npm:@angular/router",
+            "npm:ngx-spinner",
+            "npm:ngx-moment",
+            "npm:@angular/forms",
+            "npm:ng2-search-filter"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/artist/artist.component.html",
+          "hash": "7607495701553054024"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/artist/artist.component.scss",
+          "hash": "11460832573202956472"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/artist/artist.component.spec.ts",
+          "hash": "15198171495561650075",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/artist/artist.component.ts",
+          "hash": "7414453704616827309",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-spinner",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/home/home.component.html",
+          "hash": "11989004304911440470"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/home/home.component.scss",
+          "hash": "12803530820114240212"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/home/home.component.spec.ts",
+          "hash": "11591630962169892345",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/home/home.component.ts",
+          "hash": "7086374036665772290",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/material/material.module.ts",
+          "hash": "16838445879101554660",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/material",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/modal/modal.component.html",
+          "hash": "4149636643850633406"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/modal/modal.component.scss",
+          "hash": "13536461995531164235"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/modal/modal.component.ts",
+          "hash": "8493142711057059868",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/material",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/model/iartist.ts",
+          "hash": "5287615300551689817"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/model/irelease.ts",
+          "hash": "17429936626891749589"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/model/isong.ts",
+          "hash": "7572530666360540049"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/navbar/navbar.component.html",
+          "hash": "13092140204959351863"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/navbar/navbar.component.scss",
+          "hash": "15366473867568313354"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/navbar/navbar.component.spec.ts",
+          "hash": "4302546624713724412",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/navbar/navbar.component.ts",
+          "hash": "8145706164592193846",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/aimnbreak/aimnbreak.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/aimnbreak/aimnbreak.component.html",
+          "hash": "10513679306284005607"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/aimnbreak/aimnbreak.component.spec.ts",
+          "hash": "2319530984159782287",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/aimnbreak/aimnbreak.component.ts",
+          "hash": "15324626291033612616",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/basstrolls/basstrolls.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/basstrolls/basstrolls.component.html",
+          "hash": "16138672841824151278"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/basstrolls/basstrolls.component.spec.ts",
+          "hash": "1722175808696767571",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/basstrolls/basstrolls.component.ts",
+          "hash": "16731196189834650955",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/dhangsha/dhangsha.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/dhangsha/dhangsha.component.html",
+          "hash": "8526505018422115489"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/dhangsha/dhangsha.component.spec.ts",
+          "hash": "15433922895476879062",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/dhangsha/dhangsha.component.ts",
+          "hash": "11612263501493411244",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/donnamaya/donnamaya.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/donnamaya/donnamaya.component.html",
+          "hash": "131099359883622533"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/donnamaya/donnamaya.component.spec.ts",
+          "hash": "15857270290298807296",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/donnamaya/donnamaya.component.ts",
+          "hash": "3766304569363452158",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/gavana/gavana.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/gavana/gavana.component.html",
+          "hash": "8803620084797067242"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/gavana/gavana.component.spec.ts",
+          "hash": "5401949423293721267",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/gavana/gavana.component.ts",
+          "hash": "4397143415751374464",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/hab/hab.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/hab/hab.component.html",
+          "hash": "15356604889531051579"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/hab/hab.component.spec.ts",
+          "hash": "13827412771104428429",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/hab/hab.component.ts",
+          "hash": "2041794544402478592",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/joxaren/joxaren.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/joxaren/joxaren.component.html",
+          "hash": "7992826298897004758"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/joxaren/joxaren.component.spec.ts",
+          "hash": "11331440207958954646",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/joxaren/joxaren.component.ts",
+          "hash": "13288262847967775047",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/kinglman/kinglman.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/kinglman/kinglman.component.html",
+          "hash": "11379084968841762251"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/kinglman/kinglman.component.spec.ts",
+          "hash": "8811125156581244481",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/kinglman/kinglman.component.ts",
+          "hash": "11246918569890581837",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nomads.component.css",
+          "hash": "6326055067027714681"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nomads.component.html",
+          "hash": "5995333310869178668"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nomads.component.spec.ts",
+          "hash": "12250256237571999137",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nomads.component.ts",
+          "hash": "16124863306358583395",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-spinner",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nuphlo/nuphlo.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nuphlo/nuphlo.component.html",
+          "hash": "17164772973519571057"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nuphlo/nuphlo.component.spec.ts",
+          "hash": "17236203143079161077",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/nuphlo/nuphlo.component.ts",
+          "hash": "9512759961719762147",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/ombudsman/ombudsman.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/ombudsman/ombudsman.component.html",
+          "hash": "11855067791596532452"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/ombudsman/ombudsman.component.spec.ts",
+          "hash": "13571540104397909834",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/ombudsman/ombudsman.component.ts",
+          "hash": "4726622898916458326",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/phoniandflore/phoniandflore.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/phoniandflore/phoniandflore.component.html",
+          "hash": "16926501168375102179"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/phoniandflore/phoniandflore.component.spec.ts",
+          "hash": "11444828670510623170",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/phoniandflore/phoniandflore.component.ts",
+          "hash": "6123770001146648896",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/pufferfisk/pufferfisk.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/pufferfisk/pufferfisk.component.html",
+          "hash": "8560036891033328785"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/pufferfisk/pufferfisk.component.spec.ts",
+          "hash": "9667824699351246785",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/pufferfisk/pufferfisk.component.ts",
+          "hash": "8054394861083616292",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/sagraselekta/sagraselekta.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/sagraselekta/sagraselekta.component.html",
+          "hash": "2878951051365154575"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/sagraselekta/sagraselekta.component.spec.ts",
+          "hash": "16819631499399982739",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/sagraselekta/sagraselekta.component.ts",
+          "hash": "15086176861272186325",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/uzul/uzul.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/uzul/uzul.component.html",
+          "hash": "3285194725357897719"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/uzul/uzul.component.spec.ts",
+          "hash": "3684193446090135157",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/uzul/uzul.component.ts",
+          "hash": "1489100078085318771",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/wdgw/wdgw.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/wdgw/wdgw.component.html",
+          "hash": "12599522576095702023"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/wdgw/wdgw.component.spec.ts",
+          "hash": "2341232343096387177",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/nomads/wdgw/wdgw.component.ts",
+          "hash": "17263724593780783914",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/release/release.component.html",
+          "hash": "2620303220328078841"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/release/release.component.scss",
+          "hash": "10620077616000690269"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/release/release.component.spec.ts",
+          "hash": "13424727243154641634",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/release/release.component.ts",
+          "hash": "15993381992323943006",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:ngx-spinner",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/artist.service.spec.ts",
+          "hash": "13903055761462667278",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/artist.service.ts",
+          "hash": "2055624472175899376",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/filter.service.ts",
+          "hash": "16270717999537014470",
+          "deps": [
+            "npm:rxjs",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/google-analytics.service.spec.ts",
+          "hash": "10917893123224005160",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/google-analytics.service.ts",
+          "hash": "14535597811404000109",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/nomads.service.spec.ts",
+          "hash": "16784282800079266562",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/nomads.service.ts",
+          "hash": "5079178257404654170",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/release.service.spec.ts",
+          "hash": "3990190404161303588",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/app/service/release.service.ts",
+          "hash": "10066376118441351706",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/artist.json",
+          "hash": "11939424721073657560"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/aimnbreak.jpg",
+          "hash": "50767640768256536"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/basstrolls.jpg",
+          "hash": "14015598026340380214"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/bassululemasound.jpg",
+          "hash": "13251192377947478088"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/dub_tower.jpg",
+          "hash": "4768532352627309426"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/gavana.jpg",
+          "hash": "9301920474461740397"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/hab.jpg",
+          "hash": "14663520646195089248"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/hab.png",
+          "hash": "6990389380764025595"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/nuphlo.jpg",
+          "hash": "10909037482319109185"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/ombudsman.jpg",
+          "hash": "14534593826783579650"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/phoniandfiore.jpg",
+          "hash": "2411191268253377958"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/pufferfisk.jpg",
+          "hash": "3997638363459327929"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/sidstar.jpg",
+          "hash": "1310071114193866469"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/thessaly_hifi.jpg",
+          "hash": "18084729539268493741"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/uzul.jpg",
+          "hash": "842000107830564783"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/artist/wirefire.jpg",
+          "hash": "8216417915309608044"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/aimnbreak.jpg",
+          "hash": "3219892412438251026"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/bass_trolls.jpg",
+          "hash": "3065645321700450988"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/dhangsha.jpg",
+          "hash": "11892284908646286761"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/donna_maya.jpg",
+          "hash": "9921851235444138624"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/gavana.jpg",
+          "hash": "1748667657155017484"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/hab.jpg",
+          "hash": "13645113747278654202"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/hab.png",
+          "hash": "6990389380764025595"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/joxaren.jpg",
+          "hash": "16389560727259725004"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/kingl_man.jpg",
+          "hash": "4313555135885188654"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/nomads_in_sound_4.png",
+          "hash": "13672873362011338670"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/nuphlo.jpg",
+          "hash": "12470966262942583942"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/ombudsman.jpg",
+          "hash": "13361800138851074804"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/paf.jpg",
+          "hash": "8530442628483361709"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/pufferfisk.jpg",
+          "hash": "10896452536406084478"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/ss_y_oo.jpg",
+          "hash": "10405880838944538023"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/uzul.jpg",
+          "hash": "14275151924050647869"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/nomads/wdgw_collective.jpg",
+          "hash": "1162493113535019971"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/7th_day.jpg",
+          "hash": "11688088533840278743"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/bolero.jpg",
+          "hash": "5020256173733264798"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/breaks_on_fire.jpg",
+          "hash": "4781071876111603726"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/come_ruff.jpg",
+          "hash": "14899914927239014099"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/costa_del_dub.jpg",
+          "hash": "1569688833905895024"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/culture_vulture.jpg",
+          "hash": "14574019838130687193"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/dub_apart.jpg",
+          "hash": "18206255714324428862"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/greek_acid.jpg",
+          "hash": "7712412872853569593"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/greek_dub_ep.jpg",
+          "hash": "1674456016587886436"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/harlig_var_jorden.jpg",
+          "hash": "3552894122743184640"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/in_andalucia.jpg",
+          "hash": "163800723939664917"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/in_tokyo.jpg",
+          "hash": "13960958537494133592"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/introversy.jpg",
+          "hash": "7865053642785705025"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/just_fuck_me.jpg",
+          "hash": "2513357554760636027"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/krifi_ammos.jpg",
+          "hash": "18084729539268493741"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/la_latina.jpg",
+          "hash": "16444683928949671112"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/malaga_nights.jpg",
+          "hash": "14746783024612443393"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/massive_one.jpg",
+          "hash": "13718779131745374349"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/mind_the_stairs.jpg",
+          "hash": "4768532352627309426"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/nomads_4.jpg",
+          "hash": "17881742407663483086"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/nomads_v1.jpg",
+          "hash": "2925256025783370268"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/nomads_v2.jpg",
+          "hash": "15206691044912449728"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/nomads_v3.jpg",
+          "hash": "16703512448300890729"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/pyr_gyni_thalassa_jungle.jpg",
+          "hash": "16464335452670240204"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/rave_alien_invasion.jpg",
+          "hash": "33114303112558442"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/retrofuturismo.jpg",
+          "hash": "12602408096997078678"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/sentiment.jpg",
+          "hash": "14338496078163811940"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/stand_firm.jpg",
+          "hash": "17264542569829128627"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/trees_fruit_vegetation.jpg",
+          "hash": "9873300315289979447"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/vicious_vibrations.jpg",
+          "hash": "7975716068256204507"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/watch_your_back.jpg",
+          "hash": "14731423705819890265"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/we_are_pufferfisk.jpg",
+          "hash": "362733825073530212"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/release/will_work_for_churros.jpg",
+          "hash": "9753345307202316001"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/bandcamp.jpg",
+          "hash": "7667734152524166055"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/beatport.png",
+          "hash": "11328680617821600677"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/bigcartel.jpg",
+          "hash": "9348813929469615812"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/facebook.jpg",
+          "hash": "248103897117410284"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/favicon-32x32.ico",
+          "hash": "9912303524569330810"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/juno.jpg",
+          "hash": "6933474796947585333"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/mr_logo.png",
+          "hash": "10964437571937624589"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/mr_logo_round.jpg",
+          "hash": "14860401791953901457"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/mr_logo_sticker.png",
+          "hash": "9693585937485923665"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/soundcloud.png",
+          "hash": "8648429948784332842"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/images/site/turntable.jpg",
+          "hash": "16187035164197366357"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/nomad-artist.json",
+          "hash": "8021187572568724829"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/assets/release.json",
+          "hash": "18313333109540130564"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/environments/environment.prod.ts",
+          "hash": "11847377846594200203"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/environments/environment.ts",
+          "hash": "2983646171544521770"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/index.html",
+          "hash": "6190622695318143081"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/main.ts",
+          "hash": "7925638933624279613",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/polyfills.ts",
+          "hash": "61876132146472886",
+          "deps": [
+            "npm:@angular/localize",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/src/styles.scss",
+          "hash": "7214957762279807644"
+        },
+        {
+          "file": "apps/meerkat-recordings/src/test-setup.ts",
+          "hash": "928580333957722935",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings/tsconfig.app.json",
+          "hash": "14422276741018194618"
+        },
+        {
+          "file": "apps/meerkat-recordings/tsconfig.json",
+          "hash": "16012113302503596158"
+        },
+        {
+          "file": "apps/meerkat-recordings/tsconfig.spec.json",
+          "hash": "13877632550058476485"
+        },
+        {
+          "file": "apps/meerkat-recordings/tslint.json",
+          "hash": "18122788642230792361"
+        }
+      ]
+    }
+  }
+}
