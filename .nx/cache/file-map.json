@@ -2,8 +2,8 @@
   "version": "6.0",
   "nxVersion": "18.0.7",
   "deps": {
-    "@angular-devkit/core": "^17.2.2",
-    "@angular-devkit/schematics": "^17.2.2",
+    "@angular-devkit/core": "^17.2.3",
+    "@angular-devkit/schematics": "^17.2.3",
     "@angular/animations": "^17.2.3",
     "@angular/cdk": "^17.2.1",
     "@angular/common": "^17.2.3",
@@ -19,7 +19,7 @@
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@nrwl/angular": "^18.0.7",
     "@popperjs/core": "^2.11.8",
-    "@schematics/angular": "^17.2.2",
+    "@schematics/angular": "^17.2.3",
     "bootstrap": "^5.3.3",
     "core-js": "^3.36.0",
     "font-awesome": "^4.7.0",
@@ -29,15 +29,15 @@
     "ng2-search-filter": "^0.5.1",
     "ngx-moment": "^6.0.2",
     "ngx-spinner": "^16.0.2",
-    "polyfills": "^2.1.1",
+    "polyfills": "^1.13.1",
     "popper.js": "^1.16.1",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",
     "uglify-js": "^3.17.4",
     "webpack": "^5.90.3",
     "zone.js": "^0.14.4",
-    "@angular-devkit/build-angular": "^17.2.2",
-    "@angular/cli": "^17.2.2",
+    "@angular-devkit/build-angular": "^17.2.3",
+    "@angular/cli": "^17.2.3",
     "@angular/compiler-cli": "^17.2.3",
     "@angular/language-service": "^17.2.3",
     "@nrwl/cypress": "^18.0.7",
@@ -58,48 +58,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
         "file": ".gitignore",
         "hash": "13280348497499601141"
-      },
-      {
-        "file": "tslint.json",
-        "hash": "4416031395844323560"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "11426451898248235068"
-      },
-      {
-        "file": "tools/schematics/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "5864009640613726360"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "15755601163234065565"
-      },
-      {
-        "file": "apps/.gitkeep",
-        "hash": "15036214574332298676"
-      },
-      {
-        "file": "decorate-angular-cli.js",
-        "hash": "11706464733759336431"
-      },
-      {
-        "file": "package.json",
-        "hash": "11155733939606748320"
-      },
-      {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "README.md",
-        "hash": "13690006961801662592"
       },
       {
         "file": ".prettierignore",
@@ -110,24 +74,60 @@
         "hash": "6820402234827505055"
       },
       {
-        "file": "package-lock.json",
-        "hash": "18291152829715996510"
+        "file": ".vscode/extensions.json",
+        "hash": "15755601163234065565"
       },
       {
-        "file": "nx.json",
-        "hash": "3798089011180698108"
+        "file": "README.md",
+        "hash": "13690006961801662592"
       },
       {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
+        "file": "angular.json",
+        "hash": "14931166224745687468"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "15036214574332298676"
+      },
+      {
+        "file": "decorate-angular-cli.js",
+        "hash": "11706464733759336431"
       },
       {
         "file": "jest.config.js",
         "hash": "5650295198995641628"
       },
       {
-        "file": "angular.json",
-        "hash": "14931166224745687468"
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3798089011180698108"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15416323935349443371"
+      },
+      {
+        "file": "package.json",
+        "hash": "9287467074149292764"
+      },
+      {
+        "file": "tools/schematics/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "5864009640613726360"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11426451898248235068"
+      },
+      {
+        "file": "tslint.json",
+        "hash": "4416031395844323560"
       }
     ],
     "projectFileMap": {
