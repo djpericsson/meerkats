@@ -640,3 +640,29 @@ For more information about the usage of "namedInputs" see https://nx.dev/depreca
 [NX Daemon Server] - 2024-03-06T16:02:51.017Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (sources)
 [NX Daemon Server] - 2024-03-06T16:02:51.017Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (outputs)
 [NX Daemon Server] - 2024-03-06T16:02:51.017Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-03-06T16:41:58.339Z - Started listening on: \\.\pipe\nx\C:\Users\djper\AppData\Local\Temp\8ab4f703efb18857ba0a\d.sock
+[NX Daemon Server] - 2024-03-06T16:41:58.373Z - [WATCHER]: Subscribed to changes within: c:\Repos\Private\meerkats (native)
+[NX Daemon Server] - 2024-03-06T16:41:58.375Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:41:58.376Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T16:41:58.381Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-06T16:41:58.391Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-06T16:41:58.391Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-06T16:41:58.391Z - [REQUEST]: 
+
+ NX   Using `implicitDependencies` for global implicit dependencies configuration is no longer supported.
+
+Use "namedInputs" instead. You can run "nx repair" to automatically migrate your configuration.
+For more information about the usage of "namedInputs" see https://nx.dev/deprecated/global-implicit-dependencies#global-implicit-dependencies
+
+[NX Daemon Server] - 2024-03-06T16:41:59.350Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-06T16:41:59.355Z - Time taken for 'total for creating and serializing project graph' 969.4583999812603ms
+[NX Daemon Server] - 2024-03-06T16:41:59.355Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-06T16:41:59.355Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 969. Response time: 5.
+[NX Daemon Server] - 2024-03-06T16:41:59.356Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:41:59.363Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-06T16:41:59.363Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:41:59.364Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T16:41:59.367Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-03-06T16:41:59.367Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:41:59.367Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-03-06T16:41:59.367Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
