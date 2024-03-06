@@ -29,7 +29,7 @@
     "ng2-search-filter": "^0.5.1",
     "ngx-moment": "^6.0.2",
     "ngx-spinner": "^16.0.2",
-    "polyfills": "^1.13.1",
+    "polyfills": "^2.1.1",
     "popper.js": "^1.16.1",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",
@@ -107,11 +107,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "15416323935349443371"
+        "hash": "15593496723653728404"
       },
       {
         "file": "package.json",
-        "hash": "9287467074149292764"
+        "hash": "13418368679054784904"
       },
       {
         "file": "tools/schematics/.gitkeep",
@@ -131,51 +131,6 @@
       }
     ],
     "projectFileMap": {
-      "meerkat-recordings-e2e": [
-        {
-          "file": "apps/meerkat-recordings-e2e/cypress.json",
-          "hash": "13928846900712327322"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/fixtures/example.json",
-          "hash": "17341819486505642070"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/integration/app.spec.ts",
-          "hash": "9772499589596875980"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/plugins/index.js",
-          "hash": "1536397649080683784",
-          "deps": [
-            "npm:@nrwl/cypress"
-          ]
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/support/app.po.ts",
-          "hash": "5364106453863571025"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/support/commands.ts",
-          "hash": "12130045679248419058"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/src/support/index.ts",
-          "hash": "15928825062325902088"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/tsconfig.e2e.json",
-          "hash": "17230193539068221751"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/tsconfig.json",
-          "hash": "4573555006180383730"
-        },
-        {
-          "file": "apps/meerkat-recordings-e2e/tslint.json",
-          "hash": "5492850002378172202"
-        }
-      ],
       "meerkat-recordings": [
         {
           "file": "apps/meerkat-recordings/browserslist",
@@ -1206,6 +1161,51 @@
         {
           "file": "apps/meerkat-recordings/tslint.json",
           "hash": "18122788642230792361"
+        }
+      ],
+      "meerkat-recordings-e2e": [
+        {
+          "file": "apps/meerkat-recordings-e2e/cypress.json",
+          "hash": "13928846900712327322"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/fixtures/example.json",
+          "hash": "17341819486505642070"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/integration/app.spec.ts",
+          "hash": "9772499589596875980"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/plugins/index.js",
+          "hash": "1536397649080683784",
+          "deps": [
+            "npm:@nrwl/cypress"
+          ]
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/app.po.ts",
+          "hash": "5364106453863571025"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/commands.ts",
+          "hash": "12130045679248419058"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/src/support/index.ts",
+          "hash": "15928825062325902088"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tsconfig.e2e.json",
+          "hash": "17230193539068221751"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tsconfig.json",
+          "hash": "4573555006180383730"
+        },
+        {
+          "file": "apps/meerkat-recordings-e2e/tslint.json",
+          "hash": "5492850002378172202"
         }
       ]
     }

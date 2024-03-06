@@ -576,3 +576,67 @@ For more information about the usage of "namedInputs" see https://nx.dev/depreca
 [NX Daemon Server] - 2024-03-06T15:43:30.354Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (sources)
 [NX Daemon Server] - 2024-03-06T15:43:30.354Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (outputs)
 [NX Daemon Server] - 2024-03-06T15:43:30.354Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-03-06T15:47:09.790Z - Started listening on: \\.\pipe\nx\C:\Users\djper\AppData\Local\Temp\8ab4f703efb18857ba0a\d.sock
+[NX Daemon Server] - 2024-03-06T15:47:09.795Z - [WATCHER]: Subscribed to changes within: c:\Repos\Private\meerkats (native)
+[NX Daemon Server] - 2024-03-06T15:47:09.810Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T15:47:09.813Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T15:47:09.817Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-06T15:47:09.836Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-06T15:47:09.836Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-06T15:47:09.837Z - [REQUEST]: 
+
+ NX   Using `implicitDependencies` for global implicit dependencies configuration is no longer supported.
+
+Use "namedInputs" instead. You can run "nx repair" to automatically migrate your configuration.
+For more information about the usage of "namedInputs" see https://nx.dev/deprecated/global-implicit-dependencies#global-implicit-dependencies
+
+[NX Daemon Server] - 2024-03-06T15:47:10.672Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-06T15:47:10.675Z - Time taken for 'total for creating and serializing project graph' 854.6383999884129ms
+[NX Daemon Server] - 2024-03-06T15:47:10.675Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T15:47:10.675Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-06T15:47:10.676Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 855. Response time: 4.
+[NX Daemon Server] - 2024-03-06T15:47:10.679Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-06T15:47:10.681Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T15:47:10.681Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T15:47:10.681Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T15:47:10.684Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-03-06T15:47:10.684Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-03-06T15:47:10.684Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-03-06T15:47:46.040Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T15:47:46.107Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T15:47:46.324Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T15:47:46.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T15:58:54.867Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T15:58:55.036Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (sources)
+[NX Daemon Server] - 2024-03-06T15:58:55.036Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (outputs)
+[NX Daemon Server] - 2024-03-06T15:58:55.036Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-03-06T16:02:18.537Z - Started listening on: \\.\pipe\nx\C:\Users\djper\AppData\Local\Temp\8ab4f703efb18857ba0a\d.sock
+[NX Daemon Server] - 2024-03-06T16:02:18.541Z - [WATCHER]: Subscribed to changes within: c:\Repos\Private\meerkats (native)
+[NX Daemon Server] - 2024-03-06T16:02:18.552Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:02:18.554Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T16:02:18.557Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-06T16:02:18.558Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-06T16:02:18.558Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-06T16:02:18.559Z - [REQUEST]: 
+
+ NX   Using `implicitDependencies` for global implicit dependencies configuration is no longer supported.
+
+Use "namedInputs" instead. You can run "nx repair" to automatically migrate your configuration.
+For more information about the usage of "namedInputs" see https://nx.dev/deprecated/global-implicit-dependencies#global-implicit-dependencies
+
+[NX Daemon Server] - 2024-03-06T16:02:19.022Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-06T16:02:19.026Z - Time taken for 'total for creating and serializing project graph' 465.1856000125408ms
+[NX Daemon Server] - 2024-03-06T16:02:19.026Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:02:19.027Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-06T16:02:19.027Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 466. Response time: 5.
+[NX Daemon Server] - 2024-03-06T16:02:19.030Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-06T16:02:19.031Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:02:19.031Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-06T16:02:19.035Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-03-06T16:02:19.035Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-06T16:02:19.035Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-03-06T16:02:19.035Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-03-06T16:02:51.016Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-06T16:02:51.017Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (sources)
+[NX Daemon Server] - 2024-03-06T16:02:51.017Z - [WATCHER]: Stopping the watcher for c:\Repos\Private\meerkats (outputs)
+[NX Daemon Server] - 2024-03-06T16:02:51.017Z - Server stopped because: "Lock file changed"
